@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/white"
+              style="@style/style_match_wrap_content">
+    <LinearLayout style="@style/style_match_wrap_content"
+                  android:paddingRight="@dimen/dimen_16"
+                  android:gravity="center">
+        <TextView style="@style/style_wrap_content_w0_gc_pd14_ts12_tcb6_drxx"
+                  android:id="@+id/tv_ver_01"
+                  android:layout_width="wrap_content"
+                  android:text="全部项目"/>
+
+        <LinearLayout style="@style/style_wrap_content"
+                      android:gravity="center"
+                      android:id="@+id/img_ver_03"
+                      android:layout_gravity="center"
+                      android:layout_weight="1">
+            <TextView style="@style/style_wrap_content_ts12_tchg6_tcb6_pdtb14_pdlr10"
+                      android:gravity="right"
+                      android:layout_weight="1"
+                      android:hint="选择时间"
+                      android:id="@+id/tv_ver_02"/>
+
+            <ImageView android:layout_width="wrap_content"
+                       android:layout_height="@dimen/dimen_30"
+                       android:paddingRight="@dimen/dimen_8"
+                       android:src="@mipmap/icon_shuaxuan"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

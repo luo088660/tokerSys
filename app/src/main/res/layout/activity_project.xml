@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              style="@style/style_match_content"
+              android:fitsSystemWindows="true"
+              android:background="@color/c_gray_12"
+              android:orientation="vertical">
+
+    <include layout="@layout/layout_content_title"/>
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_project"
+            style="@style/style_match_wrap_content"/>
+</LinearLayout>

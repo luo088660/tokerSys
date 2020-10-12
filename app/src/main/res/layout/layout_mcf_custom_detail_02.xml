@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:id="@+id/ll_mcf_custom_recom_01"
+              style="@style/style_match_wrap_content">
+    <View style="@style/horizontalLine"
+          android:layout_above="@+id/ll_mcf_custom_detail_btm"/>
+
+
+    <LinearLayout style="@style/style_match_wrap_content"
+                  android:padding="@dimen/dimen_10"
+                  android:background="@color/white"
+                  android:orientation="horizontal">
+
+        <TextView style="@style/style_wrap_content_ptpb10_w1_mlmr6_gc_tcr4_ts14"
+                  android:id="@+id/btn_mcf_datail_01"
+                  android:text="编辑资料"/>
+
+        <TextView style="@style/style_wrap_content_ptpb10_w1_mlmr6_gc_tcr4_ts14"
+                  android:id="@+id/btn_mcf_datail_02"
+                  android:text="客户跟进"/>
+
+        <TextView style="@style/style_wrap_content_ptpb10_w1_mlmr6_gc_tcr4_ts14"
+                  android:id="@+id/btn_mcf_datail_03"
+                  android:text="推荐项目"/>
+
+        <TextView style="@style/style_wrap_content_ptpb10_w1_mlmr6_gc_tcr4_ts14"
+                  android:id="@+id/btn_mcf_datail_04"
+                  android:text="标记无效"/>
+
+
+    </LinearLayout>
+</LinearLayout>

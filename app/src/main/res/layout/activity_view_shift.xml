@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/style_match_content"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical"
+              android:background="@color/c_gray_12">
+    <include layout="@layout/layout_content_title"/>
+    <android.support.v4.widget.NestedScrollView style="@style/style_match_content">
+        <LinearLayout style="@style/style_wrap_content"
+                      android:orientation="vertical">
+
+            <include layout="@layout/layout_date_time"/>
+
+            <include layout="@layout/layout_view_shift_01"/>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              style="@style/style_match_wrap_content">
+    <LinearLayout style="@style/style_match_wrap_content"
+                  android:gravity="center"
+                  android:padding="@dimen/dimen_16">
+        <TextView style="@style/style_wrap_content"
+                  android:gravity="center_horizontal"
+                  android:padding="@dimen/dimen_1"
+                  android:id="@+id/img_item"
+                  android:text="4"
+                  android:textSize="@dimen/dimen_10"
+                  android:textColor="@color/white_01"
+                  android:background="@mipmap/icon_orange"/>
+        <LinearLayout style="@style/style_wrap_content"
+                      android:layout_marginLeft="@dimen/dimen_10"
+                      android:orientation="vertical">
+            <TextView style="@style/style_wrap_content"
+                      android:textSize="@dimen/dimen_14"
+                      android:textColor="@color/c_black_7"
+                      android:layout_marginBottom="@dimen/dimen_10"
+                      android:text="时间"/>
+            <TextView style="@style/style_wrap_content"
+                      android:textSize="@dimen/dimen_14"
+                      android:textColor="@color/c_black_7"
+                      android:text="地点"/>
+        </LinearLayout>
+        <LinearLayout style="@style/style_match_wrap_content"
+                      android:layout_marginLeft="@dimen/dimen_18">
+            <LinearLayout style="@style/style_wrap_content"
+                          android:orientation="vertical">
+                <TextView style="@style/style_wrap_content"
+                          android:textSize="@dimen/dimen_14"
+                          android:id="@+id/tv_item_01"
+                          android:textColor="@color/c_black_6"
+                          android:layout_marginBottom="@dimen/dimen_10"
+                          android:text="10:30"/>
+                <TextView style="@style/style_wrap_content"
+                          android:textSize="@dimen/dimen_14"
+                          android:id="@+id/tv_item_02"
+                          android:textColor="@color/c_black_6"
+                          android:text="天河区员村11号大院90号楼"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View style="@style/horizontalLine"/>
+</LinearLayout>

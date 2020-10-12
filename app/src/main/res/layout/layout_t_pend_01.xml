@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/style_match_wrap_content"
+        android:background="@color/c_gray_12"
+        android:orientation="vertical"
+        android:padding="@dimen/dimen_16">
+
+    <TextView
+            android:id="@+id/tv_pend_01"
+            style="@style/style_match_wrap_content"
+            android:background="@drawable/txt_bg_selector"
+            android:drawableRight="@mipmap/icon_xxjt"
+            android:drawablePadding="@dimen/dimen_10"
+            android:padding="@dimen/dimen_10"
+            android:text="全部项目"
+            android:textColor="@color/c_black_6"
+            android:textSize="@dimen/dimen_12" />
+
+    <LinearLayout
+            style="@style/style_match_wrap_content"
+            android:layout_marginTop="@dimen/dimen_10">
+
+        <TextView
+                android:id="@+id/tv_pend_02"
+                style="@style/style_wrap_content"
+                android:layout_width="@dimen/dimen_0"
+                android:layout_marginRight="@dimen/dimen_5"
+                android:layout_weight="1"
+                android:background="@drawable/txt_bg_selector"
+                android:drawableRight="@mipmap/icon_xxjt"
+                android:padding="@dimen/dimen_10"
+                android:text="全部任务类型"
+                android:textColor="@color/c_black_6"
+                android:textSize="@dimen/dimen_12" />
+
+        <TextView
+                android:id="@+id/tv_pend_03"
+                style="@style/style_wrap_content"
+                android:layout_width="@dimen/dimen_0"
+                android:layout_marginLeft="@dimen/dimen_5"
+                android:layout_weight="1"
+                android:background="@drawable/tv_bg_quit_login_normal"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dimen_10"
+                android:paddingTop="@dimen/dimen_5"
+                android:paddingRight="@dimen/dimen_10"
+                android:paddingBottom="@dimen/dimen_5"
+                android:text="审批不通过的任务"
+                android:textColor="@color/c_red_4"
+                android:textSize="@dimen/dimen_12" />
+    </LinearLayout>
+
+
+    <TextView
+            style="@style/style_match_wrap_content"
+            android:layout_marginTop="@dimen/dimen_18"
+            android:background="@drawable/btn_bg_quit_login_normal"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dimen_16"
+            android:paddingTop="@dimen/dimen_5"
+            android:paddingRight="@dimen/dimen_16"
+            android:paddingBottom="@dimen/dimen_5"
+            android:text="查询"
+            android:textColor="@color/white_01"
+            android:textSize="@dimen/dimen_14" />
+
+    <TextView
+            style="@style/style_wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dimen_15"
+            android:text="共 0 个任务"
+            android:textSize="@dimen/dimen_14" />
+</LinearLayout>

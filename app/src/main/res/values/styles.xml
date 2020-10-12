@@ -1,0 +1,293 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="style_match_wrap_content_drwaT" parent="style_match_wrap_content">
+        <item name="android:drawablePadding">@dimen/dimen_5</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <style name="ll_width0_heightw_gc_ov_w1">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="tv_w_gc_ts12" parent="style_wrap_content">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/dimen_12</item>
+    </style>
+
+    <style name="img_wh22_m10">
+        <item name="android:layout_width">@dimen/text_22</item>
+        <item name="android:layout_height">@dimen/text_22</item>
+        <item name="android:layout_margin">@dimen/dimen_10</item>
+    </style>
+
+    <style name="tv_w_gc_tstyleb" parent="style_wrap_content">
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/dimen_18</item>
+        <item name="android:textColor">@color/c_red_4</item>
+    </style>
+
+    <style name="style_w_w1_dp15_lagc_ts14_pd15" parent="style_wrap_content">
+        <item name="android:drawablePadding">@dimen/dimen_15</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginRight">@dimen/dimen_5</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">@dimen/dimen_14</item>
+        <item name="android:padding">@dimen/dimen_15</item>
+    </style>
+
+    <style name="style_wrap_content_mr_20" parent="style_wrap_content">
+        <item name="android:layout_marginRight">@dimen/dimen_20</item>
+    </style>
+
+    <style name="style_wrap_content_ml5_cv_ts14_tcb7" parent="style_wrap_content">
+        <item name="android:layout_marginLeft">@dimen/dimen_5</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textSize">@dimen/dimen_14</item>
+        <item name="android:textColor">@color/c_black_7</item>
+    </style>
+
+    <style name="style_wrap_content_gc_tcb6" parent="style_wrap_content">
+        <item name="android:textSize">@dimen/dimen_12</item>
+        <item name="android:layout_width">@dimen/dimen_0</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/c_black_6</item>
+    </style>
+
+    <style name="style_wrap_content_gc_tcb6_c7" parent="style_wrap_content_gc_tcb6">
+        <item name="android:textColor">@color/c_black_7</item>
+
+    </style>
+
+    <style name="style_wrap_content_ts14_w0_tcb7_w1" parent="style_wrap_content">
+        <item name="android:textSize">@dimen/dimen_14</item>
+        <item name="android:layout_width">@dimen/dimen_0</item>
+        <item name="android:textColor">@color/c_black_7</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="style_wrap_content_ml10_w0_tc7_w1" parent="style_wrap_content">
+        <item name="android:layout_marginLeft">@dimen/dimen_10</item>
+        <item name="android:layout_width">@dimen/dimen_0</item>
+        <item name="android:textColor">@color/c_black_7</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="style_wrap_content_RB_ptpb10_plpr20_bnull" parent="style_wrap_content">
+        <item name="android:paddingTop">@dimen/dimen_5</item>
+        <item name="android:paddingLeft">@dimen/dimen_10</item>
+        <item name="android:textColor">@drawable/tv_quit_bg_selector</item>
+        <item name="android:paddingRight">@dimen/dimen_10</item>
+        <item name="android:textSize">@dimen/dimen_14</item>
+        <item name="android:paddingBottom">@dimen/dimen_5</item>
+        <item name="android:button">@null</item>
+    </style>
+
+    <style name="style_0_wrap_pt15_pb13_ts12_tcb6_w1_gc">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">@dimen/dimen_0</item>
+        <item name="android:paddingTop">@dimen/dimen_15</item>
+        <item name="android:paddingBottom">@dimen/dimen_13</item>
+        <item name="android:textSize">@dimen/dimen_14</item>
+        <item name="android:textColor">@color/c_black_6</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="style_wrap_content_pad15_gc_ts12_tcb6" parent="style_wrap_content">
+        <item name="android:padding">@dimen/dimen_15</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/dimen_12</item>
+        <item name="android:textColor">@color/c_black_6</item>
+    </style>
+
+    <style name="style_wrap_content_padrl15_gc_ts12_tcb6" parent="style_wrap_content">
+        <item name="android:paddingTop">@dimen/dimen_15</item>
+        <item name="android:paddingBottom">@dimen/dimen_15</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/dimen_12</item>
+        <item name="android:textColor">@color/c_black_6</item>
+    </style>
+
+    <style name="style_wrap_content_b7_ts14" parent="style_wrap_content">
+        <item name="android:textColor">@color/c_black_7</item>
+        <item name="android:textSize">@dimen/dimen_14</item>
+    </style>
+
+    <style name="style_wrap_content_ts14_tcb6_ml10" parent="style_wrap_content">
+        <item name="android:textSize">@dimen/dimen_14</item>
+        <item name="android:textColor">@color/c_black_6</item>
+        <item name="android:layout_marginLeft">@dimen/dimen_10</item>
+    </style>
+
+    <style name="style_match_wrap_content_mt15" parent="style_match_wrap_content">
+        <item name="android:layout_marginTop">@dimen/dimen_10</item>
+    </style>
+
+    <style name="style_wrap_content_wid0_w1" parent="style_wrap_content">
+        <item name="android:layout_width">@dimen/dimen_0</item>
+        <item name="android:textColor">@color/c_black_7</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="style_wrap_content_wid0_w4" parent="style_wrap_content">
+        <item name="android:layout_width">@dimen/dimen_0</item>
+
+        <item name="android:textColor">@color/c_black_6</item>
+        <item name="android:layout_weight">4</item>
+    </style>
+
+    <style name="style_match_wrap_content_pl16_pr16_bw_gc" parent="style_match_wrap_content">
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">@dimen/dimen_16</item>
+        <item name="android:paddingRight">@dimen/dimen_16</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="style_wrap_content_mt15_mb15_w1_ts14" parent="style_wrap_content">
+        <item name="android:layout_marginTop">@dimen/dimen_15</item>
+        <item name="android:layout_marginBottom">@dimen/dimen_15</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">@dimen/dimen_14</item>
+        <item name="android:textColor">@color/c_txt_yiguoqi</item>
+    </style>
+
+    <style name="style_wrap_content_tch0_tc6_bnull_gr_w1_ts14" parent="style_wrap_content">
+        <item name="android:textColorHint">@color/c_gray_0</item>
+        <item name="android:textColor">@color/c_black_6</item>
+        <item name="android:background">@null</item>
+        <item name="android:gravity">right</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">@dimen/dimen_14</item>
+    </style>
+
+    <style name="style_match_content_ts14_mb10_tcb6" parent="style_match_content">
+        <item name="android:textSize">@dimen/dimen_14</item>
+        <item name="android:layout_marginBottom">@dimen/dimen_10</item>
+        <item name="android:textColor">@color/c_black_6</item>
+    </style>
+
+    <style name="style_wrap_content_ptpb10_w1_mlmr6_gc_tcr4_ts14" parent="style_wrap_content">
+        <item name="android:background">@drawable/tv_bg_quit_login_normal</item>
+        <item name="android:paddingTop">@dimen/dimen_5</item>
+        <item name="android:paddingBottom">@dimen/dimen_5</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginLeft">@dimen/dimen_6</item>
+        <item name="android:layout_marginRight">@dimen/dimen_6</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/c_red_4</item>
+        <item name="android:textSize">@dimen/dimen_12</item>
+    </style>
+
+    <style name="style_wrap_content_wid0_w1_tcb7_ts14" parent="style_wrap_content">
+        <item name="android:layout_width">@dimen/dimen_0</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/c_black_7</item>
+        <item name="android:textSize">@dimen/dimen_14</item>
+    </style>
+
+    <style name="style_wrap_content_wid0_w22_tc6_ts14" parent="style_wrap_content">
+        <item name="android:layout_width">@dimen/dimen_0</item>
+        <item name="android:layout_weight">2.2</item>
+        <item name="android:textColor">@color/c_black_6</item>
+        <item name="android:textSize">@dimen/dimen_14</item>
+    </style>
+
+    <style name="style_wrap_content_ts14_tc7" parent="style_wrap_content">
+        <item name="android:textSize">@dimen/dimen_14</item>
+        <item name="android:textColor">@color/c_black_7</item>
+    </style>
+
+    <style name="style_wrap_content_w1_mt16mb16_ml20_bnull_ts14" parent="style_wrap_content">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginTop">@dimen/dimen_16</item>
+        <item name="android:textColorHint">@color/c_black_7</item>
+        <item name="android:textSize">@dimen/dimen_14</item>
+        <item name="android:layout_marginBottom">@dimen/dimen_15</item>
+        <item name="android:layout_marginLeft">@dimen/dimen_20</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="style_wrap_content_img_ptpbpl8_pr16" parent="style_wrap_content">
+        <item name="android:paddingTop">@dimen/dimen_8</item>
+        <item name="android:paddingBottom">@dimen/dimen_8</item>
+        <item name="android:paddingLeft">@dimen/dimen_8</item>
+        <item name="android:paddingRight">@dimen/dimen_8</item>
+    </style>
+
+    <style name="style_wrap_content_ts14_tcb6_bg_ptpb10_plpr20">
+        <item name="android:layout_width">@dimen/dimen_50</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/dimen_12</item>
+        <item name="android:textColor">@color/c_black_6</item>
+        <item name="android:background">@drawable/btn_bg_qd_selector</item>
+        <item name="android:paddingTop">@dimen/dimen_5</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingBottom">@dimen/dimen_5</item>
+    </style>
+
+    <style name="horizontalLine_16" parent="horizontalLine">
+        <item name="android:layout_marginLeft">@dimen/dimen_16</item>
+        <item name="android:layout_marginRight">@dimen/dimen_16</item>
+    </style>
+
+    <style name="style_wrap_content_w0_gc_pd14_ts12_tcb6_drxx" parent="style_wrap_content">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingTop">@dimen/dimen_14</item>
+        <item name="android:paddingBottom">@dimen/dimen_14</item>
+        <item name="android:paddingLeft">@dimen/dimen_5</item>
+        <item name="android:paddingRight">@dimen/dimen_5</item>
+        <item name="android:layout_width">@dimen/dimen_0</item>
+        <item name="android:textSize">@dimen/dimen_12</item>
+        <item name="android:textColor">@color/c_black_6</item>
+        <item name="android:drawableRight">@mipmap/icon_xxjt</item>
+    </style>
+
+    <style name="style_wrap_content_ts12_tchg6_tcb6_pdtb14_pdlr10" parent="style_wrap_content">
+        <item name="android:textSize">@dimen/dimen_12</item>
+        <item name="android:textColorHint">@color/c_gray_6</item>
+        <item name="android:textColor">@color/c_black_6</item>
+        <item name="android:paddingTop">@dimen/dimen_14</item>
+        <item name="android:paddingBottom">@dimen/dimen_14</item>
+        <item name="android:paddingLeft">@dimen/dimen_10</item>
+        <item name="android:paddingRight">@dimen/dimen_10</item>
+    </style>
+
+    <style name="style_wrap_content_pd15_dp5_ts12_tc6_drrxx" parent="style_wrap_content">
+        <item name="android:padding">@dimen/dimen_15</item>
+        <item name="android:drawablePadding">@dimen/dimen_5</item>
+        <item name="android:textSize">@dimen/dimen_12</item>
+        <item name="android:textColor">@color/c_black_6</item>
+        <item name="android:drawableRight">@mipmap/icon_xxjt</item>
+    </style>
+
+    <style name="style_wrap_content_w0_pd10_ts10_gc_wei1" parent="style_wrap_content">
+        <item name="android:layout_width">@dimen/dimen_0</item>
+        <item name="android:padding">@dimen/dimen_10</item>
+        <item name="android:textSize">@dimen/dimen_14</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="LoadingDialog" parent="@android:style/Theme.Holo.Dialog.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+</resources>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+    <LinearLayout
+            style="@style/style_match_wrap_content"
+            android:orientation="vertical">
+
+        <ImageView
+                android:id="@+id/img_qr_code"
+                style="@style/style_match_content" />
+
+        <TextView
+                android:id="@+id/tv_qr_code"
+                style="@style/style_wrap_content"
+                android:layout_marginLeft="@dimen/dimen_30"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:visibility="gone"
+                android:background="@drawable/btn_bg_kaoqin_yc1_normal"
+                android:paddingLeft="@dimen/dimen_10"
+                android:paddingTop="@dimen/dimen_10"
+                android:paddingRight="@dimen/dimen_10"
+                android:paddingBottom="@dimen/dimen_10"
+                android:text="保存"
+                android:textColor="@color/white_01" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

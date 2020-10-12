@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/style_match_wrap_content"
+        android:background="@color/c_gray_12"
+        android:orientation="vertical">
+
+    <LinearLayout
+            style="@style/style_match_wrap_content"
+            android:gravity="center">
+
+        <TextView
+                android:id="@+id/tv_follow_cus_01"
+                style="@style/style_wrap_content_pd15_dp5_ts12_tc6_drrxx"
+                android:text="全部项目" />
+
+        <TextView
+                android:id="@+id/tv_follow_cus_02"
+                style="@style/style_wrap_content_pd15_dp5_ts12_tc6_drrxx"
+                android:text="全部状态" />
+
+        <TextView
+                android:id="@+id/tv_follow_cus_03"
+                android:hint="选择时间"
+                style="@style/style_wrap_content_ts12_tchg6_tcb6_pdtb14_pdlr10" />
+
+        <ImageView
+                android:id="@+id/img_follow_cus_04"
+                android:layout_width="@dimen/dimen_30"
+                android:layout_height="@dimen/dimen_30"
+                android:padding="@dimen/dimen_8"
+                android:src="@mipmap/icon_shuaxuan" />
+    </LinearLayout>
+
+    <LinearLayout
+            style="@style/style_match_wrap_content"
+            android:background="@color/c_gray_122"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dimen_16"
+            android:paddingRight="@dimen/dimen_16"
+            android:paddingTop="@dimen/dimen_10"
+            android:paddingBottom="@dimen/dimen_5"
+            >
+
+
+        <LinearLayout
+                style="@style/style_match_wrap_content"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:visibility="gone">
+
+            <TextView
+                    style="@style/style_wrap_content"
+                    android:layout_width="@dimen/dimen_0"
+                    android:layout_marginRight="@dimen/dimen_8"
+                    android:layout_weight="1"
+                    android:background="@drawable/txt_bg_selector"
+                    android:drawableRight="@mipmap/rili"
+                    android:padding="@dimen/dimen_10"
+                    android:text="开始日期"
+                    android:textSize="@dimen/dimen_12" />
+
+            <TextView
+                    android:id="@+id/tv_follow_cus_04"
+                    style="@style/style_wrap_content"
+                    android:layout_width="@dimen/dimen_0"
+                    android:layout_marginLeft="@dimen/dimen_8"
+                    android:layout_weight="1"
+                    android:background="@drawable/txt_bg_selector"
+                    android:drawableRight="@mipmap/rili"
+                    android:padding="@dimen/dimen_10"
+                    android:text="结束日期"
+                    android:textSize="@dimen/dimen_12" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/style_match_wrap_content">
+
+            <EditText
+                    android:id="@+id/tv_follow_cus_05"
+                    style="@style/style_wrap_content"
+                    android:layout_width="@dimen/dimen_0"
+                    android:layout_weight="1"
+                    android:background="@drawable/txt_bg_selector"
+                    android:hint="输入姓名/手机号码查询"
+                    android:paddingLeft="@dimen/dimen_10"
+                    android:paddingTop="@dimen/dimen_5"
+                    android:paddingRight="@dimen/dimen_10"
+                    android:paddingBottom="@dimen/dimen_5"
+                    android:textColor="@color/c_black_6"
+                    android:textColorHint="@color/c_black_7"
+                    android:textSize="@dimen/dimen_12" />
+
+            <TextView
+                    android:id="@+id/tv_follow_cus_06"
+                    style="@style/style_wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:background="@drawable/btn_bg_quit_login_normal"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/dimen_16"
+                    android:paddingTop="@dimen/dimen_5"
+                    android:paddingRight="@dimen/dimen_16"
+                    android:paddingBottom="@dimen/dimen_5"
+                    android:text="查询"
+                    android:textColor="@color/white_01"
+                    android:textSize="@dimen/dimen_12" />
+
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+                style="@style/style_match_wrap_content"
+                android:layout_marginTop="@dimen/dimen_16">
+
+            <TextView
+                    android:id="@+id/tv_follow_cus_07"
+                    style="@style/style_wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="共 0 个任务"
+                    android:textSize="@dimen/dimen_14" />
+
+            <TextView
+                    android:id="@+id/tv_follow_cus_08"
+                    style="@style/style_wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/tv_bg_quit_login_normal"
+                    android:paddingRight="@dimen/dimen_10"
+                    android:paddingLeft="@dimen/dimen_10"
+                    android:paddingTop="@dimen/dimen_5"
+                    android:paddingBottom="@dimen/dimen_5"
+                    android:text="展示小蜜蜂拓客"
+                    android:textColor="@color/c_red_4"
+                    android:textSize="@dimen/dimen_12" />
+        </RelativeLayout>
+    </LinearLayout>
+    <!--<include layout="@layout/layout_custo_detail"/>-->
+</LinearLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/style_match_wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+            style="@style/style_match_content"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_10">
+
+        <LinearLayout style="@style/style_match_wrap_content">
+
+            <TextView
+                    style="@style/style_wrap_content_b7_ts14"
+
+                    android:text="起止时间" />
+
+            <TextView
+                    android:id="@+id/tv_indic4_01"
+                    style="@style/style_wrap_content_ts14_tcb6_ml10"
+                    android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+                style="@style/style_match_wrap_content"
+                android:layout_marginTop="@dimen/dimen_10">
+
+            <TextView
+                    style="@style/style_wrap_content_b7_ts14"
+                    android:text="任务对象" />
+
+            <TextView
+                    android:id="@+id/tv_indic4_02"
+                    style="@style/style_wrap_content_ts14_tcb6_ml10"
+                    android:layout_weight="1" />
+        </LinearLayout>
+
+        <View
+                style="@style/horizontalLine"
+                android:layout_marginTop="@dimen/dimen_10" />
+
+        <LinearLayout
+                android:id="@+id/ll_indic4_03"
+                style="@style/style_match_wrap_content"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:background="@color/white">
+
+            <TextView
+                    style="@style/style_wrap_content_b7_ts14"
+                    android:layout_width="@dimen/dimen_0"
+                    android:layout_weight="1.5"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:text="指标\t\t\t\t\t\t" />
+
+            <TextView
+                    style="@style/style_wrap_content_ts14_tcb6_ml10"
+                    android:layout_width="@dimen/dimen_0"
+                    android:layout_weight="1"
+                    android:text="留电量" />
+
+            <TextView
+                    style="@style/style_wrap_content_ts14_tcb6_ml10"
+                    android:layout_width="@dimen/dimen_0"
+                    android:layout_weight="1"
+                    android:text="到访数" />
+
+            <TextView
+                    style="@style/style_wrap_content_ts14_tcb6_ml10"
+                    android:layout_width="@dimen/dimen_0"
+                    android:layout_weight="1"
+                    android:text="成交套数" />
+
+            <TextView
+                    style="@style/style_wrap_content_ts14_tcb6_ml10"
+                    android:layout_width="@dimen/dimen_0"
+                    android:layout_weight="1.5"
+                    android:text="成交额(万元)" />
+        </LinearLayout>
+
+        <View
+                style="@style/horizontalLine"
+                android:layout_marginTop="@dimen/dimen_10" />
+
+        <LinearLayout
+                android:id="@+id/ll_indic4_04"
+                style="@style/style_match_wrap_content"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:background="@color/white">
+            <TextView
+                    android:id="@+id/tv_item_indic3_"
+                    style="@style/style_wrap_content_b7_ts14"
+                    android:layout_width="@dimen/dimen_0"
+                    android:layout_weight="1.5"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:text="完成/任务"
+                    android:maxEms="4" />
+
+            <TextView
+                    android:id="@+id/tv_item_indic4_01"
+                    style="@style/style_wrap_content_ts14_tcb6_ml10"
+                    android:layout_width="@dimen/dimen_0"
+                    android:layout_weight="1"/>
+
+            <TextView
+                    android:id="@+id/tv_item_indic4_02"
+                    style="@style/style_wrap_content_ts14_tcb6_ml10"
+                    android:layout_width="@dimen/dimen_0"
+                    android:layout_weight="1" />
+
+            <TextView
+                    android:id="@+id/tv_item_indic4_03"
+                    style="@style/style_wrap_content_ts14_tcb6_ml10"
+                    android:layout_width="@dimen/dimen_0"
+                    android:layout_weight="1"/>
+
+            <TextView
+                    android:id="@+id/tv_item_indic4_04"
+                    style="@style/style_wrap_content_ts14_tcb6_ml10"
+                    android:layout_width="@dimen/dimen_0"
+                    android:layout_weight="1.5"/>
+        </LinearLayout>
+
+        <View
+                style="@style/horizontalLine"
+                android:layout_marginTop="@dimen/dimen_10" />
+
+        <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_indic4"
+                style="@style/style_match_wrap_content" />
+
+    </LinearLayout>
+</LinearLayout>

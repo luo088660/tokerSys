@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        style="@style/style_match_content"
+        android:background="@color/c_gray_12"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+    <include layout="@layout/layout_content_title" />
+
+    <RelativeLayout
+            android:id="@+id/rl_info_img"
+            style="@style/style_match_wrap_content"
+            android:background="@color/white"
+            android:padding="@dimen/dimen_10">
+
+        <TextView
+                style="@style/style_wrap_content_ml5_cv_ts14_tcb7"
+                android:text="头像" />
+
+        <ImageView
+                android:id="@+id/img_01"
+                style="@style/style_wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dimen_7"
+                android:src="@mipmap/icon_right" />
+
+        <com.toker.sys.utils.view.CircleImageView
+                android:id="@+id/cv_title"
+                android:layout_width="@dimen/dimen_50"
+                android:layout_height="@dimen/dimen_50"
+                android:scaleType="center"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:layout_toLeftOf="@+id/img_01"
+                android:src="@mipmap/icon_title" />
+    </RelativeLayout>
+
+    <View style="@style/horizontalLine" />
+
+    <LinearLayout
+            style="@style/style_match_wrap_content"
+            android:background="@color/white"
+            android:padding="@dimen/dimen_15">
+
+        <TextView
+                style="@style/style_wrap_content_ml5_cv_ts14_tcb7"
+                android:text="姓名" />
+
+        <TextView
+                android:id="@+id/tv_infor_01"
+                style="@style/style_wrap_content"
+                android:layout_width="337dp"
+                android:layout_marginRight="@dimen/dimen_7"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="张三" />
+    </LinearLayout>
+
+    <View style="@style/horizontalLine" />
+
+    <LinearLayout
+            style="@style/style_match_wrap_content"
+            android:background="@color/white"
+            android:padding="@dimen/dimen_15">
+
+        <TextView
+                style="@style/style_wrap_content_ml5_cv_ts14_tcb7"
+                android:text="登录手机号码" />
+
+        <TextView
+                android:id="@+id/tv_infor_02"
+                style="@style/style_wrap_content"
+                android:layout_marginRight="@dimen/dimen_7"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="139****001
+" />
+    </LinearLayout>
+
+    <View style="@style/horizontalLine" />
+
+    <LinearLayout
+            style="@style/style_match_wrap_content"
+            android:id="@+id/ll_infor_project"
+            android:background="@color/white"
+            android:padding="@dimen/dimen_15">
+
+        <TextView
+                style="@style/style_wrap_content_ml5_cv_ts14_tcb7"
+                android:layout_width="wrap_content"
+                android:text="管理项目" />
+
+        <TextView
+                android:id="@+id/tv_infor_03"
+                style="@style/style_wrap_content"
+                android:layout_marginRight="@dimen/dimen_7"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="right"
+                android:maxEms="1"
+                android:maxLines="1"
+                android:text="清远银湖城 / 清远恒大御泉四季" />
+    </LinearLayout>
+
+    <View style="@style/horizontalLine" />
+
+    <LinearLayout
+            android:id="@+id/ll_info_code"
+            style="@style/style_match_wrap_content"
+            android:background="@color/white"
+            android:gravity="center"
+            android:padding="@dimen/dimen_10">
+
+        <TextView
+                style="@style/style_wrap_content_ml5_cv_ts14_tcb7"
+                android:layout_weight="1"
+                android:text="我的二维码" />
+
+        <ImageView
+                style="@style/style_wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dimen_20"
+                android:src="@mipmap/icon_two_code" />
+
+        <ImageView
+                style="@style/style_wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dimen_7"
+                android:src="@mipmap/icon_right" />
+    </LinearLayout>
+
+    <View style="@style/horizontalLine" />
+
+    <LinearLayout
+            android:id="@+id/ll_info_pwd"
+            style="@style/style_match_wrap_content"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/dimen_15"
+            android:paddingTop="@dimen/dimen_15"
+            android:paddingRight="@dimen/dimen_10"
+            android:paddingBottom="@dimen/dimen_15">
+
+        <TextView
+                style="@style/style_wrap_content_ml5_cv_ts14_tcb7"
+                android:layout_weight="1"
+                android:text="密码管理" />
+
+        <ImageView
+                style="@style/style_wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dimen_7"
+                android:src="@mipmap/icon_right" />
+    </LinearLayout>
+
+    <Button
+            android:id="@+id/btn_info_quit"
+            style="@style/style_match_wrap_content"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:background="@color/white_02"
+            android:text="退出登录"
+            android:textColor="@color/c_black_6"
+            android:textSize="@dimen/dimen_14" />
+</LinearLayout>

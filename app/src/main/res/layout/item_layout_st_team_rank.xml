@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/style_wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+            style="@style/style_match_wrap_content"
+            android:background="@color/white">
+
+        <TextView
+                android:id="@+id/tv_stteam_01"
+                style="@style/style_0_wrap_pt15_pb13_ts12_tcb6_w1_gc"
+                android:text="排名" />
+
+        <TextView
+                android:id="@+id/tv_stteam_02"
+                style="@style/style_0_wrap_pt15_pb13_ts12_tcb6_w1_gc"
+                android:text="团队" />
+
+        <TextView
+                android:id="@+id/tv_stteam_03"
+                style="@style/style_0_wrap_pt15_pb13_ts12_tcb6_w1_gc"
+                android:text="项目" />
+
+        <TextView
+                android:id="@+id/tv_stteam_04"
+                style="@style/style_0_wrap_pt15_pb13_ts12_tcb6_w1_gc"
+                android:text="完成"
+                android:textColor="@color/c_red_4" />
+    </LinearLayout>
+    <View style="@style/horizontalLine_16"/>
+</LinearLayout>

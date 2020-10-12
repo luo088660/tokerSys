@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              style="@style/style_match_content"
+              android:orientation="vertical">
+    <include layout="@layout/layout_content_title"/>
+    <ScrollView style="@style/style_match_wrap_content">
+        <LinearLayout style="@style/style_match_content"
+                      android:orientation="vertical">
+
+
+            <TextView style="@style/style_match_wrap_content"
+                      android:text="拓客团队名称"
+                      android:textStyle="bold"
+                      android:padding="@dimen/dimen_10"
+                      android:background="@color/white_01"
+                      android:gravity="center"/>
+
+            <RelativeLayout style="@style/style_match_wrap_content"
+                            android:layout_marginTop="@dimen/dimen_5" android:background="@color/white_01"
+                            android:padding="@dimen/dimen_10">
+                <LinearLayout style="@style/style_wrap_content"
+                              android:layout_marginLeft="@dimen/dimen_20">
+                    <TextView style="@style/style_wrap_content"
+                              android:layout_marginRight="@dimen/dimen_10"
+                              android:text="月"/>
+                    <View style="@style/verticalLine"/>
+                    <TextView style="@style/style_wrap_content"
+                              android:layout_marginLeft="@dimen/dimen_10"
+                              android:text="日"/>
+                </LinearLayout>
+                <TextView style="@style/style_wrap_content"
+                          android:layout_marginLeft="@dimen/dimen_10"
+                          android:layout_alignParentRight="true"
+                          android:layout_marginRight="@dimen/dimen_20"
+                          android:text="2019-09"/>
+            </RelativeLayout>
+            <View style="@style/horizontalLine"/>
+            <LinearLayout style="@style/style_match_wrap_content"
+                          android:background="@color/white_01"
+                          android:padding="@dimen/dimen_20"
+                          android:orientation="vertical">
+                <LinearLayout style="@style/style_match_wrap_content">
+                    <TextView style="@style/style_wrap_content"
+                              android:layout_weight="1"
+                              android:layout_width="0dp"
+                              android:gravity="center"
+                              android:textColor="@color/btn_red"
+                              android:text="580"/>
+                    <TextView style="@style/style_wrap_content"
+                              android:layout_weight="1"
+                              android:layout_width="0dp"
+                              android:gravity="center"
+                              android:textColor="@color/btn_red"
+                              android:text="20"/>
+                    <TextView style="@style/style_wrap_content"
+                              android:layout_weight="1"
+                              android:layout_width="0dp"
+                              android:gravity="center"
+                              android:textColor="@color/btn_red"
+                              android:text="20"/>
+                    <TextView style="@style/style_wrap_content"
+                              android:layout_weight="1"
+                              android:layout_width="0dp"
+                              android:gravity="center"
+                              android:textColor="@color/btn_red"
+                              android:text="10"/>
+                </LinearLayout>
+
+                <LinearLayout style="@style/style_match_wrap_content"
+                              android:layout_marginTop="@dimen/dimen_10">
+                    <TextView style="@style/style_wrap_content"
+                              android:layout_width="0dp"
+                              android:layout_weight="1"
+                              android:gravity="center"
+                              android:textSize="@dimen/dimen_12"
+                              android:text="   签到(人次)"/>
+                    <TextView style="@style/style_wrap_content"
+                              android:layout_width="0dp"
+                              android:layout_weight="1"
+                              android:gravity="center"
+                              android:textSize="@dimen/dimen_12"
+                              android:text="签退(人次)"/>
+                    <TextView style="@style/style_wrap_content"
+                              android:layout_weight="1"
+                              android:layout_width="0dp"
+                              android:gravity="center"
+                              android:textSize="@dimen/dimen_12"
+                              android:text="考勤正常(人次)"/>
+                    <TextView style="@style/style_wrap_content"
+                              android:layout_weight="1"
+                              android:layout_width="0dp"
+                              android:textSize="@dimen/dimen_12"
+                              android:gravity="center"
+                              android:text="考勤异常(人次)"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View style="@style/horizontalLine"/>
+
+            <LinearLayout style="@style/style_match_wrap_content"
+                          android:padding="@dimen/dimen_10"
+                          android:background="@color/white_01">
+                <EditText style="@style/style_wrap_content"
+                          android:hint="请输入电话号码"
+                          android:layout_weight="1"/>
+                <TextView style="@style/style_wrap_content"
+                          android:text="查询"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+

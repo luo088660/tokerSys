@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        style="@style/style_match_content"
+        android:background="@color/c_gray_12"
+        android:fitsSystemWindows="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+
+    <include layout="@layout/layout_content_title" />
+
+    <com.liaoinstan.springview.widget.SpringView
+            android:id="@+id/sv_view_attendan"
+            style="@style/style_match_content">
+
+
+        <android.support.v4.widget.NestedScrollView
+                style="@style/style_match_wrap_content">
+
+            <LinearLayout
+                    style="@style/style_match_content"
+                    android:orientation="vertical">
+
+                <include layout="@layout/layout_view_attendan_01" />
+
+                <include layout="@layout/layout_view_attendan_02" />
+
+                <include layout="@layout/layout_view_attendan_03" />
+
+                <include layout="@layout/layout_view_attendan_04" />
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </com.liaoinstan.springview.widget.SpringView>
+</LinearLayout>

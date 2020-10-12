@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              style="@style/style_match_wrap_content">
+
+    <LinearLayout style="@style/style_match_wrap_content"
+                  android:background="@color/white"
+                  android:layout_marginBottom="@dimen/dimen_10"
+                  android:layout_marginTop="@dimen/dimen_10"
+                  android:orientation="vertical">
+        <TextView style="@style/style_match_wrap_content"
+                  android:paddingTop="@dimen/dimen_15"
+                  android:textSize="@dimen/dimen_14"
+                  android:textStyle="bold"
+                  android:textColor="@color/c_black_6"
+                  android:gravity="center"
+                  android:text="考勤统计"/>
+        <View style="@style/horizontalLine"
+              android:layout_margin="@dimen/dimen_16"/>
+        <LinearLayout style="@style/style_match_wrap_content"
+                      android:layout_marginBottom="@dimen/dimen_16">
+            <LinearLayout style="@style/style_wrap_content"
+                          android:gravity="center"
+                          android:layout_weight="1"
+                          android:orientation="vertical">
+                <TextView style="@style/style_wrap_content"
+                          android:id="@+id/tv_attend_sta_02"
+                          android:textSize="@dimen/dimen_20"
+                          android:textColor="@color/c_black_6"/>
+                <TextView style="@style/style_wrap_content"
+                          android:layout_marginTop="@dimen/dimen_10"
+                          android:textSize="@dimen/dimen_12"
+                          android:textColor="@color/c_black_7"
+                          android:text="实出勤(天)"/>
+
+            </LinearLayout>
+            <View style="@style/verticalLine"
+                  android:layout_marginTop="@dimen/dimen_10"
+                  android:layout_marginBottom="@dimen/dimen_10"/>
+            <LinearLayout style="@style/style_wrap_content"
+                          android:gravity="center"
+                          android:layout_weight="1"
+                          
+                          android:orientation="vertical">
+                <TextView style="@style/style_wrap_content"
+                          android:id="@+id/tv_attend_sta_03"
+                          android:textSize="@dimen/dimen_20"
+                          android:textColor="@color/c_red_4"/>
+                <TextView style="@style/style_wrap_content"
+                          android:layout_marginTop="@dimen/dimen_10"
+                          android:textSize="@dimen/dimen_12"
+                          android:textColor="@color/c_black_7"
+                          android:text="请假/轮休(天)"/>
+
+            </LinearLayout>
+            <View style="@style/verticalLine"
+                  android:layout_marginTop="@dimen/dimen_10"
+                  android:layout_marginBottom="@dimen/dimen_10"/>
+            <LinearLayout style="@style/style_wrap_content"
+                          android:gravity="center"
+                          android:layout_weight="1"
+                          android:orientation="vertical">
+                <TextView style="@style/style_wrap_content"
+                          android:textSize="@dimen/dimen_20"
+                          android:id="@+id/tv_attend_sta_04"
+                          android:textColor="@color/c_orange_5"/>
+                <TextView style="@style/style_wrap_content"
+                          android:layout_marginTop="@dimen/dimen_10"
+                          android:textSize="@dimen/dimen_12"
+                          android:textColor="@color/c_black_7"
+                          android:text="异常(天)"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

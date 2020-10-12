@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MyDialogStyle">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+
+    <!-- START content设置 -->
+    <style name="style_wrap_content">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="style_match_wrap_content">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="style_wrap_match_content">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="style_match_content">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <!--横线-->
+    <style name="horizontalLine">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dimen_1</item>
+        <item name="android:background">@color/c_gray_122</item>
+    </style>
+    <style name="horizontalLine2">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dimen_3</item>
+        <item name="android:background">@color/c_gray_12</item>
+    </style>
+    <!--竖线-->
+    <style name="verticalLine">
+        <item name="android:layout_width">@dimen/dimen_1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/c_gray_18</item>
+    </style>
+    <style name="DialogTheme" parent="@android:style/Theme.Dialog">
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 模糊 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 遮罩层 -->
+        <item name="android:backgroundDimAmount">0.5</item>
+    </style>
+
+    <style name="date_picker_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+    <style name="style_match_wrap_content_w2_tc9_ts14" parent="style_match_wrap_content">
+        <item name="android:layout_weight">2</item>
+        <item name="android:textColor">@color/c_gray_6</item>
+        <item name="android:textSize">@dimen/dimen_14</item>
+    </style>
+
+    <style name="style_match_wrap_content_w1_gr_tc9_ts14" parent="style_match_wrap_content">
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">right</item>
+        <item name="android:textColor">@color/c_gray_9</item>
+        <item name="android:textSize">@dimen/dimen_14</item>
+    </style>
+
+    <style name="style_match_contentv_w1" parent="style_match_content">
+        <item name="android:background">@color/white_01</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="style_wrap_content_w0_pd10_ts10_gc_wei1" parent="style_wrap_content">
+        <item name="android:layout_width">@dimen/dimen_0</item>
+        <item name="android:padding">@dimen/dimen_10</item>
+        <item name="android:textSize">@dimen/dimen_14</item>
+        <item name="android:textColor">@drawable/tv_time_selector</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/left_selector</item>
+    </style>
+</resources>

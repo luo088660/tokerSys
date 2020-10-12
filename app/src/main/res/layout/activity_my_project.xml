@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              style="@style/style_match_content"
+              android:background="@color/c_gray_12"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+    <include layout="@layout/layout_content_title"/>
+
+    <LinearLayout style="@style/style_match_wrap_content"
+                  android:id="@+id/ll_pjt_list"
+                  android:gravity="center"
+                  android:background="@color/white_01"
+                  android:padding="@dimen/dimen_15">
+        <ImageView
+                android:layout_width="@dimen/dimen_30"
+                android:layout_height="@dimen/dimen_30"
+                android:src="@mipmap/icon_xmlf"/>
+        <TextView style="@style/style_wrap_content"
+                  android:layout_marginLeft="@dimen/dimen_10"
+                  android:layout_weight="1"
+                  android:textColor="@color/c_black_6"
+                  android:textSize="@dimen/dimen_16"
+                  android:drawableRight="@mipmap/icon_right"
+                  android:text="清远银湖城"/>
+    </LinearLayout>
+    <View style="@style/horizontalLine"/>
+    <LinearLayout style="@style/style_match_wrap_content"
+                  android:background="@color/white_01"
+                  android:gravity="center"
+                  android:padding="@dimen/dimen_15">
+        <ImageView
+                android:layout_width="@dimen/dimen_30"
+                android:layout_height="@dimen/dimen_30"
+                android:src="@mipmap/icon_xmlf"/>
+        <TextView style="@style/style_wrap_content"
+                  android:layout_marginLeft="@dimen/dimen_10"
+                  android:layout_weight="1"
+                  android:textColor="@color/c_black_6"
+                  android:textSize="@dimen/dimen_16"
+                  android:drawableRight="@mipmap/icon_right"
+                  android:text="清远银湖城"/>
+    </LinearLayout>
+    <View style="@style/horizontalLine"/>
+    <LinearLayout style="@style/style_match_wrap_content"
+                  android:background="@color/white_01"
+                  android:gravity="center"
+                  android:padding="@dimen/dimen_15">
+        <ImageView
+                android:layout_width="@dimen/dimen_30"
+                android:layout_height="@dimen/dimen_30"
+                android:src="@mipmap/icon_xmlf"/>
+        <TextView style="@style/style_wrap_content"
+                  android:layout_marginLeft="@dimen/dimen_10"
+                  android:layout_weight="1"
+                  android:textColor="@color/c_black_6"
+                  android:textSize="@dimen/dimen_16"
+                  android:drawableRight="@mipmap/icon_right"
+                  android:text="清远银湖城"/>
+    </LinearLayout>
+    <View style="@style/horizontalLine"/>
+    <LinearLayout style="@style/style_match_wrap_content"
+                  android:background="@color/white_01"
+                  android:gravity="center"
+                  android:padding="@dimen/dimen_15">
+        <ImageView
+                android:layout_width="@dimen/dimen_30"
+                android:layout_height="@dimen/dimen_30"
+                android:src="@mipmap/icon_xmlf"/>
+        <TextView style="@style/style_wrap_content"
+                  android:layout_marginLeft="@dimen/dimen_10"
+                  android:layout_weight="1"
+                  android:textColor="@color/c_black_6"
+                  android:textSize="@dimen/dimen_16"
+                  android:drawableRight="@mipmap/icon_right"
+                  android:text="清远银湖城"/>
+    </LinearLayout>
+    <View style="@style/horizontalLine"/>
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:descendantFocusability="blocksDescendants"
+              style="@style/style_match_content">
+
+    <LinearLayout style="@style/style_match_wrap_content"
+                  android:padding="@dimen/dimen_15"
+                  android:background="@color/white"
+                  android:orientation="horizontal">
+
+        <TextView style="@style/style_wrap_content"
+                  android:layout_weight="1"
+                  android:gravity="center"
+                  android:textSize="@dimen/dimen_14"
+                  android:id="@+id/tv_task_tarjectory_01"/>
+        <TextView style="@style/style_wrap_content"
+                  android:layout_weight="1"
+                  android:gravity="center"
+                  android:textSize="@dimen/dimen_14"
+                  android:id="@+id/tv_task_tarjectory_02"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+
+            android:id="@+id/rv_task_trajectory"
+            style="@style/style_match_content"/>
+
+</LinearLayout>

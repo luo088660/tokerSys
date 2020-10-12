@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              style="@style/style_match_wrap_content">
+
+    <include layout="@layout/layout_t_current_item_01"/>
+
+    <TextView style="@style/style_match_wrap_content"
+              android:background="@color/c_gray_12"
+              android:id="@+id/tv_current_02"
+              android:paddingTop="@dimen/dimen_14"
+              android:paddingLeft="@dimen/dimen_14"
+              android:textSize="@dimen/dimen_12"
+              android:gravity="left"
+              android:text="共有0个任务未开始"/>
+
+</LinearLayout>

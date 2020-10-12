@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        style="@style/style_match_wrap_content"
+
+        android:background="@color/white"
+        android:orientation="vertical">
+
+    <View
+            style="@style/horizontalLine2"
+            android:layout_height="@dimen/dimen_10" />
+
+    <TextView
+            android:id="@+id/tv_attend_deta13"
+            style="@style/style_match_wrap_content"
+            android:paddingLeft="@dimen/dimen_16"
+            android:paddingTop="@dimen/dimen_15"
+            android:paddingBottom="@dimen/dimen_15"
+            android:text="当天工作轨迹"
+            android:textColor="@color/c_black_6"
+            android:textSize="@dimen/dimen_14"
+            android:textStyle="bold" />
+
+
+    <View style="@style/horizontalLine" />
+
+    <TextView
+            android:id="@+id/tv_attend_deta14"
+            style="@style/style_match_wrap_content"
+            android:paddingLeft="@dimen/dimen_16"
+            android:paddingTop="@dimen/dimen_15"
+            android:paddingBottom="@dimen/dimen_15"
+            android:text="暂无当天工作轨迹"
+            android:textColor="@color/c_gray_6"
+            android:textSize="@dimen/dimen_14"
+            android:visibility="gone" />
+
+    <LinearLayout
+            android:id="@+id/ll_attend_detail_02"
+            style="@style/style_match_wrap_content"
+            android:orientation="vertical">
+
+        <View style="@style/horizontalLine" />
+
+        <LinearLayout
+                android:id="@+id/ll_attend_deta13"
+                style="@style/style_match_wrap_content"
+                android:orientation="vertical">
+
+
+            <TextView
+                    style="@style/style_match_wrap_content"
+                    android:paddingLeft="@dimen/dimen_16"
+                    android:paddingTop="@dimen/dimen_15"
+                    android:paddingBottom="@dimen/dimen_15"
+                    android:text="10:00  未定位到地址"
+                    android:textColor="@color/c_red_4"
+                    android:textSize="@dimen/dimen_14"
+                    android:visibility="gone"
+                    android:textStyle="bold" />
+
+            <com.toker.sys.utils.view.MyMapView
+                style="@style/style_match_wrap_content">
+
+
+            <com.baidu.mapapi.map.TextureMapView
+                    android:id="@+id/mv_map_atend3"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_200" />
+            </com.toker.sys.utils.view.MyMapView>
+            <View style="@style/horizontalLine" />
+
+            <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_atten_detail3"
+                    style="@style/style_match_wrap_content"
+                    app:layoutManager="android.support.v7.widget.LinearLayoutManager" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

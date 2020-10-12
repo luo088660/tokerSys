@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/style_match_wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+            style="@style/style_match_wrap_content"
+            android:gravity="center"
+            android:paddingRight="@dimen/dimen_16">
+
+        <TextView
+                android:id="@+id/tv_ver_01"
+                style="@style/style_wrap_content_w0_gc_pd14_ts12_tcb6_drxx"
+                android:layout_width="wrap_content"
+                android:text="成交额(万元)" />
+
+        <LinearLayout
+                style="@style/style_wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center">
+
+            <TextView
+                    android:id="@+id/tv_ver_02"
+                    style="@style/style_wrap_content_ts12_tchg6_tcb6_pdtb14_pdlr10"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:hint="任务结束日期" />
+
+            <ImageView
+                    android:id="@+id/img_ver_03"
+                    android:layout_width="@dimen/dimen_30"
+                    android:layout_height="@dimen/dimen_30"
+                    android:layout_marginRight="@dimen/dimen_20"
+                    android:padding="@dimen/dimen_8"
+                    android:src="@mipmap/icon_shuaxuan" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

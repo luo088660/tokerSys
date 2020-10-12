@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/style_match_wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+    <LinearLayout
+            style="@style/style_match_wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/dimen_6">
+
+        <ImageView
+                android:layout_width="@dimen/dimen_24"
+                android:layout_height="@dimen/dimen_24"
+                android:src="@mipmap/icon_kqtj" />
+
+        <TextView
+                style="@style/style_wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_weight="1"
+                android:text="考勤统计"
+                android:textColor="@color/c_black_6"
+                android:textSize="@dimen/dimen_16" />
+
+        <TextView
+                android:id="@+id/tv_attend_sta_01"
+                style="@style/style_wrap_content"
+                android:drawableRight="@mipmap/icon_xxjt"
+                android:drawablePadding="@dimen/dimen_10"
+                android:padding="@dimen/dimen_10"
+                android:text="2019-05"
+                android:textColor="@color/c_black_7"
+                android:textSize="@dimen/dimen_12" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/style_match_wrap_content">
+
+        <LinearLayout
+                style="@style/style_wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+            <TextView
+                    android:id="@+id/tv_attend_sta_02"
+                    style="@style/style_wrap_content"
+                    android:text="20"
+                    android:textColor="@color/c_black_6"
+                    android:textSize="@dimen/dimen_20" />
+
+            <TextView
+                    style="@style/style_wrap_content"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:text="实出勤(人次)"
+                    android:textColor="@color/c_black_7"
+                    android:textSize="@dimen/dimen_12" />
+
+        </LinearLayout>
+
+        <View
+                style="@style/verticalLine"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:layout_marginBottom="@dimen/dimen_10" />
+
+        <LinearLayout
+                style="@style/style_wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+            <TextView
+                    android:id="@+id/tv_attend_sta_03"
+                    style="@style/style_wrap_content"
+                    android:text="20"
+                    android:textColor="@color/c_black_6"
+                    android:textSize="@dimen/dimen_20" />
+
+            <TextView
+                    style="@style/style_wrap_content"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:text="考勤正常(人次)"
+                    android:textColor="@color/c_black_7"
+                    android:textSize="@dimen/dimen_12" />
+
+        </LinearLayout>
+
+        <View
+                style="@style/verticalLine"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:layout_marginBottom="@dimen/dimen_10" />
+
+        <LinearLayout
+                style="@style/style_wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+            <TextView
+                    android:id="@+id/tv_attend_sta_04"
+                    style="@style/style_wrap_content"
+                    android:text="0"
+                    android:textColor="@color/c_orange_5"
+                    android:textSize="@dimen/dimen_20" />
+
+            <TextView
+                    style="@style/style_wrap_content"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:text="考勤异常(人次)"
+                    android:textColor="@color/c_black_7"
+                    android:textSize="@dimen/dimen_12" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+            style="@style/horizontalLine"
+            android:layout_marginTop="@dimen/dimen_15" />
+
+    <TextView
+            android:id="@+id/tv_attend_sta_05"
+            style="@style/style_wrap_content"
+            android:layout_margin="@dimen/dimen_10"
+            android:background="@drawable/tv_bg_quit_login_normal"
+            android:gravity="center"
+            android:paddingRight="@dimen/dimen_10"
+            android:paddingLeft="@dimen/dimen_10"
+            android:paddingTop="@dimen/dimen_5"
+            android:paddingBottom="@dimen/dimen_5"
+            android:text="查看考勤明细"
+            android:textColor="@color/c_red_4"
+            android:textSize="@dimen/dimen_12" />
+
+</LinearLayout>

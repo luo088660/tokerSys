@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/style_match_wrap_content"
+        android:background="@color/c_gray_12"
+        android:orientation="vertical">
+
+    <TextView
+            android:id="@+id/tv_receivde1_02"
+            style="@style/style_wrap_content_w0_gc_pd14_ts12_tcb6_drxx"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="@dimen/dimen_5"
+            android:text="全部项目" />
+
+    <LinearLayout
+            style="@style/style_match_wrap_content"
+            android:background="@color/c_gray_122"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dimen_16"
+            android:paddingRight="@dimen/dimen_16"
+            android:paddingTop="@dimen/dimen_10"
+            android:paddingBottom="@dimen/dimen_5">
+
+
+        <LinearLayout style="@style/style_match_wrap_content">
+
+            <EditText
+                    android:id="@+id/tv_receivde1_01"
+                    style="@style/style_wrap_content"
+                    android:layout_marginRight="@dimen/dimen_10"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:hint="输入姓名/手机号码查询"
+
+                    android:paddingLeft="@dimen/dimen_10"
+                    android:paddingTop="@dimen/dimen_5"
+                    android:paddingRight="@dimen/dimen_10"
+                    android:paddingBottom="@dimen/dimen_5"
+                    android:textColor="@color/c_black_6"
+                    android:textColorHint="@color/c_black_7"
+                    android:textSize="@dimen/dimen_12" />
+
+            <TextView
+                    android:id="@+id/tv_receivde1_011"
+                    style="@style/style_wrap_content"
+                    android:background="@drawable/btn_bg_quit_login_normal"
+                    android:paddingLeft="@dimen/dimen_16"
+                    android:paddingTop="@dimen/dimen_5"
+                    android:paddingRight="@dimen/dimen_16"
+                    android:paddingBottom="@dimen/dimen_5"
+                    android:text="查询"
+                    android:textColor="@color/white_01"
+                    android:textSize="@dimen/dimen_12" />
+        </LinearLayout>
+
+
+        <RelativeLayout
+                style="@style/style_match_wrap_content"
+                android:layout_marginTop="@dimen/dimen_16">
+
+            <TextView
+                    android:id="@+id/tv_po_cust_05"
+                    style="@style/style_wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="共 0 个客户待分配"
+                    android:textSize="@dimen/dimen_14" />
+
+            <CheckBox
+                    android:id="@+id/cbx_po_cust"
+                    style="@style/style_wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dimen_15"
+                    android:layout_toLeftOf="@+id/tv_po_cust_06"
+                    android:button="@drawable/cb_xz_selector"
+                    android:paddingLeft="@dimen/dimen_10"
+                    android:text="全选"
+                    android:textSize="@dimen/dimen_12" />
+
+
+            <TextView
+                    android:id="@+id/tv_po_cust_06"
+                    style="@style/style_wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/tv_bg_quit_login_normal"
+                    android:paddingLeft="@dimen/dimen_10"
+                    android:paddingTop="@dimen/dimen_5"
+                    android:paddingRight="@dimen/dimen_10"
+                    android:paddingBottom="@dimen/dimen_5"
+                    android:text="批量分配"
+                    android:textColor="@color/c_red_4"
+                    android:textSize="@dimen/dimen_12" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

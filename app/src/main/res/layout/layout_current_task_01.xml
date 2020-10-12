@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/style_match_wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+            style="@style/style_match_wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+        <LinearLayout
+                style="@style/style_match_wrap_content"
+                android:paddingLeft="@dimen/dimen_16"
+                android:paddingRight="@dimen/dimen_16">
+
+            <TextView
+                    style="@style/style_wrap_content"
+                    android:layout_weight="1"
+                    android:paddingTop="@dimen/text_22"
+                    android:paddingBottom="@dimen/text_22"
+                    android:text="当前任务"
+                    android:textColor="@color/c_black_6"
+                    android:textSize="@dimen/dimen_16"
+                    android:textStyle="bold" />
+
+            <TextView
+                    android:id="@+id/btn_layout_current_task_01"
+                    style="@style/style_wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@mipmap/icon_right"
+                    android:drawablePadding="@dimen/dimen_10"
+                    android:paddingTop="@dimen/dimen_10"
+                    android:paddingBottom="@dimen/dimen_10"
+                    android:text="查看全部任务"
+                    android:textColor="@color/c_txt_yiguoqi"
+                    android:textSize="@dimen/dimen_12" />
+        </LinearLayout>
+
+        <View style="@style/horizontalLine_16" />
+
+        <LinearLayout
+                style="@style/style_match_wrap_content"
+                android:id="@+id/ll_layout_current_task"
+                android:visibility="visible"
+                android:orientation="vertical">
+
+            <LinearLayout
+                    style="@style/style_match_wrap_content"
+                    android:paddingLeft="@dimen/dimen_16"
+                    android:paddingRight="@dimen/dimen_16">
+
+                <TextView
+                        android:id="@+id/btn_layout_current_task_03"
+                        style="@style/style_wrap_content"
+                        android:layout_weight="1"
+                        android:paddingTop="@dimen/text_22"
+                        android:paddingBottom="@dimen/text_22"
+                        android:textColor="@color/c_black_6"
+                        android:textSize="@dimen/dimen_16" />
+
+                <TextView
+                        android:id="@+id/btn_layout_current_task_02"
+                        style="@style/style_wrap_content"
+                        android:drawableRight="@mipmap/icon_right"
+                        android:drawablePadding="@dimen/dimen_10"
+                        android:paddingTop="@dimen/dimen_10"
+                        android:paddingBottom="@dimen/dimen_10"
+                        android:text="查看详情"
+                        android:textColor="@color/c_gray_6"
+                        android:textSize="@dimen/dimen_12" />
+            </LinearLayout>
+
+            <View style="@style/horizontalLine_16" />
+
+            <RelativeLayout
+                    style="@style/style_match_wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_16"
+                    android:background="@color/white"
+                    android:paddingLeft="@dimen/dimen_16"
+                    android:paddingRight="@dimen/dimen_16">
+
+                <LinearLayout
+                        android:id="@+id/ll_current_task_05"
+                        style="@style/style_match_wrap_content"
+                        android:layout_marginTop="@dimen/dimen_16"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+
+                    <TextView
+                            android:id="@+id/tv_current_task_05"
+                            style="@style/style_wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="@color/c_black_6"
+                            android:textSize="@dimen/dimen_16" />
+
+                    <TextView
+                            android:id="@+id/tv_t_entire3_03"
+                            style="@style/style_wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginLeft="@dimen/dimen_20"
+                            android:background="@color/c_bg_yirenchou"
+                            android:paddingLeft="@dimen/dimen_8"
+                            android:paddingTop="@dimen/dimen_4"
+                            android:paddingRight="@dimen/dimen_8"
+                            android:paddingBottom="@dimen/dimen_4"
+                            android:textColor="@color/c_txt_yirenchou"
+                            android:textSize="@dimen/dimen_14" />
+                </LinearLayout>
+
+                <LinearLayout
+                        style="@style/style_match_wrap_content"
+                        android:layout_below="@+id/ll_current_task_05"
+                        android:orientation="vertical">
+
+                    <LinearLayout
+                            style="@style/style_match_wrap_content"
+                            android:layout_marginTop="@dimen/dimen_10">
+
+                        <TextView
+                                style="@style/style_wrap_content"
+                                android:text="任务时间"
+                                android:textSize="@dimen/dimen_14" />
+
+                        <TextView
+                                android:id="@+id/btn_layout_current_task_05"
+                                style="@style/style_wrap_content"
+                                android:layout_marginLeft="@dimen/dimen_20"
+                                android:layout_weight="1"
+                                android:textSize="@dimen/dimen_14" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            style="@style/style_match_wrap_content"
+                            android:layout_marginTop="@dimen/dimen_10">
+
+                        <TextView
+                                style="@style/style_wrap_content"
+                                android:text="任务地点"
+                                android:textSize="@dimen/dimen_14" />
+
+                        <TextView
+                                android:id="@+id/btn_layout_current_task_07"
+                                style="@style/style_wrap_content"
+                                android:layout_marginLeft="@dimen/dimen_20"
+                                android:layout_weight="1"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:textSize="@dimen/dimen_14" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            style="@style/style_match_wrap_content"
+                            android:layout_marginTop="@dimen/dimen_10">
+
+                        <TextView
+                                style="@style/style_wrap_content"
+                                android:text="任务内容"
+                                android:textSize="@dimen/dimen_14" />
+
+                        <TextView
+                                android:id="@+id/btn_layout_current_task_08"
+                                style="@style/style_wrap_content"
+                                android:layout_marginLeft="@dimen/dimen_20"
+                                android:layout_weight="1"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:textSize="@dimen/dimen_14" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            style="@style/style_match_wrap_content"
+                            android:layout_marginTop="@dimen/dimen_10">
+
+                        <TextView
+                                style="@style/style_wrap_content"
+                                android:text="任务对象"
+                                android:textSize="@dimen/dimen_14" />
+
+                        <TextView
+                                android:id="@+id/btn_layout_current_task_09"
+                                style="@style/style_wrap_content"
+                                android:layout_marginLeft="@dimen/dimen_20"
+                                android:layout_weight="1"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:textSize="@dimen/dimen_14" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View style="@style/horizontalLine_16" />
+
+            <TextView
+                    android:id="@+id/btn_t_entire_03_01"
+                    style="@style/style_wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:layout_marginRight="@dimen/dimen_16"
+                    android:layout_marginBottom="@dimen/dimen_10"
+                    android:background="@drawable/btn_bg_quit_login_normal"
+                    android:paddingLeft="@dimen/dimen_10"
+                    android:paddingTop="@dimen/dimen_5"
+                    android:paddingRight="@dimen/dimen_10"
+                    android:paddingBottom="@dimen/dimen_5"
+                    android:text="填写任务汇报"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dimen_12" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+            android:id="@+id/tv_layout_current_task"
+            style="@style/style_match_wrap_content"
+            android:background="@color/white_01"
+            android:padding="@dimen/dimen_16"
+            android:text="暂无当前任务"
+            android:textColor="@color/c_black_7"
+            android:textSize="@dimen/dimen_14"
+            android:visibility="gone" />
+
+
+</LinearLayout>

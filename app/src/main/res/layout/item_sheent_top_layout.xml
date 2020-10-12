@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/style_wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="@dimen/dimen_5">
+
+    <FrameLayout style="@style/style_wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+        <ImageView
+                android:id="@+id/img_sheent_item"
+                android:layout_margin="@dimen/dimen_5"
+                android:layout_width="@dimen/dimen_32"
+                android:layout_height="@dimen/dimen_32"
+                android:layout_gravity="center"
+                android:src="@mipmap/icon_renwu" />
+        <TextView
+                android:id="@+id/tv_my_ms_01"
+                android:layout_width="@dimen/dimen_18"
+                android:layout_toRightOf="@+id/img_sheent_item"
+                android:layout_gravity="right"
+                android:layout_height="@dimen/dimen_18"
+                android:background="@drawable/spot_01_select"
+                android:gravity="center"
+                android:text="11"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_9"
+                android:visibility="gone" />
+    </FrameLayout>
+
+    <TextView
+            android:id="@+id/tv_sheent_item"
+            style="@style/style_match_wrap_content_drwaT"
+            android:layout_gravity="center"
+            android:text="我的团队"
+            android:textSize="@dimen/dimen_12" />
+
+</LinearLayout>

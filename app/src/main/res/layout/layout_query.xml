@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_marginTop="@dimen/dimen_10"
+              style="@style/style_match_wrap_content">
+
+    <EditText style="@style/style_wrap_content"
+              android:layout_weight="1"
+              android:padding="@dimen/dimen_10"
+              android:background="@drawable/txt_bg_selector"
+              android:hint="输入任务名称查询"/>
+    <TextView style="@style/style_wrap_content"
+              android:padding="@dimen/dimen_10"
+              android:layout_gravity="center"
+              android:background="@color/btn_red"
+              android:layout_marginLeft="@dimen/dimen_10"
+              android:text="查询"
+    />
+</LinearLayout>

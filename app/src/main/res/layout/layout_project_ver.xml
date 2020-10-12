@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              style="@style/style_match_wrap_content">
+
+    <LinearLayout style="@style/style_match_wrap_content"
+                  android:layout_marginTop="@dimen/dimen_10">
+
+        <TextView style="@style/style_wrap_content"
+                  android:id="@+id/tv_ver_01"
+                  android:background="@drawable/txt_bg_selector"
+                  android:layout_width="@dimen/dimen_0"
+                  android:layout_marginLeft="@dimen/dimen_10"
+                  android:padding="@dimen/dimen_10"
+                  android:layout_weight="1"
+                  android:textColor="@color/c_black_7"
+                  android:drawableRight="@mipmap/icon_xxjt"
+                  android:textSize="@dimen/dimen_12"
+                  android:text="全部项目"/>
+
+        <TextView style="@style/style_wrap_content"
+                  android:padding="@dimen/dimen_10"
+                  android:id="@+id/tv_ver_02"
+                  android:layout_width="@dimen/dimen_0"
+                  android:textColor="@color/c_black_7"
+                  android:layout_marginRight="@dimen/dimen_10"
+                  android:background="@drawable/txt_bg_selector"
+                  android:drawableRight="@mipmap/icon_xxjt"
+                  android:layout_marginLeft="@dimen/dimen_10"
+                  android:layout_weight="1"
+                  android:textSize="@dimen/dimen_12"
+                  android:text="成交额(万元)"/>
+    </LinearLayout>
+    <LinearLayout style="@style/style_match_wrap_content"
+                  android:layout_marginTop="@dimen/dimen_10">
+
+        <TextView style="@style/style_wrap_content"
+                  android:background="@drawable/txt_bg_selector"
+                  android:layout_marginLeft="@dimen/dimen_10"
+                  android:padding="@dimen/dimen_10"
+                  android:id="@+id/tv_ver_03"
+                  android:layout_width="@dimen/dimen_0"
+                  android:layout_weight="1"
+                  android:textColor="@color/c_black_7"
+                  android:drawableRight="@mipmap/icon_xxjt"
+                  android:textSize="@dimen/dimen_12"
+                  android:text="按月筛选"/>
+
+        <TextView style="@style/style_wrap_content"
+                  android:padding="@dimen/dimen_10"
+                  android:layout_width="@dimen/dimen_0"
+                  android:id="@+id/tv_ver_04"
+                  android:textColor="@color/c_black_7"
+                  android:layout_marginRight="@dimen/dimen_10"
+                  android:background="@drawable/txt_bg_selector"
+                  android:drawableRight="@mipmap/icon_xxjt"
+                  android:layout_marginLeft="@dimen/dimen_10"
+                  android:layout_weight="1"
+                  android:textSize="@dimen/dimen_12"
+                  android:text="2019-05"/>
+
+        <TextView style="@style/style_wrap_content"
+                  android:padding="@dimen/dimen_10"
+                  android:id="@+id/tv_ver_05"
+                  android:textColor="@color/c_black_7"
+                  android:layout_width="@dimen/dimen_0"
+                  android:drawableRight="@mipmap/icon_xxjt"
+                  android:layout_weight="1"
+                  android:background="@drawable/txt_bg_selector"
+                  android:visibility="gone"
+                  android:layout_marginRight="@dimen/dimen_10"
+                  android:textSize="@dimen/dimen_12"
+                  android:text="2019-06"/>
+
+    </LinearLayout>
+
+</LinearLayout>

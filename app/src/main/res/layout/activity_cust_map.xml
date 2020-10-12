@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        style="@style/style_match_content"
+        android:background="@color/c_gray_12"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+    <include layout="@layout/layout_content_title" />
+
+    <LinearLayout
+            style="@style/style_match_wrap_content"
+            android:layout_margin="@dimen/dimen_15"
+            android:orientation="vertical">
+
+        <TextView
+                android:id="@+id/tv_receivde1_02"
+                style="@style/style_match_wrap_content"
+                android:background="@drawable/txt_bg_selector"
+                android:drawableRight="@mipmap/icon_xxjt"
+                android:padding="@dimen/dimen_10"
+                android:text="全部任务类型" />
+
+
+        <LinearLayout
+                style="@style/style_match_wrap_content"
+                android:layout_marginTop="@dimen/dimen_10">
+
+            <TextView
+                    android:id="@+id/tv_receivde1_04"
+                    style="@style/style_wrap_content"
+                    android:layout_width="@dimen/dimen_0"
+                    android:layout_marginRight="@dimen/dimen_8"
+                    android:layout_weight="1"
+                    android:background="@drawable/txt_bg_selector"
+                    android:drawableRight="@mipmap/rili"
+                    android:padding="@dimen/dimen_10"
+                    android:text="开始日期" />
+
+            <TextView
+                    android:id="@+id/tv_receivde1_05"
+                    style="@style/style_wrap_content"
+                    android:layout_width="@dimen/dimen_0"
+                    android:layout_marginLeft="@dimen/dimen_8"
+                    android:layout_weight="1"
+                    android:background="@drawable/txt_bg_selector"
+                    android:drawableRight="@mipmap/rili"
+                    android:padding="@dimen/dimen_10"
+                    android:text="结束日期" />
+        </LinearLayout>
+
+        <TextView
+                android:id="@+id/btn_cust_map_04"
+                style="@style/style_match_wrap_content"
+                android:layout_marginTop="@dimen/dimen_18"
+                android:background="@drawable/btn_bg_quit_login_normal"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dimen_16"
+                android:paddingTop="@dimen/dimen_5"
+                android:paddingRight="@dimen/dimen_16"
+                android:paddingBottom="@dimen/dimen_5"
+                android:text="查询"
+                android:textColor="@color/white_01"
+                android:textSize="@dimen/dimen_14" />
+    </LinearLayout>
+    <com.toker.sys.utils.view.MyMapView
+            style="@style/style_match_wrap_content">
+
+    <com.baidu.mapapi.map.TextureMapView
+            android:id="@+id/mv_map_cust"
+            style="@style/style_match_content" />
+    </com.toker.sys.utils.view.MyMapView>
+
+</LinearLayout>

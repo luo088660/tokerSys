@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/style_match_content"
+              android:background="@color/c_gray_122"
+              android:orientation="vertical"
+              android:focusable="true"
+              android:focusableInTouchMode="true"
+
+>
+    <requestFocus/>
+    <include layout="@layout/layout_content_title"/>
+    <LinearLayout style="@style/style_match_wrap_content"
+                  android:id="@+id/ll_task_home"
+                  android:background="@color/white"
+                  android:orientation="vertical">
+
+        <RadioGroup style="@style/style_wrap_content"
+                    android:id="@+id/ll_custom"
+                    android:padding="@dimen/dimen_10"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+            <RadioButton style="@style/style_wrap_content_RB_ptpb10_plpr20_bnull"
+                         android:id="@+id/rb_yx_custom"
+                         android:background="@drawable/btn_bg_quit_left_selector"
+                         android:checked="true"
+                         android:text="我的任务"/>
+            <RadioButton style="@style/style_wrap_content_RB_ptpb10_plpr20_bnull"
+                         android:id="@+id/rb_tj_custom"
+                         android:background="@drawable/btn_bg_quit_right_selector"
+                         android:text="团队任务"/>
+        </RadioGroup>
+    </LinearLayout>
+    <FrameLayout style="@style/style_match_content">
+        <!--<ScrollView style="@style/style_match_content"-->
+                    <!--android:background="@color/c_gray_122"-->
+                    <!--android:id="@+id/sl_task_home">-->
+            <LinearLayout style="@style/style_match_wrap_content"
+                          android:orientation="vertical">
+
+                <android.support.v7.widget.RecyclerView
+                        style="@style/style_match_wrap_content"
+                        android:id="@+id/rv_task"/>
+
+                <FrameLayout style="@style/style_match_content"
+                             android:id="@+id/fl_custom_home"
+                             android:layout_weight="1"
+                />
+            </LinearLayout>
+        <!--</ScrollView>-->
+        <TextView style="@style/style_wrap_content"
+                  android:id="@+id/btn_task_home"
+                  android:background="@drawable/btn_return_top"
+                  android:layout_gravity="end|bottom"
+                  android:layout_margin="@dimen/dimen_20"/>
+    </FrameLayout>
+</LinearLayout>

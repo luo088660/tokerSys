@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        style="@style/style_match_content"
+        android:background="@color/c_gray_12"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+    <include
+            android:id="@+id/layout_title"
+            layout="@layout/layout_content_title" />
+
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_visiting"
+            style="@style/style_match_wrap_content"
+            android:layout_above="@+id/ll_visi_area"
+            android:layout_below="@+id/layout_title" />
+
+
+    <LinearLayout
+            android:id="@+id/ll_visi_area"
+            style="@style/style_match_wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/dimen_16"
+            android:paddingBottom="@dimen/dimen_15">
+
+        <TextView
+                android:id="@+id/btn_new_custom_cancel"
+                style="@style/style_wrap_content"
+                android:layout_marginRight="@dimen/dimen_12"
+                android:layout_weight="1"
+                android:background="@drawable/edit_bg_selector"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dimen_16"
+                android:paddingTop="@dimen/dimen_5"
+                android:paddingRight="@dimen/dimen_16"
+                android:paddingBottom="@dimen/dimen_5"
+                android:text="取消"
+                android:textColor="@color/c_gray_6"
+                android:textSize="@dimen/dimen_14" />
+
+        <TextView
+                android:id="@+id/btn_new_custom_determine"
+                style="@style/style_wrap_content"
+                android:layout_marginLeft="@dimen/dimen_12"
+                android:layout_weight="1"
+                android:background="@drawable/btn_bg_quit_login_normal"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dimen_16"
+                android:paddingTop="@dimen/dimen_5"
+                android:paddingRight="@dimen/dimen_16"
+                android:paddingBottom="@dimen/dimen_5"
+                android:text="完成"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_14" />
+    </LinearLayout>
+
+</RelativeLayout>

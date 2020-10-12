@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              style="@style/style_match_wrap_content">
+    <LinearLayout style="@style/style_match_wrap_content"
+                  android:background="@color/white"
+                  android:orientation="vertical">
+        <LinearLayout style="@style/style_match_wrap_content"
+                      android:paddingTop="@dimen/dimen_10"
+                      android:paddingLeft="@dimen/dimen_16"
+                      android:paddingRight="@dimen/dimen_16"
+                      android:gravity="center">
+            <TextView style="@style/style_wrap_content"
+                      android:layout_weight="1"
+                      android:textSize="@dimen/dimen_14"
+                      android:id="@+id/tv_item_admini_01"
+                      android:textColor="@color/c_black_6"/>
+            <TextView style="@style/style_wrap_content"
+                      android:text="任务轨迹"
+                      android:textColor="@color/c_red_4"
+                      android:layout_alignParentRight="true"
+                      android:id="@+id/tv_item_admini_02"
+                      android:textSize="@dimen/dimen_12"
+                      android:paddingTop="@dimen/dimen_8"
+                      android:paddingBottom="@dimen/dimen_8"
+                      android:paddingLeft="@dimen/dimen_12"
+                      android:paddingRight="@dimen/dimen_12"
+                      android:background="@drawable/tv_bg_quit_login_normal"/>
+        </LinearLayout>
+
+        <LinearLayout style="@style/style_match_wrap_content"
+                      android:paddingLeft="@dimen/dimen_16"
+                      android:layout_marginTop="@dimen/dimen_15"
+                      android:paddingRight="@dimen/dimen_16">
+            <TextView style="@style/style_wrap_content"
+                      android:textColor="@color/c_black_7"
+                      android:textSize="@dimen/dimen_14"
+                      android:layout_marginRight="@dimen/dimen_20"
+                      android:text="完成情况"/>
+            <TextView style="@style/style_wrap_content"
+                      android:textColor="@color/c_black_7"
+                      android:textSize="@dimen/dimen_14"
+                      android:id="@+id/tv_item_admini_03"
+                      android:layout_marginRight="@dimen/dimen_20"/>
+
+        </LinearLayout>
+        <LinearLayout style="@style/style_match_wrap_content"
+                      android:paddingLeft="@dimen/dimen_16"
+                      android:layout_marginTop="@dimen/dimen_15"
+                      android:layout_marginBottom="@dimen/dimen_15"
+                      android:paddingRight="@dimen/dimen_16">
+            <TextView style="@style/style_wrap_content"
+                      android:textColor="@color/c_black_7"
+                      android:textSize="@dimen/dimen_14"
+                      android:layout_marginRight="@dimen/dimen_20"
+                      android:text="上传照片"/>
+            <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_item_admini"
+                    style="@style/style_match_wrap_content"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <View style="@style/horizontalLine_16"/>
+
+</LinearLayout>

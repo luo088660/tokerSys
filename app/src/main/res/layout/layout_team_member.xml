@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/style_match_wrap_content"
+              android:orientation="vertical">
+    <LinearLayout style="@style/style_match_wrap_content"
+                  android:gravity="center"
+                  android:padding="@dimen/dimen_16">
+        <ImageView android:layout_width="@dimen/dimen_24"
+                   android:layout_height="@dimen/dimen_24"
+                   android:src="@mipmap/icon_tdcy"/>
+        <TextView style="@style/style_wrap_content"
+                  android:layout_weight="1"
+                  android:layout_marginLeft="@dimen/dimen_10"
+                  android:textSize="@dimen/dimen_16"
+                  android:textColor="@color/c_black_6"
+                  android:text="团队成员"/>
+    </LinearLayout>
+
+    <LinearLayout style="@style/style_match_wrap_content"
+                  android:orientation="vertical"
+                  android:paddingLeft="@dimen/dimen_10"
+                  android:paddingRight="@dimen/dimen_10">
+        <LinearLayout style="@style/style_match_wrap_content"
+                      android:paddingLeft="@dimen/dimen_10"
+                      android:paddingRight="@dimen/dimen_10"
+                      android:paddingBottom="@dimen/dimen_10">
+            <TextView style="@style/style_wrap_content"
+                      android:textColor="@color/c_black_7"
+                      android:textSize="@dimen/dimen_14"
+                      android:gravity="center"
+                      android:text="拓客管理员"/>
+            <TextView style="@style/style_wrap_content"
+                      android:textColor="@color/c_black_7"
+                      android:textSize="@dimen/dimen_14"
+                      android:layout_marginLeft="@dimen/dimen_20"
+                      android:layout_weight="1"
+                      android:gravity="right"
+                      android:id="@+id/tv_team_mber_01"/>
+        </LinearLayout>
+        <View style="@style/horizontalLine"/>
+        <LinearLayout style="@style/style_match_wrap_content"
+                      android:id="@+id/ll_team_mber_02"
+                      android:orientation="vertical">
+            <LinearLayout style="@style/style_match_wrap_content"
+                          android:padding="@dimen/dimen_10">
+                <TextView style="@style/style_wrap_content"
+                          android:textColor="@color/c_black_7"
+                          android:textSize="@dimen/dimen_14"
+                          android:text="拓客团队"/>
+                <TextView style="@style/style_wrap_content"
+                          android:id="@+id/tv_team_mber_02"
+                          android:layout_weight="1"
+                          android:gravity="right"
+                        android:paddingRight="@dimen/dimen_26"
+                          android:textColor="@color/c_black_7"
+                          android:textSize="@dimen/dimen_14"
+                          />
+            </LinearLayout>
+            <View style="@style/horizontalLine"/>
+        </LinearLayout>
+        <LinearLayout style="@style/style_match_wrap_content"
+                      android:gravity="center"
+                      android:padding="@dimen/dimen_10">
+            <TextView style="@style/style_wrap_content"
+                      android:textColor="@color/c_black_7"
+                      android:textSize="@dimen/dimen_14"
+
+                      android:text="拓客员"/>
+            <TextView style="@style/style_wrap_content"
+                      android:textColor="@color/c_black_7"
+                      android:id="@+id/tv_team_mber_03"
+                      android:gravity="right"
+                      android:layout_weight="1"
+                      android:drawableRight="@mipmap/icon_right"
+                      android:drawablePadding="@dimen/dimen_20"
+                      android:textSize="@dimen/dimen_14"/>
+        </LinearLayout>
+        <View style="@style/horizontalLine"/>
+        <LinearLayout style="@style/style_match_wrap_content"
+                      android:gravity="center"
+                      android:padding="@dimen/dimen_10">
+            <TextView style="@style/style_wrap_content"
+                      android:textColor="@color/c_black_7"
+                      android:textSize="@dimen/dimen_14"
+                      android:text="小蜜蜂"/>
+            <TextView style="@style/style_wrap_content"
+                      android:gravity="right"
+                      android:layout_weight="1"
+                      android:textColor="@color/c_black_7"
+                      android:id="@+id/tv_team_mber_04"
+                      android:drawableRight="@mipmap/icon_right"
+                      android:drawablePadding="@dimen/dimen_20"
+                      android:textSize="@dimen/dimen_14"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

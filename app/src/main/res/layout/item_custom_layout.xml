@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ll_type"
+        style="@style/style_match_wrap_content"
+        android:background="@color/white_01"
+        android:orientation="vertical">
+
+    <TextView
+            android:id="@+id/tv_item_title"
+            style="@style/style_wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/dimen_3"
+            android:layout_marginTop="@dimen/dimen_13"
+            android:layout_marginRight="@dimen/dimen_3"
+            android:layout_marginBottom="@dimen/dimen_5"
+            android:text="客户"
+            android:textColor="@color/c_gray_9"
+            android:textSize="@dimen/dimen_14" />
+
+    <View
+            android:id="@+id/view_hor"
+            style="@style/horizontalLine"
+            android:layout_width="@dimen/dimen_30"
+            android:layout_height="3dp"
+            android:layout_below="@+id/tv_item_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dimen_5"
+            android:background="@color/c_red_4" />
+
+    <TextView
+            android:id="@+id/tv_my_ms_01"
+            android:layout_width="@dimen/dimen_18"
+            android:layout_height="@dimen/dimen_18"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:layout_toRightOf="@+id/view_hor"
+            android:background="@drawable/spot_01_select"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="12"
+            android:textSize="@dimen/dimen_7"
+            android:visibility="gone" />
+
+</RelativeLayout><!--android:layout_alignRight="@+id/tv_item_title"
+        android:layout_alignLeft="@+id/tv_item_title"-->

@@ -1,0 +1,172 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+
+apply plugin: 'bugly'
+bugly {
+    appId = 'dcfbe26499'
+    appKey = 'f40c6d99-efe4-4646-9ca5-78b1275b2ea5'
+}
+android {
+    signingConfigs {
+        release {
+            keyAlias 'tokersyskey'
+            keyPassword 'tokersyskey123'
+            storePassword 'tokersyskey123'
+//            storeFile file('E:/work_code/TokerSys/app/tokersys_keystore.jks')
+            storeFile file('tokersys_keystore.jks')
+        }
+    }
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.toker.sys"
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 1
+        versionName "4.6"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        ndk {
+            // 设置支持的SO库架构
+            abiFilters 'armeabi', 'x86', 'armeabi-v7a', 'x86_64', 'arm64-v8a'
+        }
+        /*manifestPlaceholders = [
+                JPUSH_APPKEY : "07ca1ee9cc1468541b1925b3",
+                JPUSH_CHANNEL: "default_developer",
+                BAIDU_API_KEY: "Cic1Xk7h6QtzomUWc1CYqxK15RGSmIu8",
+        ]*/
+        flavorDimensions "code"//1.配置dimension
+        multiDexEnabled true
+    }
+    buildTypes {
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+        release {
+            setSigningConfig(signingConfigs.release)
+            setPseudoLocalesEnabled(false)
+            setZipAlignEnabled(false)
+            // 批量打包(gradle 3.0.0 以上)
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+
+   //3.配置多渠道，这里配置2个渠道：dev测试环境，prod正式环境
+   productFlavors {
+        dev {
+            applicationId "com.toker.systest"//配置测试环境的applicationid 要和正式的不一样
+            resValue "string", "app_name", "恒大拓客_测试版"//设置测试版的appname，然后记得将strings文件中的app_name删掉
+            resValue "bool", "isrRank", 'false'
+
+            buildConfigField "boolean", "SERVER_DEBUG", 'true'//给BuildConfig类增加一个boolean类型的字段，用来标记服务器地址是否是测试环境的
+            dimension "code"//配置第一步中的flavorDimensions 配置的“test”，这里我们没有额外的需求不多做配置
+            //百度地图AK 测试环境
+            manifestPlaceholders = [
+
+                    JPUSH_APPKEY : "b010dc99a6c547a30aae9da3",
+                    JPUSH_CHANNEL: "default_developer",
+                    BAIDU_API_KEY: "150uqyDO8mOr730nwMiQEQ2Khb0bbiFf"
+            ]
+        }
+        prod {
+            applicationId "com.toker.sys"
+            resValue "string", "app_name", "恒大拓客"
+            resValue "bool", "isrRank", 'true'
+
+            buildConfigField "boolean", "SERVER_DEBUG", 'false'
+            dimension "code"
+            //百度地图AK 正式环境
+            manifestPlaceholders = [
+                    //                    JPUSH_APPKEY : "176929a08da77d3531105fbf",//恒大拓客-生产环境
+                    JPUSH_APPKEY : "07ca1ee9cc1468541b1925b3",
+                    JPUSH_CHANNEL: "default_developer",
+                    BAIDU_API_KEY: "Cic1Xk7h6QtzomUWc1CYqxK15RGSmIu8"
+            ]
+        }
+    }
+
+    android.applicationVariants.all { variant ->
+        //4.配置正式和测试环境下不同的buglyid和key 如果你没有引用bugly sdk 可不做此配置
+        variant.outputs.all {
+
+            //打包到外部文件夹
+//            variant.getPackageApplication().outputDirectory = new File(project.rootDir.absolutePath + File.separator + "outputs")
+            if (variant.flavorName == "dev") {//测试环境
+//                outputFileName = "HD_APP_dev_V${defaultConfig.versionName}_${releaseTime()}.apk"
+            } else if (variant.flavorName == "prod") {//正式环境
+                outputFileName = "HD_APP_prod_V${defaultConfig.versionName}_${releaseTime()}.apk"
+            }
+
+        }
+    }
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+    lintOptions {
+        abortOnError false
+    }
+    packagingOptions {       //避免重复导入库
+        pickFirst 'lib/armeabi/libBugly.so'
+        pickFirst 'lib/x86_64/libBugly.so'
+        pickFirst 'lib/arm64-v8a/libBugly.so'
+        pickFirst 'lib/armeabi-v7a/libBugly.so'
+        pickFirst 'lib/x86/libBugly.so'
+        exclude 'META-INF/LICENSE'
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+//    implementation 'com.android.support.constraint:constraint-layout:1.0.1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'com.android.support:design:28.0.0'
+
+    implementation 'org.greenrobot:eventbus:3.1.1'
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation project(path: ':Reslib')
+
+    implementation 'com.lzy.net:okrx2:2.0.2'
+//    implementation 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    implementation 'io.reactivex.rxjava2:rxkotlin:2.1.0'
+    implementation project(path: ':calendarview')
+//    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    implementation 'com.github.bumptech.glide:glide:4.7.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.7.1'
+
+    implementation 'com.android.support:multidex:1.0.3'
+
+    implementation 'com.jaywei:compresstool:1.0.2'
+//
+//    implementation 'com.squareup.retrofit2:retrofit:2.0.2'
+//    implementation 'com.squareup.retrofit2:converter-gson:2.0.2'
+//    implementation 'com.google.code.gson:gson:2.8.5'
+//    implementation 'com.squareup.retrofit2:adapter-rxjava:2.0.2'
+
+
+
+    implementation 'com.google.guava:guava:27.0.1-android'
+
+}
+//获取当前时间
+static def releaseTime() {
+    return new Date().format("yyMMdd", TimeZone.getTimeZone("UTC"))
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}

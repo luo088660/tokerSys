@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white">
+
+    <RelativeLayout
+          style="@style/style_match_wrap_content">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_45"
+                android:text="请选择头像照片"
+                android:textColor="@color/c_black_7"
+                android:background="#fff6f6f6"
+                android:gravity="center"
+                android:textSize="@dimen/dimen_14"/>
+        <TextView
+                android:id="@+id/tv_cancel"
+                style="@style/style_wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/dimen_10"
+                android:layout_height="@dimen/dimen_45"
+                android:textColor="@color/c_black_6"
+                android:text="取消"
+                android:textSize="@dimen/dimen_14"/>
+    </RelativeLayout>
+
+
+    <View style="@style/horizontalLine"/>
+    <TextView
+            android:id="@+id/tv_take_photo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_45"
+            android:background="@color/white"
+            android:textColor="@color/c_black_6"
+            android:text="拍照"
+            android:gravity="center"
+            android:textSize="@dimen/dimen_14"/>
+
+    <View style="@style/horizontalLine"/>
+
+    <TextView
+            android:id="@+id/tv_take_pic"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_45"
+            android:background="@color/white"
+            android:textColor="@color/c_black_6"
+            android:text="从相册选择"
+            android:gravity="center"
+            android:textSize="@dimen/dimen_14"/>
+
+
+
+
+</LinearLayout>

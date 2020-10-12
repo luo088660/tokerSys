@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+       style="@style/style_match_wrap_content">
+
+    <TextView
+            android:id="@+id/tv_custo_total"
+            style="@style/style_match_wrap_content"
+            android:layout_gravity="left"
+            android:background="@color/c_gray_122"
+            android:paddingLeft="@dimen/dimen_16"
+            android:paddingTop="@dimen/dimen_10"
+            android:paddingBottom="@dimen/dimen_10"
+            android:text="共 0 个任务"
+            android:textSize="@dimen/dimen_14" />
+</LinearLayout>

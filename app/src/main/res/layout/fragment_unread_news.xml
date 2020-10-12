@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/style_match_content"
+        android:background="@color/c_gray_12"
+        android:orientation="vertical">
+
+    <com.liaoinstan.springview.widget.SpringView
+            android:id="@+id/sp_t_pend"
+            style="@style/style_match_content">
+
+        <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_read_news"
+                style="@style/style_match_wrap_content" />
+    </com.liaoinstan.springview.widget.SpringView>
+</LinearLayout>

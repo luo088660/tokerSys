@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              style="@style/style_match_content"
+              android:orientation="vertical"
+              android:layout_marginTop="@dimen/dimen_5"
+              android:background="@color/c_gray_12">
+    <ScrollView style="@style/style_match_content">
+        <LinearLayout style="@style/style_match_content"
+                      android:orientation="vertical">
+            <include layout="@layout/layout_date_time"/>
+            <include layout="@layout/layout_my_atten_01"/>
+            <include layout="@layout/layout_my_atten_02"/>
+            <include layout="@layout/layout_my_atten_03"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+

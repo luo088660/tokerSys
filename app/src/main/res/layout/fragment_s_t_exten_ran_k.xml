@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+   style="@style/style_match_wrap_content"
+        android:orientation="vertical">
+    <LinearLayout
+            style="@style/style_match_wrap_content"
+            android:paddingLeft="@dimen/dimen_16"
+            android:paddingRight="@dimen/dimen_16"
+            android:background="@color/white">
+
+        <TextView
+                style="@style/style_0_wrap_pt15_pb13_ts12_tcb6_w1_gc"
+                android:layout_weight="0.5"
+                android:text="排名" />
+
+        <TextView
+                style="@style/style_0_wrap_pt15_pb13_ts12_tcb6_w1_gc"
+                android:layout_weight="1.2"
+                android:text="拓客员" />
+
+        <TextView
+                style="@style/style_0_wrap_pt15_pb13_ts12_tcb6_w1_gc"
+                android:text="团队" />
+
+        <TextView
+                style="@style/style_0_wrap_pt15_pb13_ts12_tcb6_w1_gc"
+                android:layout_weight="1.5"
+                android:text="项目" />
+
+        <TextView
+                style="@style/style_0_wrap_pt15_pb13_ts12_tcb6_w1_gc"
+                android:text="完成"
+                android:id="@+id/tv_st_exten_rank_02_"
+                android:drawableRight="@mipmap/icon_mrpx"
+                android:textColor="@color/c_red_4" />
+    </LinearLayout>
+
+    <View style="@style/horizontalLine_16" />
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_t_exten_rank_"
+            style="@style/style_match_content"
+            android:background="@color/white_01" />
+</LinearLayout>

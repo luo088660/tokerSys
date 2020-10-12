@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:id="@+id/ll_mcf_custom_recom_02"
+              style="@style/style_match_wrap_content">
+    <View style="@style/horizontalLine"
+          android:layout_above="@+id/ll_mcf_custom_detail_btm"/>
+
+
+    <LinearLayout style="@style/style_match_wrap_content"
+                  android:padding="@dimen/dimen_10"
+                  android:gravity="center"
+                  android:background="@color/white"
+                  android:orientation="horizontal">
+
+        <TextView style="@style/style_wrap_content_ptpb10_w1_mlmr6_gc_tcr4_ts14"
+                  android:layout_width="@dimen/dimen_100"
+                  android:id="@+id/btn_mcf_custom_recom_01"
+                  android:layout_weight="0"
+                  android:layout_marginLeft="@dimen/dimen_50"
+                  android:layout_marginRight="@dimen/dimen_20"
+                  android:text="撤销推荐"/>
+
+        <TextView style="@style/style_wrap_content_ptpb10_w1_mlmr6_gc_tcr4_ts14"
+                  android:layout_width="@dimen/dimen_100"
+                  android:layout_marginLeft="@dimen/dimen_20"
+                  android:layout_weight="0"
+                  android:layout_marginRight="@dimen/dimen_50"
+                  android:id="@+id/btn_mcf_custom_recom_02"
+                  android:text="推荐其他项目"/>
+
+    </LinearLayout>
+</LinearLayout>

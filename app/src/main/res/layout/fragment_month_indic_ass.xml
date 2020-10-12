@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/style_match_content"
+        android:orientation="vertical">
+
+    <include layout="@layout/layout_content_title" />
+
+    <ScrollView style="@style/style_match_wrap_content">
+
+        <LinearLayout
+                style="@style/style_match_content"
+                android:orientation="vertical">
+
+            <LinearLayout
+                    style="@style/style_match_wrap_content"
+                    android:background="@color/white_01"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/dimen_10"
+                    android:paddingRight="@dimen/dimen_10">
+
+                <LinearLayout
+                        style="@style/style_match_wrap_content"
+                        android:layout_marginTop="@dimen/dimen_10">
+
+                    <TextView
+                            style="@style/style_wrap_content"
+                            android:text="所属项目" />
+
+                    <TextView
+                            style="@style/style_wrap_content"
+                            android:layout_marginLeft="@dimen/dimen_10"
+                            android:layout_weight="1"
+                            android:text="清远银湖城" />
+                </LinearLayout>
+
+                <LinearLayout
+                        style="@style/style_match_wrap_content"
+                        android:layout_marginTop="@dimen/dimen_10">
+
+                    <TextView
+                            style="@style/style_wrap_content"
+                            android:text="任务类型" />
+
+                    <TextView
+                            style="@style/style_wrap_content"
+                            android:layout_marginLeft="@dimen/dimen_10"
+                            android:layout_weight="1"
+                            android:text="月任务" />
+
+                    <TextView
+                            style="@style/style_wrap_content"
+                            android:text="任务状态" />
+
+                    <TextView
+                            style="@style/style_wrap_content"
+                            android:layout_marginLeft="@dimen/dimen_10"
+                            android:layout_marginRight="@dimen/dimen_20"
+                            android:text="未开始"
+                            android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                        style="@style/style_match_wrap_content"
+                        android:layout_marginTop="@dimen/dimen_10">
+
+                    <TextView
+                            style="@style/style_wrap_content"
+                            android:text="创建人" />
+
+                    <TextView
+                            style="@style/style_wrap_content"
+                            android:layout_marginLeft="@dimen/dimen_10"
+                            android:layout_weight="1"
+                            android:text="张三" />
+                </LinearLayout>
+
+                <LinearLayout
+                        style="@style/style_match_wrap_content"
+                        android:layout_marginTop="@dimen/dimen_10">
+
+                    <TextView
+                            style="@style/style_wrap_content"
+                            android:text="创建时间" />
+
+                    <TextView
+                            style="@style/style_wrap_content"
+                            android:layout_marginLeft="@dimen/dimen_10"
+                            android:layout_weight="1"
+                            android:text="2019.06.01\t\t\t15:30:09" />
+                </LinearLayout>
+
+                <LinearLayout
+                        style="@style/style_match_wrap_content"
+                        android:layout_marginTop="@dimen/dimen_10">
+
+                    <TextView
+                            style="@style/style_wrap_content"
+                            android:text="任务对象" />
+
+                    <TextView
+                            style="@style/style_wrap_content"
+                            android:layout_marginLeft="@dimen/dimen_10"
+                            android:layout_weight="1"
+                            android:text="张三" />
+                </LinearLayout>
+
+                <LinearLayout
+                        style="@style/style_match_wrap_content"
+                        android:layout_marginTop="@dimen/dimen_10">
+
+                    <TextView
+                            style="@style/style_wrap_content"
+                            android:text="任务时间" />
+
+                    <TextView
+                            style="@style/style_wrap_content"
+                            android:layout_marginLeft="@dimen/dimen_10"
+                            android:layout_weight="1"
+                            android:text="2019.06.01\t至\t2019.08.08" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                        style="@style/style_match_wrap_content"
+                        android:layout_marginTop="@dimen/dimen_10"
+                        android:gravity="center">
+
+                    <TextView
+                            style="@style/style_wrap_content"
+                            android:layout_width="@dimen/dimen_0"
+                            android:layout_weight="1"
+                            android:text="留电数" />
+
+                    <ProgressBar
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="@dimen/dimen_0"
+                            android:layout_height="@dimen/dimen_5"
+                            android:layout_weight="1.5"
+                            android:max="100"
+                            android:progress="50"
+                            android:progressDrawable="@drawable/pb_pd_sp_download" />
+
+                    <TextView
+                            style="@style/style_wrap_content"
+                            android:layout_width="@dimen/dimen_0"
+                            android:layout_marginLeft="@dimen/dimen_10"
+                            android:layout_weight="1"
+                            android:text="完成 0/目标1000" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                        style="@style/style_match_wrap_content"
+                        android:layout_marginTop="@dimen/dimen_10"
+                        android:gravity="center">
+
+                    <TextView
+                            style="@style/style_wrap_content"
+                            android:layout_width="@dimen/dimen_0"
+                            android:layout_weight="1"
+                            android:text="到访数" />
+
+                    <ProgressBar
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="@dimen/dimen_0"
+                            android:layout_height="@dimen/dimen_5"
+                            android:layout_weight="1.5"
+                            android:max="100"
+                            android:progress="50"
+                            android:progressDrawable="@drawable/pb_pd_sp_download" />
+
+                    <TextView
+                            style="@style/style_wrap_content"
+                            android:layout_width="@dimen/dimen_0"
+                            android:layout_marginLeft="@dimen/dimen_10"
+                            android:layout_weight="1"
+                            android:text="完成 0/目标1000" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                        style="@style/style_match_wrap_content"
+                        android:layout_marginTop="@dimen/dimen_10"
+                        android:gravity="center">
+
+                    <TextView
+                            style="@style/style_wrap_content"
+                            android:layout_width="@dimen/dimen_0"
+                            android:layout_weight="1"
+                            android:text="成交套数" />
+
+                    <ProgressBar
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="@dimen/dimen_0"
+                            android:layout_height="@dimen/dimen_5"
+                            android:layout_weight="1.5"
+                            android:max="100"
+                            android:progress="50"
+                            android:progressDrawable="@drawable/pb_pd_sp_download" />
+
+                    <TextView
+                            style="@style/style_wrap_content"
+                            android:layout_width="@dimen/dimen_0"
+                            android:layout_marginLeft="@dimen/dimen_10"
+                            android:layout_weight="1"
+                            android:text="完成 0/目标1000" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                        style="@style/style_match_wrap_content"
+                        android:layout_marginTop="@dimen/dimen_10"
+                        android:layout_marginBottom="@dimen/dimen_20"
+                        android:gravity="center">
+
+                    <TextView
+                            style="@style/style_wrap_content"
+                            android:layout_width="@dimen/dimen_0"
+                            android:layout_weight="1"
+                            android:text="成交额(万元)" />
+
+                    <ProgressBar
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="@dimen/dimen_0"
+                            android:layout_height="@dimen/dimen_5"
+                            android:layout_weight="1.5"
+                            android:max="100"
+                            android:progress="50"
+                            android:progressDrawable="@drawable/pb_pd_sp_download" />
+
+                    <TextView
+                            style="@style/style_wrap_content"
+                            android:layout_width="@dimen/dimen_0"
+                            android:layout_marginLeft="@dimen/dimen_10"
+                            android:layout_weight="1"
+                            android:text="完成 0/目标1000" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                    style="@style/style_match_wrap_content"
+                    android:layout_margin="@dimen/dimen_10"
+                    android:gravity="center"
+                    android:text="审批意见"
+                    android:textStyle="bold" />
+
+            <LinearLayout
+                    style="@style/style_match_wrap_content"
+                    android:background="@color/white_01"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/dimen_10">
+
+                <LinearLayout
+                        style="@style/style_match_wrap_content"
+                        android:layout_marginTop="@dimen/dimen_10">
+
+                    <TextView
+                            style="@style/style_wrap_content"
+                            android:text="审批人" />
+
+                    <TextView
+                            style="@style/style_wrap_content"
+                            android:layout_marginLeft="@dimen/dimen_10"
+                            android:layout_weight="1"
+                            android:text="张三" />
+
+                    <TextView
+                            style="@style/style_wrap_content"
+                            android:text="审批时间" />
+
+                    <TextView
+                            style="@style/style_wrap_content"
+                            android:layout_marginLeft="@dimen/dimen_10"
+                            android:layout_marginRight="@dimen/dimen_20"
+                            android:layout_weight="1"
+                            android:text="2019.05.01 15:30:09" />
+                </LinearLayout>
+
+                <LinearLayout
+                        style="@style/style_match_wrap_content"
+                        android:layout_marginTop="@dimen/dimen_10"
+                        android:paddingBottom="@dimen/dimen_10">
+
+                    <TextView
+                            style="@style/style_wrap_content"
+                            android:text="审批意见" />
+
+                    <TextView
+                            style="@style/style_wrap_content"
+                            android:layout_marginLeft="@dimen/dimen_10"
+                            android:layout_weight="1"
+                            android:text="通过" />
+                </LinearLayout>
+
+                <View style="@style/horizontalLine" />
+
+
+                <LinearLayout
+                        style="@style/style_match_wrap_content"
+                        android:layout_marginTop="@dimen/dimen_10">
+
+                    <TextView
+                            style="@style/style_wrap_content"
+                            android:text="起止时间" />
+
+                    <TextView
+                            style="@style/style_wrap_content"
+                            android:layout_marginLeft="@dimen/dimen_20"
+                            android:layout_marginRight="@dimen/dimen_20"
+                            android:layout_weight="1"
+                            android:text="2019.05.01 至 2019.05.01" />
+                </LinearLayout>
+
+                <LinearLayout
+                        style="@style/style_match_wrap_content"
+                        android:layout_marginTop="@dimen/dimen_10">
+
+                    <TextView
+                            style="@style/style_wrap_content"
+                            android:text="任务对象" />
+
+                    <TextView
+                            style="@style/style_wrap_content"
+                            android:layout_marginLeft="@dimen/dimen_20"
+                            android:layout_marginRight="@dimen/dimen_20"
+                            android:layout_weight="1"
+                            android:text="拓客A组; 拓客B组; 拓客C组;" />
+                </LinearLayout>
+
+                <LinearLayout
+                        style="@style/style_match_wrap_content"
+                        android:layout_marginTop="@dimen/dimen_10">
+
+                    <TextView
+                            style="@style/style_wrap_content"
+                            android:text="指标" />
+
+                    <TextView
+                            style="@style/style_wrap_content"
+                            android:layout_marginLeft="@dimen/dimen_20"
+                            android:layout_marginRight="@dimen/dimen_20"
+                            android:layout_weight="1"
+                            android:text="拓客A组; 拓客B组; 拓客C组;" />
+                </LinearLayout>
+
+                <LinearLayout
+                        style="@style/style_match_wrap_content"
+                        android:layout_marginTop="@dimen/dimen_10">
+
+                    <TextView
+                            style="@style/style_wrap_content"
+                            android:text="完成/目标" />
+
+                    <TextView
+                            style="@style/style_wrap_content"
+                            android:layout_marginLeft="@dimen/dimen_20"
+                            android:layout_marginRight="@dimen/dimen_20"
+                            android:layout_weight="1"
+                            android:text="拓客A组; 拓客B组; 拓客C组;" />
+                </LinearLayout>
+
+                <LinearLayout
+                        style="@style/style_match_wrap_content"
+                        android:layout_marginTop="@dimen/dimen_10"
+                        android:layout_marginBottom="@dimen/dimen_10"
+                        android:gravity="right">
+
+                    <TextView
+                            style="@style/style_wrap_content"
+                            android:background="@color/btn_red"
+                            android:paddingLeft="@dimen/dimen_10"
+                            android:paddingTop="@dimen/dimen_5"
+                            android:paddingRight="@dimen/dimen_10"
+                            android:paddingBottom="@dimen/dimen_5"
+                            android:textSize="@dimen/dimen_12"
+                            android:text="展开任务明细" />
+
+                    <TextView
+                            style="@style/style_wrap_content"
+                            android:layout_marginLeft="@dimen/dimen_20"
+                            android:layout_marginRight="@dimen/dimen_20"
+                            android:background="@color/btn_red"
+                            android:paddingLeft="@dimen/dimen_10"
+                            android:paddingTop="@dimen/dimen_5"
+                            android:paddingRight="@dimen/dimen_10"
+                            android:textSize="@dimen/dimen_12"
+                            android:paddingBottom="@dimen/dimen_5"
+                            android:text="查看日任务" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

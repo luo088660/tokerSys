@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/style_match_wrap_content"
+        android:orientation="vertical">
+
+
+    <LinearLayout
+            style="@style/style_match_wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dimen_15"
+            android:paddingRight="@dimen/dimen_15">
+
+        <LinearLayout
+                style="@style/style_match_wrap_content"
+                android:paddingTop="@dimen/dimen_10"
+                android:paddingBottom="@dimen/dimen_10">
+
+            <TextView
+                    android:id="@+id/tv_custo_detail_01"
+                    style="@style/style_wrap_content"
+                    android:layout_width="@dimen/dimen_0"
+                    android:layout_weight="1"
+                    android:text="王女士"
+                    android:textColor="@color/c_black_6"
+                    android:textSize="@dimen/dimen_16" />
+
+            <TextView
+                    android:id="@+id/tv_custo_detail_02"
+                    style="@style/style_wrap_content"
+                    android:layout_width="@dimen/dimen_0"
+                    android:layout_weight="3"
+                    android:text="13900000001"
+                    android:textColor="@color/c_black_6"
+                    android:textSize="@dimen/dimen_14" />
+
+            <TextView
+                    android:id="@+id/tv_custo_detail_03"
+                    style="@style/style_wrap_content"
+                    android:layout_weight="1"
+                    android:drawableRight="@mipmap/icon_right"
+                    android:drawablePadding="@dimen/dimen_10"
+                    android:gravity="right"
+                    android:paddingTop="@dimen/dimen_5"
+                    android:paddingBottom="@dimen/dimen_5"
+                    android:text=""
+                    android:textColor="@color/c_black_7"
+                    android:textSize="@dimen/dimen_12" />
+        </LinearLayout>
+
+        <View style="@style/horizontalLine" />
+
+        <LinearLayout
+                style="@style/style_match_wrap_content"
+                android:orientation="horizontal">
+
+            <LinearLayout
+                    style="@style/style_wrap_content"
+                    android:layout_marginTop="@dimen/dimen_15"
+                    android:layout_marginBottom="@dimen/dimen_15"
+                    android:layout_weight="1">
+
+                <LinearLayout
+                        style="@style/style_wrap_content"
+                        android:orientation="vertical">
+
+                    <LinearLayout
+                            style="@style/style_wrap_content"
+                            android:gravity="center">
+
+                        <TextView
+                                style="@style/style_wrap_content"
+                                android:text="项目\t\t\t\t\t\t"
+                                android:textColor="@color/c_black_7"
+                                android:textSize="@dimen/dimen_14" />
+
+                        <TextView
+                                android:id="@+id/tv_custo_detail_04"
+                                style="@style/style_wrap_content"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:text="清远银湖城清远银湖城"
+                                android:textColor="@color/c_black_6"
+                                android:textSize="@dimen/dimen_14" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            style="@style/style_wrap_content"
+                            android:layout_marginTop="@dimen/dimen_15"
+                            android:gravity="center">
+
+                        <TextView
+                                style="@style/style_wrap_content"
+                                android:layout_marginRight="@dimen/dimen_10"
+                                android:text="推荐日期"
+                                android:textColor="@color/c_black_7"
+                                android:textSize="@dimen/dimen_14" />
+
+                        <TextView
+                                android:id="@+id/tv_custo_detail_05"
+                                style="@style/style_wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text="2019-08-01  2019-08-01"
+                                android:textColor="@color/c_black_6"
+                                android:textSize="@dimen/dimen_14" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            style="@style/style_wrap_content"
+                            android:id="@+id/ll_recon_sust"
+                            android:layout_marginTop="@dimen/dimen_15">
+
+                        <TextView
+                                style="@style/style_wrap_content"
+                                android:text="推荐人\t\t\t"
+                                android:textColor="@color/c_black_7"
+                                android:textSize="@dimen/dimen_14" />
+
+                        <TextView
+                                android:id="@+id/tv_custo_detail_07"
+                                style="@style/style_wrap_content"
+                                android:text="李木子"
+                                android:textColor="@color/c_black_6"
+                                android:textSize="@dimen/dimen_14" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/ll_custo_detail"
+                    style="@style/style_wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="right|center"
+                    android:orientation="vertical">
+
+                <ImageView
+                        android:id="@+id/img_phone_custo_detail"
+                        android:layout_width="@dimen/dimen_24"
+                        android:layout_height="@dimen/dimen_24"
+                        android:src="@mipmap/icon_call_phone" />
+
+
+                <LinearLayout
+                        style="@style/style_wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="@dimen/dimen_5"
+                        android:gravity="center_vertical">
+
+                    <TextView
+                            android:id="@+id/tv_custo_detail_06"
+                            style="@style/style_wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/c_bg_tjchenggong"
+                            android:paddingLeft="@dimen/dimen_12"
+                            android:paddingTop="@dimen/dimen_5"
+                            android:paddingRight="@dimen/dimen_12"
+                            android:paddingBottom="@dimen/dimen_5"
+                            android:text="推荐成功"
+                            android:textColor="@color/c_txt_tjchenggong"
+                            android:textSize="@dimen/dimen_12" />
+
+                    <TextView
+                            android:id="@+id/tv_my_cus_06"
+                            style="@style/style_wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/dimen_8"
+                            android:background="@drawable/btn_bg_quit_login_normal"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/dimen_10"
+                            android:paddingTop="@dimen/dimen_5"
+                            android:paddingRight="@dimen/dimen_10"
+                            android:paddingBottom="@dimen/dimen_5"
+                            android:text="推荐项目"
+                            android:textColor="@color/white_01"
+                            android:textSize="@dimen/dimen_12" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

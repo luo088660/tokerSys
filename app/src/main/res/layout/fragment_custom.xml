@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              style="@style/style_match_content"
+              android:background="@color/c_gray_122">
+
+    <include layout="@layout/layout_content_title"/>
+    <FrameLayout style="@style/style_match_content">
+        <!--<ScrollView style="@style/style_match_content"-->
+                    <!--android:fillViewport="true">-->
+            <LinearLayout style="@style/style_match_content"
+                          android:orientation="vertical">
+                <LinearLayout style="@style/style_match_wrap_content"
+                              android:background="@color/white"
+                              android:orientation="vertical">
+
+                    <RadioGroup style="@style/style_wrap_content"
+                                android:id="@+id/ll_custom"
+                                android:padding="@dimen/dimen_10"
+                                android:layout_gravity="center"
+                                android:orientation="horizontal">
+                        <!--android:checked="true"-->
+                        <RadioButton style="@style/style_wrap_content_RB_ptpb10_plpr20_bnull"
+                                     android:id="@+id/tv_yx_custom"
+                                     android:background="@drawable/btn_bg_quit_left_selector"
+
+                                     android:text="意向客户"/>
+                        <RadioButton style="@style/style_wrap_content_RB_ptpb10_plpr20_bnull"
+                                     android:id="@+id/tv_tj_custom"
+                                     android:background="@drawable/btn_bg_quit_right_selector"
+                                     android:text="推荐客户"/>
+                    </RadioGroup>
+                </LinearLayout>
+                <android.support.v7.widget.RecyclerView
+                        style="@style/style_match_wrap_content"
+                        android:background="@color/white_01"
+                        android:id="@+id/rv_custom"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"/>
+                <FrameLayout
+                        style="@style/style_match_content"
+                        android:id="@+id/fl_custom"/>
+            </LinearLayout>
+        <!--</ScrollView>-->
+        <TextView style="@style/style_wrap_content"
+                  android:id="@+id/btn_custom"
+                  android:visibility="gone"
+                  android:layout_gravity="end|bottom"
+                  android:background="@mipmap/icon_plus"
+                  android:layout_margin="@dimen/dimen_20"/>
+
+    </FrameLayout>
+</LinearLayout>

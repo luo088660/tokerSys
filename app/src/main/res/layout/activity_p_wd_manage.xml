@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/style_match_content"
+        android:background="@color/c_gray_12"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+    <include layout="@layout/layout_content_title" />
+
+    <LinearLayout
+            style="@style/style_match_wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dimen_16">
+
+        <LinearLayout
+                style="@style/style_match_wrap_content"
+                android:gravity="center">
+
+            <TextView
+                    style="@style/style_wrap_content_ts14_tc7"
+                    android:text="原密码\t\t\t" />
+
+            <EditText
+                    android:id="@+id/et_wd_manage_01"
+                    style="@style/style_wrap_content_w1_mt16mb16_ml20_bnull_ts14"
+                    android:hint="请输入原密码"
+                    android:inputType="textPassword" />
+
+            <CheckBox
+                    android:id="@+id/cb_wd_manage_01"
+                    style="@style/style_wrap_content_img_ptpbpl8_pr16"
+                    android:button="@drawable/cb_bg_pwd_selector" />
+        </LinearLayout>
+
+        <View
+                style="@style/horizontalLine"
+                android:layout_marginRight="@dimen/dimen_16" />
+
+        <LinearLayout
+                style="@style/style_match_wrap_content"
+                android:gravity="center">
+
+            <TextView
+                    style="@style/style_wrap_content_ts14_tc7"
+                    android:text="设置密码" />
+
+            <EditText
+                    android:id="@+id/et_wd_manage_02"
+                    style="@style/style_wrap_content_w1_mt16mb16_ml20_bnull_ts14"
+                    android:hint="请输入密码"
+                    android:inputType="textPassword" />
+
+            <CheckBox
+                    android:id="@+id/cb_wd_manage_02"
+                    style="@style/style_wrap_content_img_ptpbpl8_pr16"
+                    android:button="@drawable/cb_bg_pwd_selector" />
+        </LinearLayout>
+
+        <View
+                style="@style/horizontalLine"
+                android:layout_marginRight="@dimen/dimen_16" />
+
+        <LinearLayout
+                style="@style/style_match_wrap_content"
+                android:gravity="center">
+
+            <TextView
+                    style="@style/style_wrap_content_ts14_tc7"
+                    android:text="重复密码" />
+
+            <EditText
+                    android:id="@+id/et_wd_manage_03"
+                    style="@style/style_wrap_content_w1_mt16mb16_ml20_bnull_ts14"
+                    android:hint="请输入重复密码"
+                    android:inputType="textPassword" />
+
+            <CheckBox
+                    android:id="@+id/cb_wd_manage_03"
+                    style="@style/style_wrap_content_img_ptpbpl8_pr16"
+                    android:button="@drawable/cb_bg_pwd_selector" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+            android:id="@+id/btn_determine"
+            style="@style/style_match_wrap_content"
+            android:layout_marginLeft="@dimen/dimen_16"
+            android:layout_marginTop="@dimen/dimen_30"
+            android:layout_marginRight="@dimen/dimen_16"
+            android:background="@drawable/btn_bg_quit_login_normal"
+            android:gravity="center"
+            android:paddingTop="@dimen/dimen_12"
+            android:paddingBottom="@dimen/dimen_12"
+            android:text="完成"
+            android:textColor="@color/white_01"
+            android:textSize="@dimen/dimen_18" />
+
+
+    <TextView
+            android:id="@+id/btn_pwd_forgot"
+            style="@style/style_wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="@dimen/dimen_16"
+            android:layout_marginRight="@dimen/dimen_16"
+            android:text="忘记登录密码?"
+            android:textColor="@color/c_red_1"
+            android:textSize="@dimen/dimen_12" />
+
+</LinearLayout>

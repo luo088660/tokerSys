@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/style_match_wrap_content"
+        android:orientation="vertical">
+    <LinearLayout
+            style="@style/style_match_wrap_content"
+            android:layout_marginLeft="@dimen/dimen_16"
+            android:layout_marginRight="@dimen/dimen_16"
+            >
+        <TextView
+                style="@style/style_0_wrap_pt15_pb13_ts12_tcb6_w1_gc"
+                android:layout_weight="0.5"
+                android:id="@+id/tv_ster_rank_01"
+                android:text="排名" />
+
+        <TextView
+                style="@style/style_0_wrap_pt15_pb13_ts12_tcb6_w1_gc"
+                android:id="@+id/tv_ster_rank_02"
+                android:layout_weight="1.2"
+                android:text="拓客员" />
+
+        <TextView
+                style="@style/style_0_wrap_pt15_pb13_ts12_tcb6_w1_gc"
+                android:id="@+id/tv_ster_rank_03"
+                android:text="团队" />
+
+        <TextView
+                style="@style/style_0_wrap_pt15_pb13_ts12_tcb6_w1_gc"
+                android:id="@+id/tv_ster_rank_04"
+                android:layout_weight="1.5"
+                android:text="项目" />
+
+        <TextView
+                style="@style/style_0_wrap_pt15_pb13_ts12_tcb6_w1_gc"
+                android:id="@+id/tv_ster_rank_05"
+                android:text="完成"
+                android:textColor="@color/c_red_4" />
+    </LinearLayout>
+
+    <View style="@style/horizontalLine_16"/>
+</LinearLayout>

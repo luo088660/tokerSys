@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/c_gray_12"
+
+        android:orientation="vertical">
+
+    <include layout="@layout/layout_content_title" />
+
+    <android.support.v4.widget.NestedScrollView style="@style/style_match_wrap_content">
+
+        <LinearLayout
+                style="@style/style_match_wrap_content"
+                android:orientation="vertical">
+
+
+            <LinearLayout
+                    android:id="@+id/ll_my_info"
+                    style="@style/style_match_wrap_content"
+                    android:background="@color/white_01"
+                    android:gravity="center_vertical">
+
+                <com.toker.sys.utils.view.CircleImageView
+                        android:layout_width="@dimen/dimen_50"
+                        android:id="@+id/img_title"
+                        android:layout_height="@dimen/dimen_50"
+                        android:scaleType="center"
+                        android:layout_marginLeft="@dimen/dimen_15"
+                        android:src="@mipmap/icon_title" />
+
+                <LinearLayout
+                        style="@style/style_wrap_content"
+                        android:layout_marginTop="@dimen/dimen_20"
+                        android:layout_marginBottom="@dimen/dimen_20"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                    <TextView
+                            android:id="@+id/tv_my_page_01"
+                            style="@style/style_wrap_content"
+                            android:layout_marginLeft="@dimen/dimen_20"
+                            android:layout_marginBottom="@dimen/dimen_15"
+                            android:textColor="@color/c_black_6"
+                            android:textSize="@dimen/dimen_14"
+                            android:textStyle="bold" />
+
+                    <TextView
+                            android:id="@+id/tv_my_page_02"
+                            style="@style/style_wrap_content"
+                            android:layout_marginLeft="@dimen/dimen_20"
+                            android:layout_marginBottom="@dimen/dimen_10"
+                            android:textColor="@color/c_black_7"
+                            android:textSize="@dimen/dimen_12" />
+
+                    <TextView
+                            android:id="@+id/tv_my_page_03"
+                            style="@style/style_wrap_content"
+                            android:layout_marginLeft="@dimen/dimen_20"
+                            android:textColor="@color/c_black_7"
+                            android:textSize="@dimen/dimen_12" />
+                </LinearLayout>
+
+
+                <ImageView
+                        android:id="@+id/img_my_pager"
+                        android:layout_width="@dimen/dimen_40"
+                        android:layout_height="@dimen/dimen_40"
+                        android:layout_marginRight="@dimen/dimen_5"
+                        android:padding="@dimen/dimen_12"
+                        android:src="@mipmap/icon_two_code" />
+                <ImageView
+                        style="@style/style_wrap_content_mr_20"
+                        android:src="@mipmap/icon_right" />
+
+            </LinearLayout>
+
+            <View
+                    style="@style/horizontalLine2"
+                    android:layout_height="@dimen/dimen_10" />
+
+            <LinearLayout
+                    style="@style/style_match_wrap_content"
+                    android:background="@color/white_01"
+                    android:orientation="vertical">
+
+                <LinearLayout
+                        android:id="@+id/ll_my_01"
+                        style="@style/style_match_wrap_content"
+                        android:orientation="vertical">
+
+                    <LinearLayout
+                            style="@style/style_match_wrap_content"
+                            android:gravity="center">
+
+                        <TextView
+                                android:id="@+id/tv_my_01"
+                                style="@style/style_w_w1_dp15_lagc_ts14_pd15"
+                                android:drawableLeft="@mipmap/icon_xiangmu"
+                                android:drawableRight="@mipmap/icon_right"
+                                android:text="我的项目" />
+                    </LinearLayout>
+
+                    <View style="@style/horizontalLine_16" />
+
+                    <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rv_my_page"
+                            style="@style/style_match_wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:id="@+id/ll_my_02"
+                        style="@style/style_match_wrap_content"
+                        android:orientation="vertical">
+
+                    <LinearLayout
+                            style="@style/style_match_wrap_content"
+                            android:gravity="center">
+
+                        <TextView
+                                style="@style/style_w_w1_dp15_lagc_ts14_pd15"
+                                android:drawableLeft="@mipmap/icon_kaoq"
+                                android:drawableRight="@mipmap/icon_right"
+                                android:text="我的考勤" />
+                    </LinearLayout>
+
+                    <View style="@style/horizontalLine_16" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:id="@+id/ll_my_07"
+                        style="@style/style_match_wrap_content"
+                        android:orientation="vertical">
+
+                    <LinearLayout
+                            style="@style/style_match_wrap_content"
+                            android:gravity="center">
+
+                        <TextView
+                                style="@style/style_w_w1_dp15_lagc_ts14_pd15"
+                                android:drawableLeft="@mipmap/icon_td_kaoqin"
+                                android:drawableRight="@mipmap/icon_right"
+                                android:text="团队考勤" />
+                    </LinearLayout>
+
+                    <View style="@style/horizontalLine_16" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:id="@+id/ll_my_03"
+                        style="@style/style_match_wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                    <LinearLayout
+                            style="@style/style_match_wrap_content"
+                            android:gravity="center">
+
+                        <TextView
+                                style="@style/style_w_w1_dp15_lagc_ts14_pd15"
+                                android:drawableLeft="@mipmap/icon_kaoq"
+                                android:drawableRight="@mipmap/icon_right"
+                                android:text="我的排班" />
+                    </LinearLayout>
+
+                    <View style="@style/horizontalLine_16" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:id="@+id/ll_my_04"
+                        style="@style/style_match_wrap_content"
+                        android:orientation="vertical">
+
+                    <LinearLayout
+                            style="@style/style_match_wrap_content"
+                            android:gravity="center">
+
+                        <TextView
+                                style="@style/style_w_w1_dp15_lagc_ts14_pd15"
+                                android:drawableLeft="@mipmap/icon_bee"
+                                android:drawableRight="@mipmap/icon_right"
+                                android:text="我的小蜜蜂" />
+                    </LinearLayout>
+
+                    <View style="@style/horizontalLine_16" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:id="@+id/ll_my_05"
+                        style="@style/style_match_wrap_content"
+                        android:orientation="vertical">
+
+                    <LinearLayout
+                            style="@style/style_match_wrap_content"
+                            android:gravity="center">
+
+                        <TextView
+                                style="@style/style_w_w1_dp15_lagc_ts14_pd15"
+                                android:drawableLeft="@mipmap/icon_customer_map"
+                                android:drawableRight="@mipmap/icon_right"
+                                android:text="客户地图" />
+                    </LinearLayout>
+
+                    <View style="@style/horizontalLine_16" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                        android:id="@+id/ll_my_06"
+                        style="@style/style_match_wrap_content"
+                        android:orientation="vertical"
+                        android:paddingLeft="@dimen/dimen_6">
+
+                    <ImageView
+                            style="@style/style_wrap_content_mr_20"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@mipmap/icon_right" />
+
+                    <TextView
+                            android:id="@+id/tv_my_msg"
+                            style="@style/style_w_w1_dp15_lagc_ts14_pd15"
+                            android:drawableLeft="@mipmap/icon_xiaoxi"
+                            android:text="我的消息" />
+
+                    <TextView
+                            android:id="@+id/tv_my_ms_01"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/dimen_16"
+                            android:visibility="visible"
+                            android:layout_alignRight="@+id/tv_my_msg"
+                            android:layout_marginTop="@dimen/dimen_5"
+                            android:background="@drawable/text_bg_normal"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/dimen_3"
+                            android:paddingRight="@dimen/dimen_3"
+                            android:text="23"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/dimen_9" />
+
+                    <View
+                            style="@style/horizontalLine"
+                            android:layout_alignBottom="@+id/tv_my_msg" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

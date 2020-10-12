@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/style_match_wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+            style="@style/style_match_wrap_content"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:gravity="center">
+
+        <TextView
+                style="@style/style_wrap_content_ts14_w0_tcb7_w1"
+                android:text="留电数" />
+
+        <ProgressBar
+                android:id="@+id/pb_bar_01"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="@dimen/dimen_0"
+                android:layout_height="@dimen/dimen_10"
+                android:layout_weight="1.5"
+                android:max="100"
+                android:progressDrawable="@drawable/pb_pd_sp_download" />
+
+        <TextView
+                android:id="@+id/tv_pb_011"
+                style="@style/style_wrap_content_ml10_w0_tc7_w1"
+                android:textColor="@color/btn_red"
+                android:layout_width="@dimen/dimen_0"
+                android:layout_weight="0.6"
+                android:text="" />
+
+        <TextView
+                android:id="@+id/tv_pb_01"
+                style="@style/style_wrap_content_ml10_w0_tc7_w1"
+                android:text="" />
+
+    </LinearLayout>
+
+    <LinearLayout
+            style="@style/style_match_wrap_content"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:gravity="center">
+
+        <TextView
+                style="@style/style_wrap_content_ts14_w0_tcb7_w1"
+                android:text="到访数" />
+
+        <ProgressBar
+                android:id="@+id/pb_bar_02"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="@dimen/dimen_0"
+                android:layout_height="@dimen/dimen_10"
+                android:layout_weight="1.5"
+                android:max="100"
+                android:progressDrawable="@drawable/pb_pd_sp_download" />
+        <TextView
+                android:id="@+id/tv_pb_022"
+                style="@style/style_wrap_content_ml10_w0_tc7_w1"
+                android:textColor="@color/btn_red"
+                android:layout_width="@dimen/dimen_0"
+                android:layout_weight="0.6"
+                android:text="" />
+
+        <TextView
+                android:id="@+id/tv_pb_02"
+                style="@style/style_wrap_content_ml10_w0_tc7_w1"
+                android:text="" />
+
+    </LinearLayout>
+
+    <LinearLayout
+            style="@style/style_match_wrap_content"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:gravity="center">
+
+        <TextView
+                style="@style/style_wrap_content_ts14_w0_tcb7_w1"
+                android:text="成交套数" />
+
+        <ProgressBar
+                android:id="@+id/pb_bar_03"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="@dimen/dimen_0"
+                android:layout_height="@dimen/dimen_10"
+                android:layout_weight="1.5"
+                android:max="100"
+                android:progressDrawable="@drawable/pb_pd_sp_download" />
+        <TextView
+                android:id="@+id/tv_pb_033"
+                style="@style/style_wrap_content_ml10_w0_tc7_w1"
+                android:textColor="@color/btn_red"
+                android:layout_width="@dimen/dimen_0"
+                android:layout_weight="0.6"
+                android:text="" />
+
+        <TextView
+                android:id="@+id/tv_pb_03"
+                style="@style/style_wrap_content_ml10_w0_tc7_w1"
+                android:text="" />
+
+    </LinearLayout>
+
+    <LinearLayout
+            style="@style/style_match_wrap_content"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_marginBottom="@dimen/dimen_20"
+            android:gravity="center">
+
+        <TextView
+                style="@style/style_wrap_content_ts14_w0_tcb7_w1"
+                android:text="成交额(万元)" />
+
+        <ProgressBar
+                android:id="@+id/pb_bar_04"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="@dimen/dimen_0"
+                android:layout_height="@dimen/dimen_10"
+                android:layout_weight="1.5"
+                android:max="100"
+                android:progressDrawable="@drawable/pb_pd_sp_download" />
+        <TextView
+                android:id="@+id/tv_pb_044"
+                style="@style/style_wrap_content_ml10_w0_tc7_w1"
+                android:textColor="@color/btn_red"
+                android:layout_width="@dimen/dimen_0"
+                android:layout_weight="0.6"
+                android:text="" />
+
+        <TextView
+                android:id="@+id/tv_pb_04"
+                style="@style/style_wrap_content_ml10_w0_tc7_w1"
+                android:text="" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/style_match_wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+            style="@style/style_match_wrap_content"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_16">
+
+        <TextView
+                style="@style/style_match_wrap_content"
+                android:layout_marginBottom="@dimen/dimen_16"
+                android:text="其他信息"
+                android:textColor="@color/c_black_6"
+                android:textSize="@dimen/dimen_16"
+                android:textStyle="bold" />
+
+        <View style="@style/horizontalLine" />
+
+        <LinearLayout
+                style="@style/style_match_wrap_content"
+                android:layout_marginTop="@dimen/dimen_15">
+
+            <TextView
+                    style="@style/style_wrap_content_wid0_w1_tcb7_ts14"
+                    android:text="身份证后六位" />
+
+            <TextView
+                    android:id="@+id/tv_mcf_custom_detail_01"
+                    style="@style/style_wrap_content_wid0_w22_tc6_ts14"
+                    android:text="未填写" />
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/ll_mcf_custom_detail_01"
+                style="@style/style_match_wrap_content"
+                android:orientation="vertical">
+
+            <LinearLayout
+                    style="@style/style_match_wrap_content"
+                    android:layout_marginTop="@dimen/dimen_15">
+
+                <TextView
+                        android:id="@+id/tv_mcf_custom_detail_022"
+                        style="@style/style_wrap_content_wid0_w1_tcb7_ts14"
+                        android:text="省份" />
+
+                <TextView
+                        android:id="@+id/tv_mcf_custom_detail_02"
+                        style="@style/style_wrap_content_wid0_w22_tc6_ts14"
+                        android:text="未填写" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+                style="@style/style_match_wrap_content"
+                android:layout_marginTop="@dimen/dimen_15">
+
+            <TextView
+                    android:id="@+id/tv_mcf_custom_detail_033"
+                    style="@style/style_wrap_content_wid0_w1_tcb7_ts14"
+                    android:text="意向楼盘" />
+
+            <TextView
+                    android:id="@+id/tv_mcf_custom_detail_03"
+                    style="@style/style_wrap_content_wid0_w22_tc6_ts14"
+                    android:text="未填写" />
+        </LinearLayout>
+
+
+        <LinearLayout
+                style="@style/style_match_wrap_content"
+                android:layout_marginTop="@dimen/dimen_15">
+
+            <TextView
+                    style="@style/style_wrap_content_wid0_w1_tcb7_ts14"
+                    android:text="预计看房日期" />
+
+            <TextView
+                    android:id="@+id/tv_mcf_custom_detail_04"
+                    style="@style/style_wrap_content_wid0_w22_tc6_ts14"
+                    android:text="未填写" />
+        </LinearLayout>
+
+        <LinearLayout
+                style="@style/style_match_wrap_content"
+                android:layout_marginTop="@dimen/dimen_15">
+
+            <TextView
+                    style="@style/style_wrap_content_wid0_w1_tcb7_ts14"
+                    android:text="购房客户需求" />
+
+            <LinearLayout
+                    style="@style/style_wrap_content"
+                    android:layout_width="@dimen/dimen_0"
+                    android:layout_weight="2.2"
+                    android:orientation="vertical">
+
+                <TextView
+                        style="@style/style_wrap_content"
+                        android:text="产品类型"
+                        android:textColor="@color/c_black_6"
+                        android:textSize="@dimen/dimen_14"
+                        android:textStyle="bold" />
+
+                <TextView
+                        android:id="@+id/tv_mcf_custom_detail_05"
+                        style="@style/style_wrap_content"
+                        android:layout_marginTop="@dimen/dimen_6"
+                        android:text="未填写"
+                        android:textColor="@color/c_black_6"
+                        android:textSize="@dimen/dimen_14" />
+
+                <TextView
+                        style="@style/style_wrap_content"
+                        android:layout_marginTop="@dimen/dimen_6"
+                        android:text="面积段"
+                        android:textColor="@color/c_black_6"
+                        android:textSize="@dimen/dimen_14"
+                        android:textStyle="bold" />
+
+                <TextView
+                        android:id="@+id/tv_mcf_custom_detail_06"
+                        style="@style/style_wrap_content"
+                        android:layout_marginTop="@dimen/dimen_6"
+                        android:text="未填写"
+                        android:textColor="@color/c_black_6"
+                        android:textSize="@dimen/dimen_14" />
+
+                <TextView
+                        style="@style/style_wrap_content"
+                        android:layout_marginTop="@dimen/dimen_6"
+                        android:text="户型"
+                        android:textColor="@color/c_black_6"
+                        android:textSize="@dimen/dimen_14"
+                        android:textStyle="bold" />
+
+                <TextView
+                        android:id="@+id/tv_mcf_custom_detail_07"
+                        style="@style/style_wrap_content"
+                        android:layout_marginTop="@dimen/dimen_6"
+                        android:text="未填写"
+                        android:textColor="@color/c_black_6"
+                        android:textSize="@dimen/dimen_14" />
+
+                <TextView
+                        style="@style/style_wrap_content"
+                        android:layout_marginTop="@dimen/dimen_6"
+                        android:text="购房及关注点"
+                        android:textColor="@color/c_black_6"
+                        android:textSize="@dimen/dimen_14"
+                        android:textStyle="bold" />
+
+                <TextView
+                        android:id="@+id/tv_mcf_custom_detail_08"
+                        style="@style/style_wrap_content"
+                        android:layout_marginTop="@dimen/dimen_6"
+                        android:text="未填写"
+                        android:textColor="@color/c_black_6"
+                        android:textSize="@dimen/dimen_14" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

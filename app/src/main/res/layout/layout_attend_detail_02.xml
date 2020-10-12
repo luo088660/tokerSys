@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        style="@style/style_match_wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+    <View
+            style="@style/horizontalLine2"
+            android:layout_height="@dimen/dimen_10" />
+
+    <TextView
+            style="@style/style_match_wrap_content"
+            android:paddingLeft="@dimen/dimen_16"
+            android:paddingTop="@dimen/dimen_15"
+            android:paddingBottom="@dimen/dimen_15"
+            android:text="当天签到记录"
+            android:textColor="@color/c_black_6"
+            android:textSize="@dimen/dimen_14"
+            android:textStyle="bold" />
+
+    <View style="@style/horizontalLine" />
+    <TextView
+            android:id="@+id/tv_my_attem_011"
+            style="@style/style_match_wrap_content"
+            android:padding="@dimen/dimen_16"
+            android:visibility="gone"
+            android:text="暂无考勤记录"
+            android:textColor="@color/c_gray_6"
+            android:textSize="@dimen/dimen_14" />
+
+    <LinearLayout
+            style="@style/style_match_wrap_content"
+            android:id="@+id/ll_attend2_01"
+            android:background="@color/white"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dimen_16"
+            android:paddingTop="@dimen/dimen_12"
+            android:paddingRight="@dimen/dimen_16"
+            android:paddingBottom="@dimen/dimen_15">
+
+        <CheckBox
+                android:id="@+id/cb_attend_deta2_01"
+                style="@style/style_wrap_content"
+                android:layout_marginRight="@dimen/dimen_5"
+                android:button="@drawable/cb_xz_selector"
+                android:visibility="gone" />
+        <LinearLayout
+                style="@style/style_wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+            <LinearLayout
+                    style="@style/style_match_wrap_content"
+                    android:gravity="center">
+                <TextView
+                        android:id="@+id/tv_attend_deta2_01"
+                        style="@style/style_wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/c_black_6"
+                        android:textSize="@dimen/dimen_20"
+                        android:textStyle="bold" />
+
+                <View style="@style/verticalLine" />
+
+                <TextView
+                        android:id="@+id/tv_attend_deta2_02"
+                        style="@style/style_wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_10"
+                        android:layout_weight="5"
+                        android:textColor="@color/c_black_6"
+                        android:textSize="@dimen/dimen_14" />
+            </LinearLayout>
+            <TextView
+                    android:id="@+id/tv_attend_deta2_03"
+                    style="@style/style_wrap_content"
+                    android:layout_marginTop="@dimen/dimen_13"
+                    android:drawableLeft="@mipmap/icon_loca"
+                    android:drawablePadding="@dimen/dimen_10"
+                    android:textColor="@color/c_black_7"
+                    android:textSize="@dimen/dimen_12" />
+        </LinearLayout>
+
+        <TextView
+                android:id="@+id/tv_attend_deta2_04"
+                style="@style/style_wrap_content"
+                android:textColor="@color/c_black_6"
+                android:textSize="@dimen/dimen_14" />
+
+    </LinearLayout>
+
+    <View
+            style="@style/horizontalLine"
+            android:layout_marginLeft="@dimen/dimen_16"
+            android:layout_marginRight="@dimen/dimen_16" />
+
+    <LinearLayout
+            style="@style/style_match_wrap_content"
+            android:gravity="center"
+            android:id="@+id/ll_attend2_02"
+            android:paddingLeft="@dimen/dimen_16"
+            android:paddingTop="@dimen/dimen_12"
+            android:paddingRight="@dimen/dimen_16"
+            android:paddingBottom="@dimen/dimen_15">
+
+        <CheckBox
+                android:id="@+id/cb_attend_deta2_02"
+                style="@style/style_wrap_content"
+                android:button="@drawable/cb_xz_selector"
+                android:layout_marginRight="@dimen/dimen_5"
+                android:visibility="gone" />
+
+        <LinearLayout
+                style="@style/style_wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+            <LinearLayout
+                    style="@style/style_match_wrap_content"
+                    android:gravity="center">
+
+                <TextView
+                        android:id="@+id/tv_attend_deta2_05"
+                        style="@style/style_wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/c_red_4"
+                        android:textSize="@dimen/dimen_20"
+                        android:textStyle="bold" />
+
+                <View style="@style/verticalLine" />
+
+                <TextView
+                        android:id="@+id/tv_attend_deta2_06"
+                        style="@style/style_wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_10"
+                        android:layout_weight="5"
+                        android:textColor="@color/c_red_4"
+                        android:textSize="@dimen/dimen_14" />
+            </LinearLayout>
+
+            <TextView
+                    android:id="@+id/tv_attend_deta2_07"
+                    style="@style/style_wrap_content"
+                    android:layout_marginTop="@dimen/dimen_13"
+                    android:drawableLeft="@mipmap/icon_loca"
+                    android:drawablePadding="@dimen/dimen_10"
+                    android:textColor="@color/c_black_7"
+                    android:textSize="@dimen/dimen_12" />
+        </LinearLayout>
+
+        <TextView
+                android:id="@+id/tv_attend_deta2_08"
+                style="@style/style_wrap_content"
+                android:textColor="@color/c_orange_5"
+                android:textSize="@dimen/dimen_14" />
+
+    </LinearLayout>
+
+</LinearLayout>

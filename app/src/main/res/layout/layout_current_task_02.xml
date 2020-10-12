@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/style_match_wrap_content"
+        android:orientation="vertical">
+
+
+    <LinearLayout
+            style="@style/style_match_wrap_content"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:background="@color/white"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dimen_16"
+            android:paddingRight="@dimen/dimen_16">
+
+        <TextView
+                android:id="@+id/tv_current_lhban"
+                style="@style/style_wrap_content"
+                android:layout_weight="1"
+                android:text="龙虎榜"
+                android:textColor="@color/c_black_6"
+                android:textSize="@dimen/dimen_16"
+                android:textStyle="bold" />
+
+        <TextView
+                style="@style/style_wrap_content"
+                android:layout_marginLeft="@dimen/dimen_6"
+                android:layout_marginRight="@dimen/dimen_6"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:gravity="right"
+                android:paddingLeft="@dimen/dimen_20"
+                android:text="至"
+                android:textColor="@color/c_gray_6"
+                android:textSize="@dimen/dimen_12" />
+
+        <TextView
+                android:id="@+id/tv_current_task2_01"
+                style="@style/style_wrap_content_ts12_tchg6_tcb6_pdtb14_pdlr10"
+                android:gravity="center"
+                android:hint="日期"
+                android:lineSpacingMultiplier="1.2"
+                android:text="2019/06/01" />
+
+        <ImageView
+                android:layout_width="@dimen/dimen_30"
+                android:layout_height="@dimen/dimen_30"
+                android:padding="@dimen/dimen_8"
+                android:src="@mipmap/icon_shuaxuan" />
+    </LinearLayout>
+
+    <TextView
+            android:id="@+id/tv_current_task2_02"
+            style="@style/style_wrap_content_w0_gc_pd14_ts12_tcb6_drxx"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="@dimen/dimen_5"
+            android:text="成交额(万元)" />
+
+    <LinearLayout
+            style="@style/style_match_wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+        <LinearLayout style="@style/style_match_wrap_content">
+
+            <TextView
+                    style="@style/style_wrap_content_pad15_gc_ts12_tcb6"
+                    android:layout_weight="1"
+                    android:layout_width="@dimen/dimen_0"
+                    android:text="排名" />
+
+            <TextView
+                    style="@style/style_wrap_content_pad15_gc_ts12_tcb6"
+                    android:layout_weight="1"
+                    android:layout_width="@dimen/dimen_0"
+                    android:text="拓客员" />
+
+            <TextView
+                    style="@style/style_wrap_content_pad15_gc_ts12_tcb6"
+                    android:layout_width="@dimen/dimen_0"
+                    android:layout_weight="1"
+                    android:id="@+id/tv_current_task2_03"
+                    android:text="成交额(万元)" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+        <!--android:drawableRight="@mipmap/icon_mrpx"-->

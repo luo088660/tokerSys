@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/style_match_content"
+        android:background="@color/c_gray_12"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+    <include
+            android:id="@+id/ll_mcf_custom_detail_top"
+            layout="@layout/layout_content_title" />
+
+
+    <FrameLayout
+            style="@style/style_match_content"
+            android:layout_above="@+id/ll_mcf_custom_detail_btm_"
+            android:layout_below="@+id/ll_mcf_custom_detail_top">
+
+        <ScrollView style="@style/style_match_content"
+                >
+
+            <LinearLayout
+                    style="@style/style_match_content"
+                    android:orientation="vertical">
+
+
+                <include layout="@layout/layout_f_custom_detail_01" />
+
+                <include layout="@layout/layout_mcf_custom_detail_01" />
+
+                <include layout="@layout/layout_mcf_custom_recom_02" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+                android:id="@+id/ll_mcf_cus_rscon"
+                style="@style/style_wrap_content"
+                android:layout_gravity="end|bottom"
+                android:layout_marginRight="@dimen/dimen_15"
+                android:layout_marginBottom="@dimen/dimen_30"
+                android:orientation="vertical">
+
+            <TextView
+                    android:id="@+id/btn_mcf_custom_01"
+                    style="@style/style_wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_8"
+                    android:background="@mipmap/icon_phone" />
+
+            <TextView
+                    android:id="@+id/btn_mcf_custom_02"
+                    style="@style/style_wrap_content"
+                    android:layout_marginTop="@dimen/dimen_8"
+                    android:background="@mipmap/icon_plus" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+    <LinearLayout
+            android:id="@+id/ll_mcf_custom_detail_btm_"
+            style="@style/style_match_wrap_content"
+            android:layout_alignParentBottom="true">
+
+        <include layout="@layout/layout_mcf_custom_recom_03" />
+    </LinearLayout>
+
+
+</RelativeLayout>

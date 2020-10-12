@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/style_match_wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+            style="@style/style_match_wrap_content"
+            android:orientation="vertical">
+
+
+
+        <TextView
+                android:id="@+id/tv_follow_up_01"
+                style="@style/style_wrap_content_w0_gc_pd14_ts12_tcb6_drxx"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/dimen_5"
+                android:text="全部项目" />
+        <LinearLayout
+                style="@style/style_match_wrap_content"
+                android:background="@color/white_01"
+                android:paddingTop="@dimen/dimen_16"
+                android:paddingBottom="@dimen/dimen_16"
+                android:paddingRight="@dimen/dimen_32"
+                android:paddingLeft="@dimen/dimen_32">
+
+            <TextView
+                    style="@style/style_wrap_content"
+                    android:text="排名"
+                    android:textColor="@color/c_black_6"
+                    android:textSize="@dimen/dimen_12"
+                    android:layout_weight="0.51"
+                    android:textStyle="bold" />
+
+            <TextView
+                    style="@style/style_wrap_content"
+                    android:layout_width="@dimen/dimen_0"
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="项目"
+                    android:textColor="@color/c_black_6"
+                    android:textSize="@dimen/dimen_12"
+                    android:textStyle="bold" />
+
+            <TextView
+                    style="@style/style_wrap_content"
+                    android:layout_width="@dimen/dimen_0"
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:id="@+id/tv_khzl"
+                    android:text="客户总数"
+                    android:drawableRight="@mipmap/icon_mrpx"
+                    android:textColor="@color/c_black_6"
+                    android:textSize="@dimen/dimen_12"
+                    android:textStyle="bold" />
+        </LinearLayout>
+
+        <View style="@style/horizontalLine_16" />
+               <include layout="@layout/layout_public_pool_02"/>
+    </LinearLayout>
+</LinearLayout>

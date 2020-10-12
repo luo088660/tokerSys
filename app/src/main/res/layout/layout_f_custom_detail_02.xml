@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_marginTop="@dimen/dimen_10"
+              style="@style/style_match_wrap_content">
+    <LinearLayout style="@style/style_match_content"
+                  android:background="@color/white"
+                  android:paddingRight="@dimen/dimen_16"
+                  android:paddingLeft="@dimen/dimen_16"
+                  android:orientation="vertical">
+        <TextView style="@style/style_match_wrap_content"
+                  android:id="@+id/tv_f_custom_dt_02"
+                  android:text="客户跟进记录"
+                  android:textColor="@color/c_black_6"
+                  android:textSize="@dimen/dimen_16"
+                  android:layout_marginBottom="@dimen/dimen_16"
+                  android:layout_marginTop="@dimen/dimen_16"/>
+        <View style="@style/horizontalLine"/>
+        <android.support.v7.widget.RecyclerView
+                style="@style/style_match_wrap_content"
+        android:id="@+id/rv_f_custom_detail"/>
+
+
+    </LinearLayout>
+</LinearLayout>

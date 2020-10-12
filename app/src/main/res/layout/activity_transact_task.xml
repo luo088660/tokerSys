@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/style_match_content"
+              android:orientation="vertical"
+              android:fitsSystemWindows="true"
+              android:background="@color/c_gray_12">
+    <include layout="@layout/layout_content_title"/>
+    <android.support.v4.widget.NestedScrollView
+            style="@style/style_match_content">
+        <LinearLayout style="@style/style_match_content"
+                      android:orientation="vertical">
+
+            <include layout="@layout/layout_admini_tran_detail_01"/>
+
+            <include layout="@layout/layout_admini_tran_detail_02"/>
+
+            <LinearLayout style="@style/style_match_wrap_content"
+                          android:id="@+id/ll_transact_task"
+                          android:background="@color/white"
+                          android:orientation="vertical">
+                <TextView style="@style/style_match_wrap_content"
+                          android:text="任务汇报"
+                          android:textColor="@color/c_black_6"
+                          android:textSize="@dimen/dimen_16"
+                          android:layout_marginTop="@dimen/dimen_15"
+                          android:layout_marginBottom="@dimen/dimen_15"
+                          android:layout_marginLeft="@dimen/dimen_16"
+                          android:textStyle="bold"/>
+
+                <View style="@style/horizontalLine"/>
+
+                <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_list_transact_task"
+                        style="@style/style_match_wrap_content"/>
+
+                <TextView style="@style/style_match_wrap_content"
+                          android:textColor="@color/c_black_6"
+                          android:id="@+id/tv_list_transact_task"
+                          android:padding="@dimen/dimen_16"
+                          android:visibility="gone"
+                          android:textSize="@dimen/dimen_14"
+                          android:text="还未填写任务完成情况"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/style_match_wrap_content"
+                          android:layout_marginTop="@dimen/dimen_10"
+                          android:background="@color/white"
+                          android:orientation="vertical">
+                <TextView style="@style/style_match_wrap_content"
+                          android:text="任务轨迹"
+                          android:textColor="@color/c_black_6"
+                          android:textSize="@dimen/dimen_16"
+                          android:id="@+id/tv_transact_task_01"
+                          android:layout_marginTop="@dimen/dimen_15"
+                          android:layout_marginBottom="@dimen/dimen_15"
+                          android:layout_marginLeft="@dimen/dimen_16"
+                          android:textStyle="bold"/>
+                <View style="@style/horizontalLine"/>
+                <TextView style="@style/style_match_wrap_content"
+                        android:textColor="@color/c_black_6"
+                        android:id="@+id/tv_list_transact_task1"
+                        android:padding="@dimen/dimen_16"
+                        android:visibility="gone"
+                        android:textSize="@dimen/dimen_14"
+                        android:text="暂无任务轨迹"/>
+
+                <RelativeLayout style="@style/style_match_wrap_content"
+                        android:id="@+id/rl_transact">
+                    <com.toker.sys.utils.view.MyMapView
+                            style="@style/style_match_wrap_content">
+
+                    <com.baidu.mapapi.map.TextureMapView
+                            android:id="@+id/mv_map_task"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"/>
+                    </com.toker.sys.utils.view.MyMapView>
+                    <TextView style="@style/style_match_wrap_content"
+                              android:id="@+id/tv_transact_task_02"
+                              android:visibility="gone"
+                              android:textColor="@color/white"
+                              android:paddingLeft="@dimen/dimen_16"
+                              android:paddingTop="@dimen/dimen_10"
+                              android:paddingBottom="@dimen/dimen_10"
+                              android:textSize="@dimen/dimen_12"
+                              android:layout_alignParentBottom="true"
+                              android:background="@color/c_gray_60"
+                              android:text="tete"/>
+                </RelativeLayout>
+                <android.support.v7.widget.RecyclerView
+                        android:id="@+id/tv_transact_task"
+                        style="@style/style_match_content"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

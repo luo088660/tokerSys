@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/style_match_wrap_content"
+        android:orientation="vertical">
+    <LinearLayout
+            style="@style/style_match_wrap_content"
+            android:orientation="vertical">
+        <TextView
+                android:id="@+id/tv_01"
+                android:text="签到"
+                android:gravity="left"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        <TextView style="@style/style_match_wrap_content"
+                android:id="@+id/tv_02"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:layout_marginBottom="@dimen/dimen_5"
+                android:drawableLeft="@mipmap/icon_loca"/>
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/img_item"
+            style="@style/style_match_wrap_content"/>
+
+    <View style="@style/horizontalLine"
+            android:layout_marginTop="@dimen/dimen_10"/>
+
+</LinearLayout>

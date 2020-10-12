@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              style="@style/style_match_wrap_content">
+    <LinearLayout
+            style="@style/style_match_wrap_content"
+            android:id="@+id/ll_item_view_atten_"
+            android:paddingLeft="@dimen/dimen_16"
+            android:paddingRight="@dimen/dimen_16"
+            android:background="@color/white">
+        <TextView
+                android:text="姓名"
+                style="@style/style_0_wrap_pt15_pb13_ts12_tcb6_w1_gc"
+                android:id="@+id/tv_item_view_atten_01"
+                android:gravity="left"
+                android:layout_width="@dimen/dimen_0"/>
+        <TextView
+                android:text="签到"
+                android:layout_width="@dimen/dimen_0"
+                android:gravity="left"
+                android:id="@+id/tv_item_view_atten_02"
+                style="@style/style_0_wrap_pt15_pb13_ts12_tcb6_w1_gc"/>
+        <TextView
+                android:text="签退"
+                android:layout_width="@dimen/dimen_0"
+                android:gravity="left"
+                android:id="@+id/tv_item_view_atten_03"
+                style="@style/style_0_wrap_pt15_pb13_ts12_tcb6_w1_gc"/>
+        <TextView
+                android:text="考勤正常"
+                android:layout_width="@dimen/dimen_0"
+                android:id="@+id/tv_item_view_atten_04"
+                android:gravity="left"
+                style="@style/style_0_wrap_pt15_pb13_ts12_tcb6_w1_gc"/>
+        <TextView
+                android:text="考勤异常"
+                android:id="@+id/tv_item_view_atten_05"
+                android:layout_width="@dimen/dimen_0"
+                android:gravity="left"
+                style="@style/style_0_wrap_pt15_pb13_ts12_tcb6_w1_gc"
+                android:drawableRight="@mipmap/icon_right"/>
+    </LinearLayout>
+    <View style="@style/horizontalLine"/>
+</LinearLayout>

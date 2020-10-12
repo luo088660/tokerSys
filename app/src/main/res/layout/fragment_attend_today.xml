@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        style="@style/style_match_wrap_content"
+        android:background="@color/c_gray_12"
+        android:orientation="vertical">
+
+    <LinearLayout
+            style="@style/style_match_wrap_content"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+        <LinearLayout
+                style="@style/style_match_wrap_content"
+                android:paddingLeft="@dimen/dimen_16"
+                android:paddingTop="@dimen/text_22"
+                android:paddingBottom="@dimen/text_22"
+                android:paddingRight="@dimen/dimen_16">
+
+            <TextView
+                    style="@style/style_wrap_content"
+                    android:layout_weight="1"
+                    android:text="今日考勤"
+                    android:textColor="@color/c_black_6"
+                    android:textSize="@dimen/dimen_16" />
+
+            <TextView
+                    style="@style/style_wrap_content"
+                    android:id="@+id/tv_today_01"
+                    android:textColor="@color/c_gray_6" />
+        </LinearLayout>
+
+        <View style="@style/horizontalLine_16" />
+
+        <LinearLayout
+                style="@style/style_match_wrap_content"
+                android:id="@+id/ll_attend_today"
+                android:visibility="visible"
+                android:orientation="vertical">
+
+            <LinearLayout
+                    style="@style/style_match_wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_10"
+                    android:orientation="vertical">
+
+                <LinearLayout
+                        style="@style/style_match_wrap_content"
+                        android:layout_marginTop="@dimen/dimen_12"
+                        android:paddingLeft="@dimen/dimen_16"
+                        android:paddingRight="@dimen/dimen_16">
+
+                    <TextView
+                            style="@style/style_wrap_content"
+                            android:id="@+id/tv_today_02"
+                            android:textColor="@color/c_gray_6"
+                            android:textSize="@dimen/dimen_18"
+                            android:textStyle="bold" />
+
+                    <View
+                            style="@style/verticalLine"
+                            android:layout_marginLeft="@dimen/dimen_12"
+                            android:layout_marginRight="@dimen/dimen_12" />
+
+                    <TextView
+                            style="@style/style_wrap_content"
+                            android:text="签到"
+                            android:id="@+id/tv_today_03"
+                            android:textColor="@color/c_black_6"
+                            android:textSize="@dimen/dimen_18" />
+                    <TextView
+                            style="@style/style_wrap_content"
+                            android:layout_marginLeft="@dimen/dimen_20"
+                            android:id="@+id/tv_today_04"
+                            android:textColor="@color/c_red_4"
+                            android:textSize="@dimen/dimen_18" />
+                    <TextView
+                            style="@style/style_wrap_content"
+                            android:layout_marginLeft="@dimen/dimen_20"
+                            android:id="@+id/tv_today_044"
+                            android:textColor="@color/c_gray_6"
+                            android:textSize="@dimen/dimen_12" />
+                </LinearLayout>
+
+                <TextView
+                        style="@style/style_match_wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_16"
+                        android:layout_marginTop="@dimen/dimen_12"
+                        android:layout_marginRight="@dimen/dimen_16"
+                        android:drawableLeft="@mipmap/icon_loca"
+                        android:id="@+id/tv_today_05"
+                        android:drawablePadding="@dimen/dimen_10"
+                        android:textSize="@dimen/dimen_12" />
+
+            </LinearLayout>
+
+            <View style="@style/horizontalLine_16" />
+
+            <LinearLayout
+                    style="@style/style_match_wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_13"
+                    android:orientation="vertical">
+
+                <LinearLayout
+                        style="@style/style_match_wrap_content"
+                        android:layout_marginTop="@dimen/dimen_12"
+                        android:paddingLeft="@dimen/dimen_16"
+                        android:paddingRight="@dimen/dimen_16">
+
+                    <TextView
+                            style="@style/style_wrap_content"
+                            android:textColor="@color/c_gray_6"
+                            android:textSize="@dimen/dimen_18"
+                            android:id="@+id/tv_today_06"
+                            android:textStyle="bold" />
+
+                    <View
+                            style="@style/verticalLine"
+                            android:layout_marginLeft="@dimen/dimen_12"
+                            android:layout_marginRight="@dimen/dimen_12" />
+
+                    <TextView
+                            style="@style/style_wrap_content"
+                            android:text="签退"
+                            android:textColor="@color/c_black_6"
+                            android:id="@+id/tv_today_07"
+                            android:textSize="@dimen/dimen_18" />
+
+                    <TextView
+                            style="@style/style_wrap_content"
+                            android:layout_marginLeft="@dimen/dimen_20"
+                            android:id="@+id/tv_today_08"
+                            android:textColor="@color/c_red_4"
+                            android:textSize="@dimen/dimen_18" />
+                    <TextView
+                            style="@style/style_wrap_content"
+                            android:layout_marginLeft="@dimen/dimen_20"
+                            android:id="@+id/tv_today_088"
+                            android:textColor="@color/c_gray_6"
+                            android:textSize="@dimen/dimen_12" />
+                </LinearLayout>
+
+                <TextView
+                        style="@style/style_match_wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_16"
+                        android:layout_marginTop="@dimen/dimen_12"
+                        android:layout_marginRight="@dimen/dimen_16"
+                        android:drawableLeft="@mipmap/icon_loca"
+                        android:id="@+id/tv_today_09"
+                        android:drawablePadding="@dimen/dimen_10"
+                        android:textSize="@dimen/dimen_12" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+            android:id="@+id/tv_attend_today"
+            style="@style/style_match_wrap_content"
+            android:background="@color/white"
+            android:padding="@dimen/dimen_16"
+            android:text="无需考勤"
+            android:textColor="@color/c_black_7"
+            android:textSize="@dimen/dimen_14"
+            android:visibility="visible" />
+
+</LinearLayout>

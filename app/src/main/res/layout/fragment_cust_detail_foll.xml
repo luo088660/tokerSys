@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/style_match_content"
+              android:orientation="vertical"
+              android:background="@color/c_gray_12">
+    <include layout="@layout/layout_content_title"/>
+
+    <android.support.v7.widget.RecyclerView
+            style="@style/style_match_wrap_content"
+            android:id="@+id/rv_cust_detail"/>
+    <TextView style="@style/style_match_wrap_content"
+              android:text="清远银湖城"
+              android:background="@color/white_01"
+              android:padding="@dimen/dimen_10"
+              android:gravity="right"/>
+
+</LinearLayout>

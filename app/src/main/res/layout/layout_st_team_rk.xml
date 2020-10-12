@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/style_match_wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+            style="@style/style_match_wrap_content"
+            android:background="@color/white">
+
+        <TextView
+                style="@style/style_0_wrap_pt15_pb13_ts12_tcb6_w1_gc"
+                android:text="排名" />
+
+        <TextView
+                style="@style/style_0_wrap_pt15_pb13_ts12_tcb6_w1_gc"
+                android:text="团队" />
+
+        <TextView
+                style="@style/style_0_wrap_pt15_pb13_ts12_tcb6_w1_gc"
+                android:text="项目" />
+
+        <LinearLayout style="@style/style_wrap_content"
+                android:layout_width="@dimen/dimen_0"
+                android:gravity="center"
+                android:layout_weight="1">
+
+
+            <TextView
+                    style="@style/style_0_wrap_pt15_pb13_ts12_tcb6_w1_gc"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="0"
+                    android:id="@+id/tv_khzl"
+                    android:drawablePadding="@dimen/dimen_5"
+                    android:drawableRight="@mipmap/icon_mrpx"
+                    android:text="完成"
+                    android:textColor="@color/c_red_4" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View style="@style/horizontalLine_16" />
+</LinearLayout>

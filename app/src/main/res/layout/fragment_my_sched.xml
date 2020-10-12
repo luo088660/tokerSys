@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              style="@style/style_match_content" android:background="@color/white_01"
+              android:orientation="vertical">
+    <include layout="@layout/layout_content_title"/>
+    <ScrollView style="@style/style_match_wrap_content">
+        <LinearLayout style="@style/style_match_content"
+                      android:orientation="vertical">
+
+            <LinearLayout style="@style/style_match_wrap_content"
+                          android:layout_height="@dimen/dimen_100"
+                          android:gravity="center"
+                          android:orientation="vertical">
+                <TextView style="@style/style_wrap_content"
+                          android:text="时间列表"/>
+            </LinearLayout>
+
+            <TextView style="@style/style_match_wrap_content"
+                      android:layout_marginLeft="@dimen/dimen_10"
+                      android:layout_marginBottom="@dimen/dimen_20"
+                      android:text="2019-04-01 星期二"/>
+            <View style="@style/horizontalLine"/>
+            <LinearLayout style="@style/style_match_wrap_content"
+                          android:padding="@dimen/dimen_10">
+                <LinearLayout style="@style/style_wrap_content"
+                              android:orientation="vertical"
+
+                              android:layout_width="@dimen/dimen_0"
+                              android:gravity="right"
+                              android:layout_weight="1">
+
+                    <TextView style="@style/style_wrap_content"
+                              android:text="考勤地址"/>
+
+                    <TextView style="@style/style_wrap_content"
+                              android:layout_marginTop="10dp"
+                              android:text="签到"/>
+                    <TextView style="@style/style_wrap_content"
+                              android:layout_marginTop="10dp"
+                              android:text="签退"/>
+
+                </LinearLayout>
+                <LinearLayout style="@style/style_wrap_content"
+                              android:layout_width="@dimen/dimen_0"
+                              android:orientation="vertical"
+                              android:layout_marginLeft="@dimen/dimen_20"
+                              android:layout_weight="3">
+
+                    <TextView style="@style/style_wrap_content"
+                              android:text="广州市天河区体育东路11号"/>
+
+                    <TextView style="@style/style_wrap_content"
+                              android:layout_marginTop="10dp"
+                              android:text="09:00"/>
+                    <TextView style="@style/style_wrap_content"
+                              android:layout_marginTop="10dp"
+                              android:text="18:00"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View style="@style/horizontalLine"/>
+
+            <TextView style="@style/style_match_wrap_content"
+                      android:layout_margin="@dimen/dimen_10"
+                      android:text="考勤说明：\n偏离考勤地址500米外，视为考勤偏离位置异常；异常考勤通过管理员审核后，异常考勤变更为正常考勤。"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

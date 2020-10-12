@@ -1,0 +1,27 @@
+<resources>
+    <string name="NAxNZldo">获取验证码</string>
+
+    <string name="cancel">取消</string>
+    <string name="title">时间筛选</string>
+    <string name="confirm">确定</string>
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+    <string name="hour">时</string>
+    <string name="minute">分</string>
+
+    <string name="select_date">选择日期</string>
+    <string name="current_date">当前日期</string>
+    <string name="select_time">选择时间</string>
+    <string name="current_time">当前时间</string>
+    <string name="star_time">2000-01-01</string>
+    <string name="end_time">2050-01-01</string>
+
+
+    <string name="x_recycler_data_empty">暂时没有数据</string>
+    <string name="x_recycler_more_not">没有更多数据啦</string>
+    <string name="x_recycler_click_load_more">点击加载更多</string>
+    <string name="x_recycler_load_error">加载出错啦，请稍后重试</string>
+    <string name="x_recycler_load_more_message">正在加载更多数据，请稍后</string>
+
+</resources>

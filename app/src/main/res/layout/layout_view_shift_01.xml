@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              style="@style/style_match_wrap_content">
+    <LinearLayout style="@style/style_match_wrap_content"
+                  android:layout_marginTop="@dimen/dimen_10"
+                  android:background="@color/white"
+                  android:padding="@dimen/dimen_16"
+                  android:orientation="vertical">
+        <TextView style="@style/style_match_wrap_content"
+                  android:id="@+id/tv_view_shif2_00"
+                  android:textColor="@color/c_black_6"
+                  android:layout_marginBottom="@dimen/dimen_15"
+                  android:textSize="@dimen/dimen_14"/>
+        <View style="@style/horizontalLine"/>
+
+        <LinearLayout style="@style/style_match_wrap_content"
+                      android:layout_marginTop="@dimen/dimen_15">
+
+            <LinearLayout style="@style/style_wrap_content"
+                          android:orientation="vertical">
+                <TextView style="@style/style_wrap_content"
+                          android:textSize="@dimen/dimen_14"
+                          android:textColor="@color/c_black_7"
+                          android:text="考勤地址"/>
+                <TextView style="@style/style_wrap_content"
+                          android:textSize="@dimen/dimen_14"
+                          android:layout_marginTop="@dimen/dimen_15"
+                          android:layout_marginBottom="@dimen/dimen_15"
+                          android:textColor="@color/c_black_7"
+                          android:text="签到"/>
+                <TextView style="@style/style_wrap_content"
+                          android:textSize="@dimen/dimen_14"
+                          android:textColor="@color/c_black_7"
+                          android:text="签退"/>
+            </LinearLayout>
+            <LinearLayout style="@style/style_match_wrap_content"
+                          android:layout_marginLeft="@dimen/dimen_15"
+                          android:textSize="@dimen/dimen_14"
+                          android:orientation="vertical">
+                <TextView style="@style/style_wrap_content"
+                          android:textSize="@dimen/dimen_14"
+                          android:textColor="@color/c_black_6"
+                          android:id="@+id/tv_view_shif2_01"/>
+                <TextView style="@style/style_wrap_content"
+                          android:textSize="@dimen/dimen_14"
+                          android:layout_marginTop="@dimen/dimen_15"
+                          android:id="@+id/tv_view_shif2_02"
+                          android:textColor="@color/c_black_6"
+                          android:layout_marginBottom="@dimen/dimen_15"/>
+                <TextView style="@style/style_wrap_content"
+                          android:textColor="@color/c_black_6"
+                          android:id="@+id/tv_view_shif2_03"
+                          android:textSize="@dimen/dimen_14"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout style="@style/style_match_wrap_content"
+                  android:layout_marginTop="@dimen/dimen_10"
+                  android:background="@color/white"
+                  android:orientation="vertical">
+        <TextView style="@style/style_match_wrap_content"
+                  android:paddingTop="@dimen/dimen_15"
+                  android:paddingRight="@dimen/dimen_16"
+                  android:paddingLeft="@dimen/dimen_16"
+                  android:id="@+id/tv_view_shif2_04"
+                  android:textSize="@dimen/dimen_14"
+                  android:textColor="@color/c_black_6"
+                  android:drawableRight="@mipmap/icon_xsjt"
+                  android:paddingBottom="@dimen/dimen_15"
+                  android:text="上班人员(4人)"/>
+        <View style="@style/horizontalLine"/>
+
+        <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_view_shift2_01"
+                style="@style/style_match_wrap_content"/>
+    </LinearLayout>
+    <LinearLayout style="@style/style_match_wrap_content"
+                  android:layout_marginTop="@dimen/dimen_10"
+                  android:background="@color/white"
+                  android:orientation="vertical">
+        <TextView style="@style/style_match_wrap_content"
+                  android:paddingTop="@dimen/dimen_15"
+                  android:paddingRight="@dimen/dimen_16"
+                  android:id="@+id/tv_view_shif2_05"
+                  android:paddingLeft="@dimen/dimen_16"
+                  android:textSize="@dimen/dimen_14"
+                  android:textColor="@color/c_black_6"
+                  android:drawableRight="@mipmap/icon_xsjt"
+                  android:paddingBottom="@dimen/dimen_15"
+                  android:text="请假人员(4人)"/>
+        <View style="@style/horizontalLine"/>
+        <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_view_shift2_02"
+                style="@style/style_match_wrap_content"/>
+    </LinearLayout>
+
+
+</LinearLayout>

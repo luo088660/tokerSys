@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/style_match_wrap_content"
+        android:background="@color/c_gray_12"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dimen_16"
+        android:paddingRight="@dimen/dimen_16">
+
+    <LinearLayout
+            style="@style/style_match_wrap_content"
+            android:layout_marginTop="@dimen/dimen_10">
+
+        <TextView
+                android:id="@+id/tv_follow_up_01"
+                style="@style/style_match_wrap_content"
+                android:background="@drawable/txt_bg_selector"
+                android:drawableRight="@mipmap/icon_xxjt"
+                android:padding="@dimen/dimen_10"
+                android:text="全部项目" />
+
+    </LinearLayout>
+
+    <LinearLayout
+            style="@style/style_match_wrap_content"
+            android:layout_marginTop="@dimen/dimen_10">
+
+        <TextView
+                android:id="@+id/tv_follow_up_02"
+                style="@style/style_wrap_content"
+                android:layout_width="@dimen/dimen_0"
+                android:layout_marginRight="@dimen/dimen_8"
+                android:layout_weight="1"
+                android:background="@drawable/txt_bg_selector"
+                android:drawableRight="@mipmap/icon_xxjt"
+                android:padding="@dimen/dimen_10"
+                android:text="全部状态" />
+
+        <TextView
+                android:id="@+id/tv_follow_up_03"
+                style="@style/style_wrap_content"
+                android:layout_width="@dimen/dimen_0"
+                android:layout_marginLeft="@dimen/dimen_8"
+                android:layout_weight="1"
+                android:background="@drawable/txt_bg_selector"
+                android:drawableRight="@mipmap/icon_xxjt"
+                android:padding="@dimen/dimen_10"
+                android:text="全部推荐用户" />
+    </LinearLayout>
+
+    <LinearLayout
+            style="@style/style_match_wrap_content"
+            android:layout_marginTop="@dimen/dimen_10">
+
+        <TextView
+                android:id="@+id/tv_follow_up_04"
+                style="@style/style_wrap_content"
+                android:layout_width="@dimen/dimen_0"
+                android:layout_marginRight="@dimen/dimen_8"
+                android:layout_weight="1"
+                android:background="@drawable/txt_bg_selector"
+                android:drawableRight="@mipmap/rili"
+                android:padding="@dimen/dimen_10"
+                android:text="开始日期" />
+
+        <TextView
+                android:id="@+id/tv_follow_up_05"
+                style="@style/style_wrap_content"
+                android:layout_width="@dimen/dimen_0"
+                android:layout_marginLeft="@dimen/dimen_8"
+                android:layout_weight="1"
+                android:background="@drawable/txt_bg_selector"
+                android:drawableRight="@mipmap/rili"
+                android:padding="@dimen/dimen_10"
+                android:text="结束日期" />
+    </LinearLayout>
+
+    <TextView
+            android:id="@+id/tv_follow_up_06"
+            style="@style/style_match_wrap_content"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:background="@drawable/btn_bg_quit_login_normal"
+
+            android:gravity="center"
+            android:paddingLeft="@dimen/dimen_16"
+            android:paddingTop="@dimen/dimen_5"
+            android:paddingRight="@dimen/dimen_16"
+            android:paddingBottom="@dimen/dimen_5"
+            android:text="确定"
+            android:textColor="@color/white_01"
+            android:textSize="@dimen/dimen_14" />
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        style="@style/style_match_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+    <ImageView
+            android:layout_width="109dp"
+            android:layout_height="96dp"
+            android:layout_marginTop="176dp"
+            android:src="@mipmap/logo_"/>
+    <TextView
+            style="@style/style_wrap_content"
+           android:text="恒大集团营销拓客系统"
+            android:textSize="@dimen/dimen_18"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/style_match_wrap_content"
+        android:orientation="vertical">
+
+    <View style="@style/horizontalLine" />
+
+    <LinearLayout
+            style="@style/style_match_wrap_content"
+            android:background="@color/white"
+            android:paddingTop="@dimen/dimen_10"
+            android:paddingBottom="@dimen/dimen_10">
+
+        <TextView
+                android:id="@+id/tv_item_vdi_01"
+                style="@style/style_wrap_content_b7_ts14"
+                android:layout_width="@dimen/dimen_0"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:text="指标" />
+
+        <TextView
+                android:id="@+id/tv_item_vdi_02"
+                style="@style/style_wrap_content_ts14_tcb6_ml10"
+                android:layout_width="@dimen/dimen_0"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/dimen_0"
+                android:gravity="center"
+                android:text="留电量" />
+
+        <TextView
+                android:id="@+id/tv_item_vdi_03"
+                style="@style/style_wrap_content_ts14_tcb6_ml10"
+                android:layout_width="@dimen/dimen_0"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/dimen_0"
+                android:gravity="center"
+                android:text="到访数" />
+
+        <TextView
+                android:id="@+id/tv_item_vdi_04"
+                style="@style/style_wrap_content_ts14_tcb6_ml10"
+                android:layout_width="@dimen/dimen_0"
+                android:layout_weight="1.2"
+                android:layout_marginLeft="@dimen/dimen_0"
+                android:gravity="center"
+                android:text="成交套数" />
+
+        <TextView
+                android:id="@+id/tv_item_vdi_05"
+                style="@style/style_wrap_content_ts14_tcb6_ml10"
+                android:layout_width="@dimen/dimen_0"
+                android:layout_weight="1.8"
+                android:layout_marginLeft="@dimen/dimen_0"
+                android:gravity="center"
+                android:text="成交额(万元)" />
+    </LinearLayout>
+
+
+</LinearLayout>

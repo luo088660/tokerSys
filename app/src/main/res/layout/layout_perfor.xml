@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/style_match_wrap_content"
+              android:orientation="vertical">
+    <LinearLayout
+            android:layout_marginTop="@dimen/dimen_20"
+            android:layout_marginBottom="@dimen/dimen_20"
+            style="@style/style_match_wrap_content">
+        <LinearLayout
+                style="@style/ll_width0_heightw_gc_ov_w1">
+            <TextView
+                    style="@style/tv_w_gc_ts12"
+                    android:text="留电数"/>
+
+            <ImageView
+                    android:src="@mipmap/icon_liudianshu"
+                    style="@style/img_wh22_m10"/>
+            <TextView
+                    style="@style/tv_w_gc_tstyleb"
+                    android:text="0"
+                    android:id="@+id/tv_ly_perfor_01"/>
+
+        </LinearLayout>
+        <LinearLayout style="@style/ll_width0_heightw_gc_ov_w1">
+
+            <TextView style="@style/tv_w_gc_ts12"
+                      android:text="到访数"/>
+            <ImageView style="@style/img_wh22_m10"
+                       android:src="@mipmap/icon_daofangliang"/>
+            <TextView style="@style/tv_w_gc_tstyleb"
+                    android:text="0"
+                      android:id="@+id/tv_ly_perfor_02"/>
+        </LinearLayout>
+        <LinearLayout style="@style/ll_width0_heightw_gc_ov_w1">
+
+            <TextView style="@style/tv_w_gc_ts12"
+                      android:text="成交套数"/>
+            <ImageView style="@style/img_wh22_m10"
+                       android:src="@mipmap/icon_chengjiaoliang"/>
+            <TextView style="@style/tv_w_gc_tstyleb"
+                    android:text="0"
+                      android:id="@+id/tv_ly_perfor_03"/>
+        </LinearLayout>
+        <LinearLayout style="@style/ll_width0_heightw_gc_ov_w1">
+
+            <TextView style="@style/tv_w_gc_ts12"
+                      android:text="成交额(万元)"/>
+            <ImageView style="@style/img_wh22_m10"
+                       android:src="@mipmap/icon_chengjiaoe"/>
+
+            <TextView style="@style/tv_w_gc_tstyleb"
+                    android:text="0"
+                      android:id="@+id/tv_ly_perfor_04"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

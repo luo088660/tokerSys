@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/style_match_wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+            style="@style/style_match_wrap_content"
+            android:background="@color/c_gray_12"
+            android:gravity="center">
+
+        <LinearLayout
+                style="@style/style_wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+            <TextView
+                    android:id="@+id/tv_pend_01"
+                    style="@style/style_wrap_content_pd15_dp5_ts12_tc6_drrxx"
+                    android:text="全部项目" />
+        </LinearLayout>
+
+        <LinearLayout
+                style="@style/style_wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+            <TextView
+                    android:id="@+id/tv_pend_02"
+                    style="@style/style_wrap_content_pd15_dp5_ts12_tc6_drrxx"
+                    android:text="全部任务类型" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+            style="@style/style_match_wrap_content"
+            android:background="@color/c_gray_122"
+            android:paddingLeft="@dimen/dimen_16"
+            android:paddingTop="@dimen/dimen_10"
+            android:paddingRight="@dimen/dimen_16"
+            android:paddingBottom="@dimen/dimen_10">
+
+        <TextView
+                android:id="@+id/tv_pend_04"
+                style="@style/style_wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="共 0 个任务"
+                android:textSize="@dimen/dimen_14" />
+
+        <TextView
+                android:id="@+id/tv_pend_03"
+                style="@style/style_wrap_content"
+                android:layout_marginLeft="@dimen/dimen_5"
+                android:background="@drawable/tv_bg_quit_login_normal"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dimen_10"
+                android:paddingTop="@dimen/dimen_5"
+                android:paddingRight="@dimen/dimen_10"
+                android:paddingBottom="@dimen/dimen_5"
+                android:text="审批不通过的任务"
+                android:textColor="@color/c_red_4"
+                android:textSize="@dimen/dimen_12" />
+    </LinearLayout>
+</LinearLayout>

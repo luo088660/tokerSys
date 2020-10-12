@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              style="@style/style_match_wrap_content">
+    <LinearLayout style="@style/style_match_wrap_content"
+                  android:orientation="vertical"
+                  android:layout_marginTop="@dimen/dimen_10"
+                  android:padding="@dimen/dimen_16"
+                  android:background="@color/white">
+        <TextView style="@style/style_match_wrap_content"
+                  android:text="被推荐人信息"
+                  android:layout_marginBottom="@dimen/dimen_16"
+                  android:textSize="@dimen/dimen_16"
+                  android:textStyle="bold"
+                  android:textColor="@color/c_black_6"/>
+        <View style="@style/horizontalLine"/>
+
+        <LinearLayout style="@style/style_match_wrap_content"
+                      android:layout_marginTop="@dimen/dimen_15">
+            <TextView style="@style/style_wrap_content_wid0_w1_tcb7_ts14"
+                      android:text="身份证后六位"/>
+            <TextView style="@style/style_wrap_content_wid0_w22_tc6_ts14"
+                      android:id="@+id/tv_mcf_custom_01"/>
+        </LinearLayout>
+        <LinearLayout style="@style/style_match_wrap_content"
+                      android:layout_marginTop="@dimen/dimen_15">
+            <TextView style="@style/style_wrap_content_wid0_w1_tcb7_ts14"
+                      android:text="省份"
+            />
+            <TextView style="@style/style_wrap_content_wid0_w22_tc6_ts14"
+                      android:id="@+id/tv_mcf_custom_02"/>
+        </LinearLayout>
+        <LinearLayout style="@style/style_match_wrap_content"
+                      android:layout_marginTop="@dimen/dimen_15">
+            <TextView style="@style/style_wrap_content_wid0_w1_tcb7_ts14"
+                      android:text="意向楼盘" />
+            <TextView style="@style/style_wrap_content_wid0_w22_tc6_ts14"
+                      android:id="@+id/tv_mcf_custom_03"/>
+        </LinearLayout>
+        <LinearLayout style="@style/style_match_wrap_content"
+                      android:layout_marginTop="@dimen/dimen_15">
+            <TextView style="@style/style_wrap_content_wid0_w1_tcb7_ts14"
+                      android:text="预计看房日期"/>
+            <TextView style="@style/style_wrap_content_wid0_w22_tc6_ts14"
+                      android:id="@+id/tv_mcf_custom_04"/>
+        </LinearLayout>
+
+        <LinearLayout style="@style/style_match_wrap_content"
+                      android:layout_marginTop="@dimen/dimen_15">
+            <TextView style="@style/style_wrap_content_wid0_w1_tcb7_ts14"
+                      android:text="购房客户需求"/>
+            <TextView style="@style/style_wrap_content_wid0_w22_tc6_ts14"
+                      android:id="@+id/tv_mcf_custom_05"
+                      android:text="产品类\n高层；别墅 \n面积段\n小于60㎡\n户型 \n两室 \n购房及关注点\n地段；周边配套；现房；学区；精修房"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

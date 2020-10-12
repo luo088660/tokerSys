@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:fitsSystemWindows="true"
+                android:id="@+id/ll_main"
+                style="@style/style_match_content">
+
+    <FrameLayout style="@style/style_match_content"
+                 android:layout_above="@+id/view"
+                 android:id="@+id/fl_main"/>
+
+    <android.support.v4.app.FragmentTabHost
+            android:layout_alignParentBottom="true"
+            style="@style/style_match_wrap_content"
+            android:id="@+id/ft_main"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"/>
+
+    <View style="@style/horizontalLine"
+          android:id="@+id/view"
+          android:layout_above="@+id/ft_main"/>
+
+
+</RelativeLayout>

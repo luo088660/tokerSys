@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/white"
+              style="@style/style_match_wrap_content">
+    <LinearLayout style="@style/style_match_wrap_content"
+                  android:paddingLeft="@dimen/dimen_16"
+                  android:paddingBottom="@dimen/dimen_10"
+                  android:paddingTop="@dimen/dimen_10"
+                  android:paddingRight="@dimen/dimen_16"
+                  android:gravity="center">
+
+        <com.toker.sys.utils.view.CircleImageView
+                android:layout_width="@dimen/dimen_50"
+                android:layout_height="50dp"
+                android:background="@mipmap/icon_title"
+                android:id="@+id/img_miss_item"/>
+        <TextView style="@style/style_wrap_content"
+                  android:id="@+id/tv_miss_item_01"
+                  android:gravity="right"
+                  android:textSize="@dimen/dimen_14"
+                  android:layout_marginLeft="@dimen/dimen_15"
+                  android:textColor="@color/c_black_6"
+                  android:text="dfa"/>
+        <TextView style="@style/style_wrap_content"
+                  android:layout_weight="1"
+                  android:gravity="right"
+                  android:id="@+id/tv_miss_item_02"
+                  android:textColor="@color/c_black_7"
+                  android:drawableRight="@mipmap/icon_right"
+                  android:drawablePadding="@dimen/dimen_10"
+                  android:text="未填写"
+                  android:textSize="@dimen/dimen_14"/>
+    </LinearLayout>
+    <View style="@style/horizontalLine"/>
+</LinearLayout>

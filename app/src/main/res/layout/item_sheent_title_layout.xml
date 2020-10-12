@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/style_wrap_content"
+>
+    <View style="@style/verticalLine"
+          android:layout_marginTop="@dimen/dimen_30"
+          android:layout_marginBottom="@dimen/dimen_30"/>
+    <LinearLayout style="@style/style_match_wrap_content"
+                  android:orientation="vertical"
+                  android:gravity="center"
+                  android:padding="@dimen/dimen_10">
+        <TextView
+                android:id="@+id/tv_sheent_tt_item1"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:layout_gravity="center"
+                style="@style/style_match_wrap_content_drwaT"
+                android:textColor="@color/c_red_1"
+                android:textSize="@dimen/dimen_20"
+                android:text="1"/>
+        <TextView
+                android:id="@+id/tv_sheent_tt_item2"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:layout_gravity="center"
+                android:textSize="@dimen/dimen_12"
+                style="@style/style_match_wrap_content_drwaT"
+                android:text="待审批任务"/>
+    </LinearLayout>
+</LinearLayout>

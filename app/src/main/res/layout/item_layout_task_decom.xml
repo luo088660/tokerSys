@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/style_match_wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+            style="@style/style_match_wrap_content"
+            android:layout_marginTop="@dimen/dimen_12"
+            android:layout_marginBottom="@dimen/dimen_12">
+
+        <TextView
+                android:id="@+id/tv_item_indic3_"
+                style="@style/style_wrap_content_b7_ts14"
+                android:layout_width="@dimen/dimen_0"
+                android:layout_weight="1.5"
+                android:ellipsize="end"
+                android:lines="1"
+                android:maxEms="4" />
+
+        <TextView
+                android:id="@+id/tv_item_indic3_01"
+                style="@style/style_wrap_content_ts14_tcb6_ml10"
+                android:layout_width="@dimen/dimen_0"
+                android:gravity="center"
+                android:layout_weight="1"/>
+
+        <TextView
+                android:id="@+id/tv_item_indic3_02"
+                style="@style/style_wrap_content_ts14_tcb6_ml10"
+                android:layout_width="@dimen/dimen_0"
+                android:gravity="center"
+                android:layout_weight="1" />
+
+        <TextView
+                android:id="@+id/tv_item_indic3_03"
+                style="@style/style_wrap_content_ts14_tcb6_ml10"
+                android:layout_width="@dimen/dimen_0"
+                android:gravity="center"
+                android:layout_weight="1"/>
+
+        <TextView
+                android:id="@+id/tv_item_indic3_04"
+                style="@style/style_wrap_content_ts14_tcb6_ml10"
+                android:layout_width="@dimen/dimen_0"
+                android:gravity="center"
+                android:layout_weight="1.5"/>
+    </LinearLayout>
+
+    <View style="@style/horizontalLine" />
+
+</LinearLayout>

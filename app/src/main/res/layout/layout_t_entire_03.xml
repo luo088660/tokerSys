@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/style_match_wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+            style="@style/style_match_wrap_content"
+            android:background="@color/white_01"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dimen_16"
+            android:paddingRight="@dimen/dimen_16"
+            android:paddingBottom="@dimen/dimen_10">
+
+        <LinearLayout
+                style="@style/style_match_wrap_content"
+                android:gravity="center">
+
+            <ImageView
+                    android:id="@+id/img_icon_ji"
+                    android:layout_width="@dimen/dimen_18"
+                    android:visibility="gone"
+                    android:layout_height="@dimen/dimen_18"
+                    android:layout_margin="@dimen/dimen_10"
+                    android:src="@drawable/icon_ji" />
+
+            <TextView
+                    android:id="@+id/tv_t_entire3_01"
+                    style="@style/style_wrap_content"
+                    android:background="@color/white_01"
+                    android:text="天河体育中心派发宣传单"
+                    android:textColor="@color/c_black_6"
+                    android:textStyle="bold" />
+
+            <TextView
+                    android:id="@+id/tv_entire_se03_deta"
+                    style="@style/style_wrap_content"
+                    android:layout_weight="1"
+                    android:drawableRight="@mipmap/icon_right"
+                    android:drawablePadding="@dimen/dimen_10"
+                    android:gravity="right"
+                    android:padding="@dimen/dimen_18"
+                    android:text="查看详情"
+                    android:textColor="@color/c_black_7"
+                    android:textSize="@dimen/dimen_12" />
+        </LinearLayout>
+
+        <View style="@style/horizontalLine" />
+
+        <TextView
+                android:id="@+id/btn_t_entire3_01"
+                style="@style/style_wrap_content"
+                android:layout_marginTop="@dimen/dimen_15"
+                android:text="清远恒大御泉四季"
+                android:textColor="@color/c_black_6"
+                android:textSize="@dimen/dimen_16"
+                android:textStyle="bold" />
+
+        <LinearLayout
+                style="@style/style_match_wrap_content"
+                android:layout_marginTop="@dimen/dimen_10">
+
+            <TextView
+                    style="@style/style_wrap_content"
+                    android:text="创建人\t\t\t"
+                    android:textSize="@dimen/dimen_14" />
+
+            <TextView
+                    android:id="@+id/tv_t_entire3_02"
+                    style="@style/style_wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_20"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/dimen_14" />
+
+            <TextView
+                    style="@style/style_wrap_content"
+                    android:text="任务状态"
+                    android:textSize="@dimen/dimen_14" />
+
+            <TextView
+                    android:id="@+id/tv_t_entire3_03"
+                    style="@style/style_wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_20"
+                    android:background="@color/c_bg_yirenchou"
+                    android:paddingLeft="@dimen/dimen_8"
+                    android:paddingTop="@dimen/dimen_4"
+                    android:paddingRight="@dimen/dimen_8"
+                    android:paddingBottom="@dimen/dimen_4"
+                    android:text="进行中"
+                    android:textColor="@color/c_txt_yirenchou"
+                    android:textSize="@dimen/dimen_14" />
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:id="@+id/ll_t_entire_01"
+                style="@style/style_match_wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+            <LinearLayout
+                    style="@style/style_match_wrap_content"
+                    android:layout_marginTop="@dimen/dimen_10">
+
+                <TextView
+                        style="@style/style_wrap_content"
+                        android:layout_width="@dimen/dimen_0"
+                        android:layout_weight="1"
+                        android:text="审批不通过原因"
+                        android:textSize="@dimen/dimen_14" />
+
+                <TextView
+                        android:id="@+id/tv_t_entire3_04"
+                        style="@style/style_wrap_content"
+                        android:layout_width="@dimen/dimen_0"
+                        android:layout_marginLeft="@dimen/dimen_20"
+                        android:layout_weight="2"
+                        android:text="任务分配不合理"
+                        android:textColor="@color/c_red_4"
+                        android:textSize="@dimen/dimen_14" />
+            </LinearLayout>
+
+            <LinearLayout
+                    style="@style/style_match_wrap_content"
+                    android:layout_marginTop="@dimen/dimen_10">
+
+                <TextView
+                        style="@style/style_wrap_content"
+                        android:layout_width="@dimen/dimen_0"
+                        android:layout_weight="1"
+                        android:text="审批时间"
+                        android:textSize="@dimen/dimen_14" />
+
+                <TextView
+                        android:id="@+id/tv_t_entire3_05"
+                        style="@style/style_wrap_content"
+                        android:layout_width="@dimen/dimen_0"
+                        android:layout_marginLeft="@dimen/dimen_20"
+                        android:layout_weight="2"
+                        android:text="2019-08-01  15:30:09"
+                        android:textColor="@color/c_black_7"
+                        android:textSize="@dimen/dimen_14" />
+            </LinearLayout>
+
+            <View
+                    style="@style/horizontalLine"
+                    android:layout_marginTop="@dimen/dimen_15" />
+        </LinearLayout>
+
+
+        <LinearLayout
+                style="@style/style_match_wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+            <LinearLayout
+                    style="@style/style_wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                <LinearLayout
+                        style="@style/style_match_wrap_content"
+                        android:layout_marginTop="@dimen/dimen_10">
+
+                    <TextView
+                            style="@style/style_wrap_content"
+                            android:text="任务对象"
+                            android:textSize="@dimen/dimen_14" />
+
+                    <TextView
+                            android:id="@+id/tv_t_entire3_066"
+                            style="@style/style_wrap_content"
+                            android:layout_marginLeft="@dimen/dimen_20"
+                            android:layout_weight="1"
+                            android:textSize="@dimen/dimen_14" />
+                </LinearLayout>
+
+                <LinearLayout
+                        style="@style/style_match_wrap_content"
+                        android:layout_marginTop="@dimen/dimen_10">
+
+                    <TextView
+                            style="@style/style_wrap_content"
+                            android:text="创建时间"
+                            android:textSize="@dimen/dimen_14" />
+
+                    <TextView
+                            android:id="@+id/tv_t_entire3_06"
+                            style="@style/style_wrap_content"
+                            android:layout_marginLeft="@dimen/dimen_20"
+                            android:layout_weight="1"
+                            android:textSize="@dimen/dimen_14" />
+                </LinearLayout>
+
+                <LinearLayout
+                        style="@style/style_match_wrap_content"
+                        android:layout_marginTop="@dimen/dimen_10">
+
+                    <TextView
+                            style="@style/style_wrap_content"
+                            android:text="任务时间"
+                            android:textSize="@dimen/dimen_14" />
+
+                    <TextView
+                            android:id="@+id/tv_t_entire3_07"
+                            style="@style/style_wrap_content"
+                            android:layout_marginLeft="@dimen/dimen_20"
+                            android:layout_weight="1"
+                            android:textSize="@dimen/dimen_14" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+                style="@style/style_match_wrap_content"
+                android:layout_marginTop="@dimen/dimen_10">
+
+            <TextView
+                    style="@style/style_wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="任务地点"
+                    android:textSize="@dimen/dimen_14" />
+
+            <TextView
+                    android:id="@+id/tv_t_entire3_08"
+                    style="@style/style_wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_20"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/dimen_14" />
+        </LinearLayout>
+
+        <LinearLayout
+                style="@style/style_match_wrap_content"
+
+                android:layout_marginTop="@dimen/dimen_10">
+
+            <TextView
+                    style="@style/style_wrap_content"
+                    android:text="任务内容"
+                    android:textSize="@dimen/dimen_14" />
+
+            <TextView
+                    android:id="@+id/tv_t_entire3_09"
+                    style="@style/style_wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_20"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/dimen_14" />
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/ll_t_entire3_10"
+                style="@style/style_match_wrap_content"
+                android:layout_marginTop="@dimen/dimen_10">
+
+            <TextView
+                    style="@style/style_wrap_content"
+                    android:text="参与人\t\t\t"
+                    android:textSize="@dimen/dimen_14" />
+
+            <TextView
+                    android:id="@+id/tv_t_entire3_10"
+                    style="@style/style_wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_20"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/dimen_14" />
+        </LinearLayout>
+
+        <View
+                style="@style/horizontalLine"
+                android:layout_marginTop="@dimen/dimen_15" />
+
+        <RelativeLayout
+                style="@style/style_match_wrap_content"
+                android:layout_marginTop="@dimen/dimen_10">
+
+            <TextView
+                    android:id="@+id/tvhuibai"
+                    style="@style/style_wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="任务汇报"
+                    android:textSize="@dimen/dimen_14" />
+
+            <TextView
+                    android:id="@+id/tv_t_entire3_11"
+                    style="@style/style_wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dimen_20"
+                    android:layout_marginRight="@dimen/dimen_15"
+                    android:layout_toLeftOf="@+id/btn_t_entire_03_01"
+                    android:layout_toRightOf="@+id/tvhuibai"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/dimen_14" />
+
+            <TextView
+                    android:id="@+id/btn_t_entire_03_01"
+                    style="@style/style_wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/btn_bg_quit_login_normal"
+                    android:paddingLeft="@dimen/dimen_5"
+                    android:paddingTop="@dimen/dimen_5"
+                    android:paddingRight="@dimen/dimen_5"
+                    android:paddingBottom="@dimen/dimen_5"
+                    android:text="填写任务汇报"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dimen_12" />
+        </RelativeLayout>
+
+        <RelativeLayout
+                style="@style/style_match_wrap_content"
+                android:layout_marginTop="@dimen/dimen_10">
+
+            <TextView
+                    android:id="@+id/tvguiji"
+                    style="@style/style_wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="任务轨迹"
+                    android:textSize="@dimen/dimen_14" />
+
+            <TextView
+                    android:id="@+id/tv_t_entire3_12"
+                    style="@style/style_wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dimen_20"
+                    android:layout_marginRight="@dimen/dimen_15"
+                    android:layout_toLeftOf="@+id/btn_t_entire_03_02"
+                    android:layout_toRightOf="@+id/tvguiji"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/dimen_14" />
+
+            <TextView
+                    android:id="@+id/btn_t_entire_03_02"
+                    style="@style/style_wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/btn_bg_quit_login_normal"
+                    android:paddingLeft="@dimen/dimen_5"
+                    android:paddingTop="@dimen/dimen_5"
+                    android:paddingRight="@dimen/dimen_5"
+                    android:paddingBottom="@dimen/dimen_5"
+                    android:text="查看任务轨迹"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dimen_12" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

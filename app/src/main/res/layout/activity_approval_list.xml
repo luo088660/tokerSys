@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/style_match_content"
+        android:background="@color/c_gray_12"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+    <include layout="@layout/layout_content_title" />
+
+
+    <!--<include layout="@layout/layout_t_entire_02"/>-->
+    <com.liaoinstan.springview.widget.SpringView
+            android:id="@+id/sp_team_rank"
+            style="@style/style_match_wrap_content">
+
+        <android.support.v4.widget.NestedScrollView
+                style="@style/style_match_wrap_content">
+
+            <LinearLayout
+                    style="@style/style_match_content"
+                    android:orientation="vertical">
+
+                <include layout="@layout/layout_t_pend_011" />
+
+                <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_t_approval_list"
+                        style="@style/style_match_wrap_content" />
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </com.liaoinstan.springview.widget.SpringView>
+
+</LinearLayout>

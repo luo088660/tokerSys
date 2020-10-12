@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/style_match_content"
+        android:background="@color/c_gray_12"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+    <include layout="@layout/layout_content_title" />
+
+    <FrameLayout style="@style/style_match_content">
+
+        <android.support.v4.widget.NestedScrollView
+                android:id="@+id/sl_month_indic"
+                style="@style/style_match_wrap_content">
+
+            <LinearLayout
+                    style="@style/style_match_content"
+                    android:orientation="vertical">
+
+                <include layout="@layout/layout_month_indic_01" />
+
+                <include layout="@layout/layout_month_indic_02" />
+
+
+                <TextView
+                        style="@style/style_match_wrap_content"
+                        android:background="@color/c_gray_12"
+                        android:padding="@dimen/dimen_10"
+                        android:text="任务分解"
+                        android:textStyle="bold" />
+                <LinearLayout
+                        style="@style/style_match_content"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:padding="@dimen/dimen_10">
+
+                    <LinearLayout
+                            style="@style/style_match_wrap_content"
+                            android:layout_marginTop="@dimen/dimen_5"
+                            android:id="@+id/ll_month_indic_"
+                            android:gravity="center">
+
+                        <TextView
+                                style="@style/style_wrap_content_b7_ts14"
+                                android:text="创建人\t\t\t" />
+
+                        <TextView
+                                android:id="@+id/tv_indic3_01"
+                                style="@style/style_wrap_content_ts14_tcb6_ml10"
+                                android:layout_width="@dimen/dimen_0"
+                                android:layout_weight="1" />
+
+                        <TextView
+                                style="@style/style_wrap_content_b7_ts14"
+                                android:text="创建时间" />
+
+                        <TextView
+                                android:id="@+id/tv_indic3_02"
+                                style="@style/style_wrap_content_ts14_tcb6_ml10"
+                                android:layout_width="@dimen/dimen_0"
+                                android:layout_marginRight="@dimen/dimen_20"
+                                android:layout_weight="1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            style="@style/style_match_wrap_content"
+                            android:id="@+id/tv_month_indic_zwfjrw"
+                            android:visibility="gone"
+                            android:gravity="center">
+                        <TextView
+                                style="@style/style_wrap_content_b7_ts14"
+                                android:visibility="visible"
+                                android:layout_weight="1"
+                                android:text="暂无分解任务" />
+
+                        <TextView
+                                android:id="@+id/btn_month_indic_01"
+                                style="@style/style_wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginTop="@dimen/dimen_10"
+                                android:layout_marginRight="@dimen/dimen_30"
+                                android:layout_marginBottom="@dimen/dimen_10"
+                                android:background="@drawable/btn_bg_quit_login_normal"
+                                android:paddingLeft="@dimen/dimen_12"
+                                android:paddingTop="@dimen/dimen_5"
+                                android:paddingRight="@dimen/dimen_12"
+                                android:paddingBottom="@dimen/dimen_8"
+                                android:text="查看日任务"
+                                android:textColor="@color/white_01"
+                                android:textSize="@dimen/dimen_12" />
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+                <View style="@style/horizontalLine"
+                        />
+                <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_month_indic"
+                        style="@style/style_match_wrap_content" />
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+        <TextView
+                android:id="@+id/btn_month_indic"
+                style="@style/style_wrap_content"
+                android:layout_gravity="end|bottom"
+                android:layout_margin="@dimen/dimen_20"
+                android:background="@drawable/btn_return_top" />
+    </FrameLayout>
+</LinearLayout>

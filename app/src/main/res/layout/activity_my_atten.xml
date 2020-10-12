@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              style="@style/style_match_content"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+    <include layout="@layout/layout_content_title"/>
+    <android.support.v7.widget.RecyclerView
+            style="@style/style_match_wrap_content"
+            android:id="@+id/rv_my_atten"/>
+    <ScrollView style="@style/style_match_content">
+        <LinearLayout style="@style/style_match_content"
+                      android:orientation="vertical">
+            <FrameLayout style="@style/style_match_content"
+                         android:id="@+id/fl_my_atten"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

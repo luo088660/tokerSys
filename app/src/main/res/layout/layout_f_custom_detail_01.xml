@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/style_match_wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+            style="@style/style_match_wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dimen_16"
+            android:paddingRight="@dimen/dimen_16"
+            android:paddingBottom="@dimen/dimen_16">
+
+        <LinearLayout style="@style/style_match_wrap_content_mt15">
+
+            <TextView
+                    style="@style/style_wrap_content_wid0_w1"
+                    android:text="姓名" />
+
+            <TextView
+                    android:id="@+id/tv_f_custom_01"
+                    android:layout_weight="2.5"
+                    style="@style/style_wrap_content_wid0_w4" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/style_match_wrap_content_mt15">
+
+            <TextView
+                    style="@style/style_wrap_content_wid0_w1"
+                    android:text="手机号码" />
+
+            <TextView
+                    android:id="@+id/tv_f_custom_02"
+                    style="@style/style_wrap_content_wid0_w4"
+                    android:layout_weight="2.5" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/style_match_wrap_content_mt15"
+                android:gravity="center">
+
+            <TextView
+                    style="@style/style_wrap_content_wid0_w1"
+                    android:text="状态" />
+            <LinearLayout
+                    style="@style/style_wrap_content_wid0_w4"
+                    android:layout_weight="2.5" >
+                <TextView
+                        android:id="@+id/tv_f_custom_03"
+                        style="@style/style_wrap_content"
+                        android:layout_width="@dimen/dimen_0"
+                        android:layout_weight="1.2"
+                        android:background="@color/c_red_5"
+                        android:gravity="center"
+                        android:paddingTop="@dimen/dimen_5"
+                        android:paddingBottom="@dimen/dimen_5"
+                        android:text="未推荐"
+                        android:textColor="@color/c_red_4"
+                        android:textSize="@dimen/dimen_14" />
+
+                <TextView
+                        style="@style/style_wrap_content_wid0_w4"
+                        android:layout_weight="2.8"
+                        android:text="王女士"
+                        android:visibility="invisible" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/style_match_wrap_content_mt15">
+
+            <TextView
+                    android:id="@+id/tv_f_custom_044"
+                    style="@style/style_wrap_content_wid0_w1"
+                    android:text="拓客日期" />
+
+            <TextView
+                    android:id="@+id/tv_f_custom_04"
+                    android:layout_weight="2.5"
+                    style="@style/style_wrap_content_wid0_w4" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/style_match_wrap_content_mt15">
+
+            <TextView
+                    style="@style/style_wrap_content_wid0_w1"
+                    android:text="拓客地点" />
+
+            <TextView
+                    android:id="@+id/tv_f_custom_05"
+                    android:layout_weight="2.5"
+                    style="@style/style_wrap_content_wid0_w4"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/ll_custom_detail1_01"
+                style="@style/style_match_wrap_content_mt15">
+
+            <TextView
+                    style="@style/style_wrap_content_wid0_w1"
+                    android:text="拓客员" />
+
+            <TextView
+                    android:id="@+id/tv_f_custom_06"
+                    android:layout_weight="2.5"
+                    style="@style/style_wrap_content_wid0_w4" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/style_match_wrap_content_mt15">
+
+            <TextView
+                    android:id="@+id/tv_custo_detail_011"
+                    style="@style/style_wrap_content_wid0_w1"
+                    android:text="创建人" />
+
+            <TextView
+                    android:id="@+id/tv_f_custom_07"
+                    android:layout_weight="2.5"
+                    style="@style/style_wrap_content_wid0_w4" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/style_match_wrap_content_mt15"
+                android:id="@+id/tv_custo_detail_022">
+
+            <TextView
+                    style="@style/style_wrap_content_wid0_w1"
+                    android:text="创建地点" />
+
+            <TextView
+                    android:id="@+id/tv_f_custom_08"
+                    android:layout_weight="2.5"
+                    style="@style/style_wrap_content_wid0_w4" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/style_match_wrap_content_mt15">
+
+            <TextView
+                    style="@style/style_wrap_content_wid0_w1"
+                    android:text="客户备注" />
+
+            <TextView
+                    android:id="@+id/tv_f_custom_09"
+                    android:layout_weight="2.5"
+                    style="@style/style_wrap_content_wid0_w4"
+                    />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

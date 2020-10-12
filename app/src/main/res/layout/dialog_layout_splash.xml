@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/style_match_wrap_content"
+              android:orientation="vertical">
+    <LinearLayout style="@style/style_match_wrap_content"
+                  android:background="@drawable/dialog_bg_selector"
+                  android:layout_marginLeft="@dimen/dimen_45"
+                  android:layout_marginRight="@dimen/dimen_45"
+                  android:orientation="vertical">
+        <RelativeLayout style="@style/style_match_wrap_content">
+            <TextView style="@style/style_wrap_content"
+                      android:textColor="@color/c_black_6"
+                      android:textSize="@dimen/dimen_16"
+                      android:text="提示"
+                      android:layout_marginTop="@dimen/dimen_13"
+                      android:layout_marginBottom="@dimen/dimen_16"
+                      android:layout_centerInParent="true"/>
+
+            <ImageView style="@style/style_wrap_content"
+                       android:id="@+id/img_layout_nc_exist_close"
+                       android:layout_centerVertical="true"
+                       android:padding="@dimen/dimen_18"
+                    android:visibility="gone"
+                       android:layout_alignParentRight="true"
+                       android:src="@mipmap/icon_close"/>
+        </RelativeLayout>
+        <View style="@style/horizontalLine"/>
+
+        <TextView style="@style/style_match_wrap_content"
+                  android:text="该客户已在意向客户中存在，点击确定前往意向客户页面推荐客户。"
+                  android:lineSpacingMultiplier="1.5"
+                  android:id="@+id/tv_layout_nc_exist_content"
+                  android:textColor="@color/c_black_6"
+                  android:layout_marginTop="@dimen/dimen_30"
+                  android:layout_marginLeft="@dimen/dimen_20"
+                  android:layout_marginRight="@dimen/dimen_20"
+                  android:gravity="center"
+                  android:textSize="@dimen/dimen_14"/>
+
+        <LinearLayout
+                style="@style/style_match_wrap_content"
+                android:layout_margin="@dimen/dimen_16">
+
+            <TextView
+                    android:id="@+id/btn_call_phone_cancel"
+                    style="@style/style_wrap_content"
+                    android:layout_marginRight="@dimen/dimen_8"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_bg_selector"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/dimen_16"
+                    android:paddingTop="@dimen/dimen_5"
+                    android:paddingRight="@dimen/dimen_16"
+                    android:paddingBottom="@dimen/dimen_5"
+                    android:text="取消"
+                    android:textColor="@color/c_gray_6"
+                    android:textSize="@dimen/dimen_14" />
+
+            <TextView
+                    android:id="@+id/btn_layout_nc_exist_determine"
+                    style="@style/style_wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_8"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_bg_quit_login_normal"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/dimen_16"
+                    android:paddingTop="@dimen/dimen_5"
+                    android:paddingRight="@dimen/dimen_16"
+                    android:paddingBottom="@dimen/dimen_5"
+                    android:text="确定"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dimen_14" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

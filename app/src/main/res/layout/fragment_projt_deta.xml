@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/style_match_content"
+              android:background="@color/white_01"
+              android:orientation="vertical">
+
+    <include layout="@layout/layout_content_title"/>
+    <ScrollView style="@style/style_match_content">
+        <LinearLayout style="@style/style_match_content"
+                      android:orientation="vertical">
+
+            <include layout="@layout/layout_overall_perfor"/>
+
+            <include layout="@layout/layout_team_member"/>
+
+            <include layout="@layout/layout_attend_statis"/>
+
+            <include layout="@layout/layout_schedul_plan"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

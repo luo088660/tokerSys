@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/style_match_content"
+        android:background="@color/c_gray_12"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+    <include layout="@layout/layout_content_title" />
+
+    <LinearLayout
+            style="@style/style_match_wrap_content"
+            android:background="@color/white">
+
+        <TextView
+                style="@style/style_wrap_content"
+                android:padding="@dimen/dimen_15"
+                android:text="项目"
+                android:textColor="@color/c_black_7"
+                android:textSize="@dimen/dimen_14" />
+
+        <TextView
+                style="@style/style_wrap_content"
+                android:layout_weight="1"
+                android:drawableRight="@mipmap/icon_xxjt"
+                android:drawablePadding="@dimen/dimen_10"
+                android:gravity="right"
+                android:padding="@dimen/dimen_15"
+                android:text="清远银湖城"
+                android:textColor="@color/c_black_6"
+                android:textSize="@dimen/dimen_14" />
+
+    </LinearLayout>
+
+    <View style="@style/horizontalLine" />
+
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_team_mber"
+            style="@style/style_match_wrap_content"
+            android:background="@color/white" />
+
+    <LinearLayout
+            style="@style/style_match_wrap_content"
+            android:layout_marginLeft="@dimen/dimen_16"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_marginRight="@dimen/dimen_16"
+            android:layout_marginBottom="@dimen/dimen_10">
+
+        <EditText
+                android:id="@+id/tv_receivde1_01"
+                style="@style/style_wrap_content"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:layout_weight="1"
+                android:background="@drawable/txt_bg_selector"
+                android:hint="输入拓客团队名称查询"
+
+                android:paddingLeft="@dimen/dimen_10"
+                android:paddingTop="@dimen/dimen_5"
+                android:paddingRight="@dimen/dimen_10"
+                android:paddingBottom="@dimen/dimen_5"
+                android:textColor="@color/c_black_6"
+                android:textColorHint="@color/c_black_7"
+                android:textSize="@dimen/dimen_12" />
+
+        <TextView
+                style="@style/style_wrap_content"
+                android:background="@drawable/btn_bg_quit_login_normal"
+                android:paddingLeft="@dimen/dimen_16"
+                android:paddingTop="@dimen/dimen_5"
+                android:paddingRight="@dimen/dimen_16"
+                android:paddingBottom="@dimen/dimen_5"
+                android:text="查询"
+                android:textColor="@color/white_01"
+                android:textSize="@dimen/dimen_12" />
+    </LinearLayout>
+
+    <FrameLayout
+            android:id="@+id/fl_team_mber"
+            style="@style/style_match_content"
+            android:background="@color/white" />
+</LinearLayout>

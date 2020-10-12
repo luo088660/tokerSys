@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="horizontal"
+                style="@style/style_match_wrap_content">
+
+    <LinearLayout style="@style/style_wrap_content"
+                  android:layout_alignTop="@+id/ll_02"
+                  android:layout_alignBottom="@+id/ll_02"
+                  android:id="@+id/ll"
+                  android:layout_marginRight="@dimen/dimen_12"
+                  android:paddingTop="@dimen/dimen_5"
+                  android:orientation="vertical">
+        <ImageView style="@style/style_wrap_content"
+                   android:id="@+id/img_item_01"
+                   android:src="@drawable/spot_02_select"/>
+        <ImageView style="@style/style_wrap_content"
+                   android:layout_gravity="center"
+                   android:id="@+id/img_item_02"
+                   android:src="@mipmap/icon_list_jt"/>
+
+    </LinearLayout>
+    <LinearLayout style="@style/style_match_wrap_content"
+                  android:id="@+id/ll_02"
+                  android:layout_toRightOf="@+id/ll"
+                  android:paddingBottom="@dimen/dimen_12">
+        <LinearLayout style="@style/style_wrap_content"
+                      android:layout_weight="1"
+                      android:layout_marginRight="@dimen/dimen_40"
+                      android:orientation="vertical">
+            <TextView style="@style/style_wrap_content"
+                      android:textSize="@dimen/dimen_12"
+                      android:id="@+id/tv_fcdetail_01"
+                      android:textColor="@color/c_black_7"
+                      android:text="2019/04/03  08:41:50AM"
+            />
+            <TextView style="@style/style_wrap_content"
+                      android:layout_marginTop="@dimen/dimen_8"
+                      android:textSize="@dimen/dimen_12"
+                      android:id="@+id/tv_fcdetail_02"
+                      android:textColor="@color/c_black_7"
+                      android:text="拨打客户电话，客户对小户型有意向，计划下周看房。"
+            />
+
+
+        </LinearLayout>
+        <TextView style="@style/style_wrap_content"
+                  android:textSize="@dimen/dimen_12"
+                  android:id="@+id/tv_fcdetail_03"
+                  android:textColor="@color/c_black_7"
+                  android:text="李子一"/>
+    </LinearLayout>
+</RelativeLayout>

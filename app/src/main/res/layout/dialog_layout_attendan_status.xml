@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        style="@style/style_match_content">
+
+    <LinearLayout
+            style="@style/style_match_wrap_content"
+            tools:ignore="MissingConstraints">
+
+        <LinearLayout
+                style="@style/style_match_wrap_content"
+                android:layout_marginLeft="@dimen/dimen_40"
+                android:layout_marginRight="@dimen/dimen_40"
+                android:background="@drawable/dialog_bg_selector"
+                android:orientation="vertical">
+
+            <RelativeLayout style="@style/style_match_wrap_content">
+
+                <TextView
+                        style="@style/style_wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="@dimen/dimen_13"
+                        android:layout_marginBottom="@dimen/dimen_16"
+                        android:text="提示"
+                        android:textColor="@color/c_black_6"
+                        android:textSize="@dimen/dimen_16" />
+
+                <ImageView
+                        android:id="@+id/img_app_task_close"
+                        style="@style/style_wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/dimen_18"
+                        android:src="@mipmap/icon_close" />
+            </RelativeLayout>
+
+            <View style="@style/horizontalLine" />
+
+
+            <LinearLayout
+                    style="@style/style_match_wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_16"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:layout_marginRight="@dimen/dimen_16"
+                    android:gravity="center">
+
+                <TextView
+                        style="@style/style_wrap_content"
+                        android:layout_width="@dimen/dimen_0"
+                        android:layout_weight="1"
+                        android:id="@+id/tv_dialog"
+                        android:text="确定审核考勤为正常？"
+                        android:textColor="@color/c_black_6"
+                        android:textSize="@dimen/dimen_14" />
+
+            </LinearLayout>
+            <LinearLayout style="@style/style_match_wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_16"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:layout_marginRight="@dimen/dimen_16">
+                <CheckBox style="@style/style_wrap_content"
+                        android:textSize="@dimen/dimen_14"
+                        android:id="@+id/cb_01"
+                        android:textColor="@color/c_black_7"
+                        android:layout_width="@dimen/dimen_0"
+                        android:layout_weight="0.5"
+                        android:button="@drawable/cb_xz_selector"
+                        android:text="事假"/>
+                <CheckBox style="@style/style_wrap_content"
+                        android:textSize="@dimen/dimen_14"
+                        android:id="@+id/cb_02"
+                        android:textColor="@color/c_black_7"
+                        android:button="@drawable/cb_xz_selector"
+                        android:layout_width="@dimen/dimen_0"
+                        android:layout_weight="0.5"
+                        android:text="病假"/>
+                <CheckBox style="@style/style_wrap_content"
+                        android:textSize="@dimen/dimen_14"
+                        android:id="@+id/cb_03"
+                        android:textColor="@color/c_black_7"
+                        android:button="@drawable/cb_xz_selector"
+                        android:layout_width="@dimen/dimen_0"
+                        android:layout_weight="0.5"
+                        android:text="其他"/>
+            </LinearLayout>
+            <LinearLayout
+                    style="@style/style_match_wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_16"
+                    android:layout_marginRight="@dimen/dimen_16"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:orientation="vertical">
+
+                <EditText
+                        android:id="@+id/et_dialog"
+                        style="@style/style_match_wrap_content"
+                        android:layout_height="@dimen/dimen_60"
+                        android:background="@drawable/edit_bg_selector"
+                        android:gravity="start"
+                        android:hint="请输入审批意见"
+                        android:padding="@dimen/dimen_10"
+                        android:textColor="@color/c_gray_6"
+                        android:textSize="@dimen/dimen_12" />
+            </LinearLayout>
+
+            <LinearLayout
+                    style="@style/style_match_wrap_content"
+                    android:layout_margin="@dimen/dimen_16">
+
+                <TextView
+                        android:id="@+id/btn_app_task_cancel"
+                        style="@style/style_wrap_content"
+                        android:layout_marginRight="@dimen/dimen_8"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_bg_selector"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/dimen_16"
+                        android:paddingTop="@dimen/dimen_5"
+                        android:paddingRight="@dimen/dimen_16"
+                        android:paddingBottom="@dimen/dimen_5"
+                        android:text="取消"
+                        android:textColor="@color/c_gray_6"
+                        android:textSize="@dimen/dimen_14" />
+
+                <TextView
+                        android:id="@+id/btn_app_task_determine"
+                        style="@style/style_wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_8"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_bg_quit_login_normal"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/dimen_16"
+                        android:paddingTop="@dimen/dimen_5"
+                        android:paddingRight="@dimen/dimen_16"
+                        android:paddingBottom="@dimen/dimen_5"
+                        android:text="确定"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dimen_14" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

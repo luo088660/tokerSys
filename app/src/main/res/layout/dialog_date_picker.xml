@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+        <TextView
+                android:id="@+id/tv_cancel"
+                style="@style/style_wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dimen_15"
+                android:paddingTop="@dimen/dimen_18"
+                android:paddingRight="@dimen/dimen_18"
+                android:paddingBottom="@dimen/dimen_18"
+                android:text="取消"
+                android:textSize="@dimen/dimen_14"
+                android:textColor="@color/c_gray_6"
+                android:textStyle="bold"/>
+
+        <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="@string/title"
+                android:textColor="@color/c_gray_9"
+                android:textSize="@dimen/dimen_16"/>
+
+        <TextView
+                android:id="@+id/tv_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/dimen_15"
+                android:text="@string/confirm"
+                android:textColor="@color/c_red_4"
+                android:textSize="@dimen/dimen_14"
+        />
+
+    </LinearLayout>
+
+    <RadioGroup style="@style/style_match_wrap_content"
+                android:id="@+id/rg_time_01"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:layout_marginLeft="@dimen/dimen_16"
+                android:layout_marginRight="@dimen/dimen_16">
+        <RadioButton style="@style/style_wrap_content_w0_pd10_ts10_gc_wei1"
+                     android:background="@drawable/left_selector"
+                     android:textColor="@drawable/tv_time_selector"
+                     android:button="@null"
+                     android:id="@+id/tv_date_pick_01"
+                     android:text="年"/>
+        <RadioButton style="@style/style_wrap_content_w0_pd10_ts10_gc_wei1"
+                     android:background="@drawable/middle_selector"
+                     android:button="@null"
+                     android:textColor="@drawable/tv_time_selector"
+                     android:id="@+id/tv_date_pick_02"
+                     android:text="月"/>
+        <RadioButton style="@style/style_wrap_content_w0_pd10_ts10_gc_wei1"
+                     android:background="@drawable/middle_selector"
+                     android:button="@null"
+                     android:textColor="@drawable/tv_time_selector"
+                     android:id="@+id/tv_date_pick_03"
+                     android:text="日"/>
+        <RadioButton style="@style/style_wrap_content_w0_pd10_ts10_gc_wei1"
+                     android:background="@drawable/right_selector"
+                     android:button="@null"
+                     android:textColor="@drawable/tv_time_selector"
+                     android:id="@+id/tv_date_pick_04"
+                     android:text="自定义"/>
+
+    </RadioGroup>
+
+    <RadioGroup style="@style/style_match_wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/rg_time_02"
+                android:layout_margin="@dimen/dimen_16">
+        <RadioButton style="@style/style_wrap_content_w0_pd10_ts10_gc_wei1"
+                     android:button="@null"
+                     android:id="@+id/rb_date_se_01"
+                     android:textColor="@color/c_black_6"
+                     android:background="@drawable/txt_time_selector"
+                     android:hint="开始时间"/>
+        <TextView style="@style/style_wrap_content"
+                  android:layout_marginLeft="@dimen/dimen_16"
+                  android:layout_marginRight="@dimen/dimen_16"
+                  android:textSize="@dimen/dimen_14"
+                  android:textColor="@color/c_black_6"
+                  android:text="—至—"/>
+        <RadioButton style="@style/style_wrap_content_w0_pd10_ts10_gc_wei1"
+                     android:button="@null"
+                     android:textColor="@color/c_black_6"
+                     android:id="@+id/rb_date_se_02"
+                     android:background="@drawable/txt_time_selector"
+                     android:hint="结束时间"/>
+
+    </RadioGroup>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="20dp"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp"
+            android:paddingTop="15dp">
+
+        <com.toker.sys.utils.view.datepicker.PickerView
+                android:id="@+id/dpv_year"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dimen_160"
+                android:layout_weight="3"/>
+
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:visibility="gone"
+                android:text="@string/year"
+                android:textColor="@color/c_black_6"
+                android:textSize="@dimen/dimen_15"/>
+
+        <com.toker.sys.utils.view.datepicker.PickerView
+                android:id="@+id/dpv_month"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dimen_160"
+                android:layout_weight="2"/>
+
+        <TextView
+                android:id="@+id/tv_month_unit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:visibility="gone"
+                android:text="@string/month"
+                android:textColor="@color/c_black_6"
+                android:textSize="@dimen/dimen_15"/>
+
+        <com.toker.sys.utils.view.datepicker.PickerView
+                android:id="@+id/dpv_day"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dimen_160"
+                android:layout_weight="2"/>
+
+        <TextView
+
+                android:id="@+id/tv_day_unit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:visibility="gone"
+                android:text="@string/day"
+                android:textColor="@color/c_black_6"
+                android:textSize="@dimen/dimen_15"/>
+        <LinearLayout style="@style/style_wrap_content"
+                      android:visibility="gone">
+
+            <com.toker.sys.utils.view.datepicker.PickerView
+                    android:id="@+id/dpv_hour"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dimen_160"
+                    android:layout_weight="2"/>
+
+            <TextView
+                    android:id="@+id/tv_hour_unit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/hour"
+                    android:textColor="@color/c_orange_4"
+                    android:textSize="@dimen/dimen_15"/>
+
+            <com.toker.sys.utils.view.datepicker.PickerView
+                    android:id="@+id/dpv_minute"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dimen_160"
+                    android:layout_weight="2"/>
+
+            <TextView
+                    android:id="@+id/tv_minute_unit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/minute"
+                    android:textColor="@color/c_orange_4"
+                    android:textSize="@dimen/dimen_15"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

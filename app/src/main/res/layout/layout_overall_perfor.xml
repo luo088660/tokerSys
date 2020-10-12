@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/style_match_wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+    <LinearLayout
+            style="@style/style_match_wrap_content"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dimen_16"
+            android:paddingTop="@dimen/dimen_16"
+            android:paddingRight="@dimen/dimen_16">
+
+        <ImageView
+                android:layout_width="@dimen/dimen_24"
+                android:layout_height="@dimen/dimen_24"
+                android:src="@mipmap/icon_yjztqk" />
+
+        <TextView
+                style="@style/style_wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_weight="1"
+                android:text="业绩总体情况"
+                android:textColor="@color/c_black_6"
+                android:textSize="@dimen/dimen_16" />
+
+    </LinearLayout>
+
+    <LinearLayout
+            style="@style/style_match_wrap_content"
+            android:gravity="center"
+
+            android:paddingLeft="@dimen/dimen_16"
+            android:paddingRight="@dimen/dimen_16">
+
+        <TextView
+                style="@style/style_wrap_content"
+                android:layout_weight="1"
+                android:text="统计日期"
+                android:textColor="@color/c_black_7" />
+
+        <LinearLayout
+                style="@style/style_wrap_content"
+                android:gravity="center"
+                android:id="@+id/ll_all_per_01"
+                android:orientation="horizontal">
+            <LinearLayout
+                    android:id="@+id/ll_all_per_011"
+                    android:visibility="gone"
+                    style="@style/style_wrap_content">
+            <TextView
+                    android:id="@+id/tv_all_per_01"
+                    style="@style/style_wrap_content_ts12_tchg6_tcb6_pdtb14_pdlr10"
+                    android:hint="任务开始日期"
+                    android:gravity="right"
+                    android:text="2019/06/01" />
+
+
+            <TextView
+                    style="@style/style_wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_6"
+                    android:layout_marginRight="@dimen/dimen_6"
+                    android:text="至"
+                    android:textColor="@color/c_gray_6"
+                    android:textSize="@dimen/dimen_12" />
+            </LinearLayout>
+            <TextView
+                    android:id="@+id/tv_all_per_02"
+                    style="@style/style_wrap_content_ts12_tchg6_tcb6_pdtb14_pdlr10"
+                    android:text="2019/09/02" />
+
+            <ImageView
+                    android:layout_width="@dimen/dimen_30"
+                    android:layout_height="@dimen/dimen_30"
+                    android:padding="@dimen/dimen_8"
+                    android:src="@mipmap/icon_shuaxuan" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/layout_perfor" />
+
+    <View
+            style="@style/horizontalLine"
+            android:layout_marginTop="@dimen/dimen_5" />
+
+    <LinearLayout
+            style="@style/style_match_wrap_content"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dimen_25"
+            android:paddingRight="@dimen/dimen_25">
+
+        <TextView
+                android:id="@+id/tv_perfor_01"
+                style="@style/style_wrap_content"
+                android:layout_width="0dp"
+                android:layout_margin="@dimen/dimen_15"
+                android:layout_weight="1"
+                android:background="@drawable/btn_bg_quit_login_normal"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dimen_16"
+                android:paddingTop="@dimen/dimen_5"
+                android:paddingRight="@dimen/dimen_16"
+                android:paddingBottom="@dimen/dimen_5"
+                android:text="团队排名"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_12" />
+
+        <View
+                style="@style/verticalLine"
+                android:layout_marginLeft="@dimen/dimen_30"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:layout_marginRight="@dimen/dimen_30"
+                android:layout_marginBottom="@dimen/dimen_20"
+
+
+                />
+
+        <TextView
+                android:id="@+id/tv_perfor_02"
+                style="@style/style_wrap_content"
+                android:layout_width="0dp"
+                android:layout_margin="@dimen/dimen_15"
+                android:layout_weight="1"
+                android:background="@drawable/btn_bg_quit_login_normal"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dimen_16"
+                android:paddingTop="@dimen/dimen_5"
+                android:paddingRight="@dimen/dimen_16"
+                android:paddingBottom="@dimen/dimen_5"
+                android:textSize="@dimen/dimen_12"
+                android:text="拓客员排名"
+                android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>

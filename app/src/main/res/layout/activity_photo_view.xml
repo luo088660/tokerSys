@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        style="@style/style_match_content">
+
+
+    <com.toker.sys.utils.view.image.PhotoView
+            android:id="@+id/photo_view"
+            style="@style/style_match_content" />
+    <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_10"
+            android:src="@mipmap/icon_back" />
+
+</RelativeLayout>

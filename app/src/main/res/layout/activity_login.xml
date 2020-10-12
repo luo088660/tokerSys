@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/style_match_content"
+        android:background="@color/white_01"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+    <include layout="@layout/layout_content_title" />
+
+    <ImageView
+            android:layout_width="109dp"
+            android:layout_height="96dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dimen_50"
+            android:layout_marginBottom="@dimen/dimen_12"
+            android:src="@mipmap/logo_" />
+
+    <TextView
+            style="@style/style_match_wrap_content"
+            android:gravity="center"
+            android:text="恒大集团营销拓客系统"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_18" />
+
+    <LinearLayout
+            style="@style/style_match_wrap_content"
+            android:layout_marginLeft="@dimen/dimen_30"
+            android:layout_marginTop="@dimen/dimen_60"
+            android:layout_marginRight="@dimen/dimen_30"
+            android:orientation="vertical">
+
+        <LinearLayout
+                style="@style/style_match_wrap_content"
+                android:gravity="center">
+
+            <ImageView
+                    android:layout_width="@dimen/dimen_20"
+                    android:layout_height="@dimen/dimen_20"
+                    android:src="@mipmap/icon_id" />
+
+            <EditText
+                    android:id="@+id/et_login_01"
+                    style="@style/style_wrap_content"
+                    android:maxLines="1"
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:singleLine="true"
+                    android:hint="请输入账号"
+                    android:textSize="@dimen/dimen_14" />
+
+        </LinearLayout>
+
+        <View
+                style="@style/horizontalLine"
+                android:layout_marginTop="@dimen/dimen_6"
+                android:layout_marginBottom="@dimen/dimen_20" />
+
+        <LinearLayout
+                style="@style/style_match_wrap_content"
+                android:gravity="center">
+
+            <ImageView
+                    android:layout_width="@dimen/dimen_20"
+                    android:layout_height="@dimen/dimen_20"
+                    android:src="@mipmap/icon_passwd" />
+
+            <EditText
+                    android:id="@+id/ed_pwd_login"
+                    style="@style/style_wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:background="@null"
+                    android:singleLine="true"
+                    android:hint="请输入密码"
+                    android:inputType="textPassword"
+                    android:textSize="@dimen/dimen_14" />
+
+            <CheckBox
+                    android:id="@+id/cb_login"
+                    style="@style/style_wrap_content"
+                    android:layout_width="wrap_content"
+                    android:button="@drawable/cb_bg_pwd_selector" />
+
+        </LinearLayout>
+
+        <View
+                style="@style/horizontalLine"
+                android:layout_marginTop="@dimen/dimen_6" />
+
+        <LinearLayout
+                style="@style/style_match_wrap_content"
+                android:layout_marginTop="@dimen/dimen_16"
+                android:gravity="center|left">
+
+            <CheckBox
+                    android:id="@+id/cb_useragree"
+                    style="@style/style_wrap_content"
+                    android:layout_marginRight="@dimen/dimen_5"
+                    android:button="@drawable/cb_xz_selector" />
+
+            <TextView
+                    style="@style/style_wrap_content"
+                    android:text="我已阅读并同意"
+                    android:textColor="@color/c_gray_6"
+                    android:textSize="@dimen/dimen_12" />
+
+            <TextView
+                    android:id="@+id/tv_useragree_login"
+                    style="@style/style_wrap_content"
+                    android:text="《用户隐私政策》"
+                    android:textColor="@color/c_blue_6"
+                    android:textSize="@dimen/dimen_12" />
+        </LinearLayout>
+
+        <Button
+                android:id="@+id/btn_login"
+                style="@style/style_match_wrap_content"
+                android:layout_marginTop="@dimen/dimen_18"
+                android:background="@drawable/btn_bg_login_normal"
+                android:text="登录"
+                android:textColor="@color/white_01"
+                android:textSize="@dimen/dimen_18" />
+
+        <TextView
+                android:id="@+id/tv_forget_pw_login"
+                style="@style/style_wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="@dimen/dimen_15"
+                android:text="忘记登录密码？"
+                android:textColor="@color/c_red_4"
+                android:textSize="@dimen/dimen_12" />
+
+        <LinearLayout
+                style="@style/style_match_wrap_content"
+                android:visibility="gone">
+            <Button
+                    android:id="@+id/btn_login1"
+                    style="@style/style_wrap_content"
+                    android:layout_weight="1"
+                    android:text="中层" />
+
+            <Button
+                    android:id="@+id/btn_login2"
+                    style="@style/style_wrap_content"
+                    android:layout_weight="1"
+                    android:text="管理层" />
+
+            <Button
+                    android:id="@+id/btn_login3"
+                    style="@style/style_wrap_content"
+                    android:layout_weight="1"
+                    android:text="拓客员" />
+
+            <Button
+                    android:id="@+id/btn_login4"
+                    style="@style/style_wrap_content"
+                    android:layout_weight="1"
+                    android:text="组长" />
+
+        </LinearLayout>
+        <LinearLayout
+                style="@style/style_match_wrap_content"
+                android:visibility="gone">
+            <Button
+                    android:id="@+id/btn_login5"
+                    style="@style/style_wrap_content"
+                    android:layout_weight="1"
+                    android:text="中层" />
+            <Button
+                    android:id="@+id/btn_login6"
+                    style="@style/style_wrap_content"
+                    android:layout_weight="1"
+                    android:text="管理层" />
+
+            <Button
+                    android:id="@+id/btn_login7"
+                    style="@style/style_wrap_content"
+                    android:layout_weight="1"
+                    android:text="拓客员" />
+            <Button
+                    android:id="@+id/btn_login8"
+                    style="@style/style_wrap_content"
+                    android:layout_weight="1"
+                    android:text="组长" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

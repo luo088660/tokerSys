@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/style_match_content"
+        android:background="@color/c_gray_12"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+    <include layout="@layout/layout_content_title" />
+
+    <ScrollView style="@style/style_match_wrap_content">
+
+        <LinearLayout
+                style="@style/style_match_content"
+                android:orientation="vertical">
+
+            <include layout="@layout/layout_attend_detail_01" />
+
+            <include layout="@layout/layout_attend_detail_02" />
+
+            <LinearLayout
+                    style="@style/style_match_content"
+                    android:id="@+id/ll_attend_detail_01"
+                    android:orientation="vertical">
+
+
+                <LinearLayout
+                        android:id="@+id/ll_attend_detail"
+                        style="@style/style_match_wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_16"
+                        android:layout_marginTop="@dimen/dimen_16"
+                        android:layout_marginRight="@dimen/dimen_16"
+                        android:layout_marginBottom="@dimen/dimen_5">
+
+                    <TextView
+                            android:id="@+id/tv_attend_detail_01"
+                            style="@style/style_wrap_content"
+                            android:layout_marginRight="@dimen/dimen_12"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_bg_kaoqin_zc_normal"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/dimen_16"
+                            android:paddingTop="@dimen/dimen_5"
+                            android:paddingRight="@dimen/dimen_16"
+                            android:paddingBottom="@dimen/dimen_5"
+                            android:text="考勤正常"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/dimen_14" />
+
+                    <TextView
+                            android:id="@+id/tv_attend_detail_02"
+                            style="@style/style_wrap_content"
+                            android:layout_marginLeft="@dimen/dimen_12"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_bg_kaoqin_yc_normal"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/dimen_16"
+                            android:paddingTop="@dimen/dimen_5"
+                            android:paddingRight="@dimen/dimen_16"
+                            android:paddingBottom="@dimen/dimen_5"
+                            android:text="考勤异常"
+                            android:textColor="@color/c_gray_6"
+                            android:textSize="@dimen/dimen_14" />
+
+                </LinearLayout>
+
+                <include layout="@layout/layout_attend_detail_03" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

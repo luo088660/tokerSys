@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:fitsSystemWindows="true"
+              style="@style/style_match_content"
+              android:background="@color/c_gray_12"
+              android:orientation="vertical">
+    <include layout="@layout/layout_content_title"/>
+    <LinearLayout style="@style/style_match_wrap_content"
+                  android:background="@color/white"
+                  android:orientation="vertical">
+
+        <LinearLayout style="@style/style_match_wrap_content"
+                      android:layout_marginLeft="@dimen/dimen_16"
+                      android:layout_marginRight="@dimen/dimen_16"
+                      android:gravity="center"
+                      >
+            <TextView style="@style/style_wrap_content_ts14_tc7"
+                      android:text="手机号码\t\t\t"/>
+            <EditText style="@style/style_wrap_content_w1_mt16mb16_ml20_bnull_ts14"
+                      android:id="@+id/ed_fro_phone"
+                      android:hint="请输入手机号码"
+            />
+        </LinearLayout>
+        <View style="@style/horizontalLine"/>
+        <LinearLayout style="@style/style_match_wrap_content"
+                      android:layout_marginRight="@dimen/dimen_16"
+                      android:layout_marginLeft="@dimen/dimen_16"
+                      android:gravity="center">
+            <TextView style="@style/style_wrap_content_ts14_tc7"
+                      android:text="图形验证码"/>
+            <EditText style="@style/style_wrap_content_w1_mt16mb16_ml20_bnull_ts14"
+                      android:id="@+id/ed_fro_pswd"
+                      android:hint="请输入验证码"
+            />
+            <ImageView android:layout_width="@dimen/dimen_60"
+                       android:id="@+id/img_fro_pswd"
+                       android:layout_height="@dimen/dimen_30"/>
+        </LinearLayout>
+        <View style="@style/horizontalLine"/>
+        <LinearLayout style="@style/style_match_wrap_content"
+                      android:layout_marginLeft="@dimen/dimen_16"
+                      android:layout_marginRight="@dimen/dimen_16"
+                      android:gravity="center">
+            <TextView style="@style/style_wrap_content_ts14_tc7"
+                      android:text="验证码\t\t\t\t\t"/>
+            <EditText style="@style/style_wrap_content_w1_mt16mb16_ml20_bnull_ts14"
+                    android:id="@+id/ed_pswd"
+                      android:hint="请输入验证码"/>
+            <Button
+                    android:id="@+id/btn_fro_vcode"
+                    style="@style/style_wrap_content"
+                    android:layout_height="@dimen/dimen_30"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/tv_bg_quit_login_normal"
+                    android:text="获取验证码"
+                    android:textSize="@dimen/dimen_14"
+                    android:textColorHint="@color/c_red_4"
+                    android:textColor="@color/c_red_4"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+            android:id="@+id/btn_fro_ps_commin"
+            style="@style/style_match_wrap_content"
+            android:layout_marginLeft="@dimen/dimen_16"
+            android:layout_marginRight="@dimen/dimen_16"
+            android:padding="@dimen/dimen_12"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_16"
+            android:background="@drawable/btn_bg_quit_login_normal"
+            android:text="确定"
+            android:layout_marginTop="@dimen/dimen_30"/>
+</LinearLayout>

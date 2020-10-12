@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        style="@style/style_match_wrap_content"
+        android:background="@color/c_gray_12"
+        android:orientation="vertical">
+
+    <com.liaoinstan.springview.widget.SpringView
+            android:id="@+id/sv_exten_record"
+            style="@style/style_match_content"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/dimen_10">
+        <android.support.v4.widget.NestedScrollView
+                style="@style/style_match_content">
+
+        <LinearLayout
+                android:id="@+id/ll_my_little"
+                style="@style/style_match_wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+            <TextView
+                    android:id="@+id/tv_entiret_05"
+                    style="@style/style_wrap_content_ts12_tchg6_tcb6_pdtb14_pdlr10"
+                    android:drawableRight="@mipmap/icon_shuaxuan"
+                    android:drawablePadding="@dimen/dimen_10"
+                    android:hint="选择日期"
+                    android:textSize="@dimen/dimen_12" />
+
+            <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_exten_record"
+                    style="@style/style_match_wrap_content" />
+        </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </com.liaoinstan.springview.widget.SpringView>
+</RelativeLayout>

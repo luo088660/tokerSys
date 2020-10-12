@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/style_match_content"
+              android:fitsSystemWindows="true"
+              android:background="@color/c_gray_12"
+              android:orientation="vertical">
+    <include layout="@layout/layout_content_title"/>
+
+    <FrameLayout style="@style/style_match_content">
+        <ScrollView style="@style/style_match_wrap_content"
+        android:id="@+id/sl_month_indic">
+            <LinearLayout style="@style/style_match_content"
+                          android:orientation="vertical">
+
+                <include layout="@layout/layout_month_indic_01"/>
+                <include layout="@layout/layout_month_indic_02"/>
+                <include layout="@layout/layout_month_indic_03"/>
+                <include layout="@layout/layout_month_indic_04"/>
+
+
+            </LinearLayout>
+        </ScrollView>
+        <TextView style="@style/style_wrap_content"
+                  android:id="@+id/btn_month_indic"
+                  android:layout_gravity="end|bottom"
+                  android:background="@drawable/btn_return_top"
+                  android:layout_margin="@dimen/dimen_20"/>
+    </FrameLayout>
+</LinearLayout>

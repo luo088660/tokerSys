@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/style_match_wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+            style="@style/style_match_wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dimen_16"
+            android:paddingRight="@dimen/dimen_16">
+
+        <LinearLayout
+                style="@style/style_match_wrap_content"
+                android:paddingTop="@dimen/dimen_15"
+                android:paddingBottom="@dimen/dimen_15">
+
+            <TextView
+                    style="@style/style_wrap_content"
+                    android:text="姓名"
+                    android:textSize="@dimen/dimen_14" />
+
+            <TextView
+                    android:id="@+id/tv_attend_deta1_01"
+                    style="@style/style_wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textColor="@color/c_black_6"
+                    android:textSize="@dimen/dimen_14" />
+        </LinearLayout>
+
+        <View style="@style/horizontalLine" />
+
+        <LinearLayout
+                style="@style/style_match_wrap_content"
+                android:paddingTop="@dimen/dimen_15"
+                android:paddingBottom="@dimen/dimen_15">
+
+            <TextView
+                    style="@style/style_wrap_content"
+                    android:text="日期"
+                    android:textSize="@dimen/dimen_14" />
+
+            <TextView
+                    android:id="@+id/tv_attend_deta1_02"
+                    style="@style/style_wrap_content"
+                    android:layout_weight="1"
+                    android:drawableRight="@mipmap/icon_xxjt"
+                    android:drawablePadding="@dimen/dimen_10"
+                    android:gravity="right"
+                    android:text="2019年5月27日 星期四"
+                    android:textColor="@color/c_black_6"
+                    android:textSize="@dimen/dimen_14" />
+        </LinearLayout>
+
+        <View style="@style/horizontalLine" />
+
+        <LinearLayout
+                style="@style/style_match_wrap_content"
+                android:paddingTop="@dimen/dimen_15"
+                android:paddingBottom="@dimen/dimen_15">
+
+            <TextView
+                    style="@style/style_wrap_content"
+                    android:text="上班签到"
+                    android:textSize="@dimen/dimen_14" />
+
+            <TextView
+                    android:id="@+id/tv_attend_deta1_03"
+                    style="@style/style_wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="张三三"
+                    android:textColor="@color/c_black_6"
+                    android:textSize="@dimen/dimen_14" />
+        </LinearLayout>
+
+        <View style="@style/horizontalLine" />
+
+        <LinearLayout
+                style="@style/style_match_wrap_content"
+                android:paddingTop="@dimen/dimen_15"
+                android:paddingBottom="@dimen/dimen_15">
+
+            <TextView
+                    style="@style/style_wrap_content"
+                    android:text="下班签到"
+                    android:textSize="@dimen/dimen_14" />
+
+            <TextView
+                    android:id="@+id/tv_attend_deta1_04"
+                    style="@style/style_wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="09:00"
+                    android:textColor="@color/c_black_6"
+                    android:textSize="@dimen/dimen_14" />
+        </LinearLayout>
+
+        <View style="@style/horizontalLine" />
+
+        <LinearLayout
+                style="@style/style_match_wrap_content"
+                android:paddingTop="@dimen/dimen_15"
+                android:paddingBottom="@dimen/dimen_15">
+
+            <TextView
+                    style="@style/style_wrap_content"
+                    android:text="签到地址"
+                    android:textSize="@dimen/dimen_14" />
+
+            <TextView
+                    android:id="@+id/tv_attend_deta1_05"
+                    style="@style/style_wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="18:00"
+                    android:textColor="@color/c_black_6"
+                    android:textSize="@dimen/dimen_14" />
+        </LinearLayout>
+
+        <View style="@style/horizontalLine" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        style="@style/style_match_content"
+        android:fitsSystemWindows="true"
+        android:background="@color/c_gray_12"
+        android:orientation="vertical">
+
+    <include layout="@layout/layout_content_title" />
+
+
+    <com.liaoinstan.springview.widget.SpringView
+            android:id="@+id/sp_t_approval"
+            style="@style/style_match_content">
+
+        <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_team_mem"
+                style="@style/style_match_wrap_content" />
+    </com.liaoinstan.springview.widget.SpringView>
+
+</LinearLayout>

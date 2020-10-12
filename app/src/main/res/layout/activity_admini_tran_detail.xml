@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/style_match_wrap_content"
+              android:orientation="vertical"
+              android:descendantFocusability="blocksDescendants"
+              android:fitsSystemWindows="true"
+              android:background="@color/c_gray_12">
+    <include layout="@layout/layout_content_title"/>
+`
+    <android.support.v4.widget.NestedScrollView style="@style/style_match_content">
+        <LinearLayout style="@style/style_match_content"
+                      android:descendantFocusability="blocksDescendants"
+                      android:orientation="vertical">
+
+            <include layout="@layout/layout_admini_tran_detail_01"/>
+            <include layout="@layout/layout_admini_tran_detail_02"/>
+
+            <android.support.v7.widget.RecyclerView
+                    style="@style/style_match_wrap_content"
+            android:id="@+id/rv_admini_tran"/>
+            <FrameLayout style="@style/style_match_content"
+                         android:layout_marginTop="@dimen/dimen_10"
+                         android:id="@+id/fl_admini_tran_detail"/>
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

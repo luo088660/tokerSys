@@ -1,0 +1,99 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!--    <string name="app_name">恒大拓客</string>-->
+<!--    <string name="app_name">恒大拓客-测试版</string>-->
+
+    <string name="tip_fol_up_cus">跟进中的客户</string>
+    <string name="task_await_appr">待审批任务</string>
+    <string name="custom_foll_up">待跟进客户</string>
+    <string name="custom_foll_up1">逾期未跟进客户</string>
+    <string name="task_foll_up">待跟进任务</string>
+    <string name="custom_be_assig">待分配客户</string>
+    <string name="group_foll_task">小组待跟进任务</string>
+
+    <string name="tip_Myteam">我的团队</string>
+    <string name="tip_Team_attendance">团队考勤</string>
+    <string name="tip_Schedule_Rule">排班计划</string>
+    <string name="tip_Customer_Map">客户地图</string>
+
+    <string name="tip_MyMission">我的任务</string>
+    <string name="tip_Attendance_Card">考勤打卡</string>
+    <string name="tip_My_Schedule">我的排班</string>
+
+
+    <string name="tip_bus_pool">公客池</string>
+    <string name="tip_Inval_cus">无效客户</string>
+    <string name="tip_my_client">我的客户</string>
+    <string name="tip_my_add_new_cut">新增客户</string>
+
+    <string name="tip_whole">全部</string>
+    <string name="tip_created">我创建的</string>
+    <string name="tip_approved">待审批</string>
+    <string name="tip_Accept">我接受的任务</string>
+    <string name="tip_assignment">我下发的任务</string>
+    <string name="tip_process">审批中</string>
+    <string name="tip_Current">当前任务</string>
+    <string name="tip_started">未开始</string>
+    <string name="tip_Completed">已完成</string>
+
+
+    <string name="tip_atten_today">今日考勤</string>
+    <string name="tip_atten_stati">考勤统计</string>
+
+    <string name="tip_little_bee">小蜜蜂</string>
+    <string name="tip_extension">拓客员</string>
+    <string name="tip_punch_record">打卡记录</string>
+    <string name="tip_touch_records">拓客记录</string>
+
+    <string name="tip_Unread">未读</string>
+    <string name="tip_Alread_ead">已读</string>
+
+
+    <string name="tip_overdue_follow_up"> 逾期未跟进</string>
+    <string name="tip_coming_into_pool"> 即将进入公客池</string>
+    <string name="tip_month_indic_ass">月指标考核任务</string>
+
+    <string name="tip_task1"><![CDATA[<a>截止</a><a>%1$s</a><a>日，逾期未跟进客户统计排名如下：</a>]]></string>
+    <string name="tip_task"><![CDATA[<a>共 </a><font color=\'#E62E37\'><a>%1$s</a></font><a> 个任务</a>]]></string>
+    <string name="tip_custom"><![CDATA[<a>共 </a><font color=\'#E62E37\'><a>%1$s</a></font><a> 个客户</a>]]></string>
+    <string name="tip_task_day"><![CDATA[<a>逾期</a><font color=\'#E62E37\'><a>%1$s</a></font><a> 天</a>]]></string>
+    <string name="tip_task_day1"><![CDATA[<a></a><font color=\'#E62E37\'><a>%1$s</a></font><a> 天后进入公客池</a>]]></string>
+    <string name="tip_task_day_01" tools:ignore="ExtraTranslation"><![CDATA[<a></a><font color=\'#E62E37\'><a>逾期%1$s天，请尽快分配拓客员！</a></font>]]></string>
+    <string name="tip_task_day_02"><![CDATA[<a></a><font color=\'#E62E37\'><a>客户已被标记为无效，请尽快分配拓客员！</a></font>]]></string>
+    <string name="tip_start_01"><![CDATA[<a>今日 </a><font color=\'#E62E37\'><a>%1$s</a></font><a> 个任务待跟进</a>]]></string>
+    <string name="tip_start_02"><![CDATA[<a>共 </a><font color=\'#E62E37\'><a>%1$s</a></font><a> 个任务未开始</a>]]></string>
+    <string name="tip_start_03"><![CDATA[<a>共 </a><font color=\'#E62E37\'><a>%1$s</a></font><a> 个任务已完成</a>]]></string>
+    <string name="tip_start_04" tools:ignore="ExtraTranslation"><![CDATA[<a>共 </a><font color=\'#E62E37\'><a>%1$s</a></font><a> 个客户待分配</a>]]></string>
+
+    <string name="tip_bee_01" tools:ignore="ExtraTranslation"><![CDATA[<a>共 </a><font color=\'#E62E37\'><a>%1$s</a></font><a> 个小蜜蜂</a>]]></string>
+
+    <string name="tip_task_num"><![CDATA[<font color=\'#E62E37\'><a>%1$s</a>/</font><a>%2$s</a>]]></string>
+    <string name="tip_task_num1"><![CDATA[<a>%1$s</a>/<a>%2$s</a>]]></string>
+    <string name="tip_task_number"><![CDATA[<font color=\'#E62E37\'><a>%1$s</a><a>%</a></font>]]></string>
+    <string name="tip_task_number_01"><![CDATA[<a>轨迹正常</a><font color=\'#E62E37\'><a>(%1$s)</a></font><a>人</a>]]></string>
+    <string name="tip_task_number_02"><![CDATA[<a>轨迹异常</a><font color=\'#E62E37\'><a>(%1$s)</a></font><a>人</a>]]></string>
+
+
+    <string name="tip_task_number_03"><![CDATA[<a>已汇报</a><font color=\'#E62E37\'><a>%1$s</a></font><a>人;未汇报</a><font color=\'#E62E37\'><a>%2$s</a></font><a>人</a>]]></string>
+    <string name="tip_task_number_04"><![CDATA[<a>正常</a><font color=\'#E62E37\'><a>%1$s</a></font><a>人;异常</a><font color=\'#E62E37\'><a>%2$s</a></font><a>人</a>]]></string>
+    <string name="tip_task_number_05"><![CDATA[<a>上班人员</a><font color=\'#E62E37\'><a>(%1$s)</a></font>]]></string>
+    <string name="tip_task_number_06"><![CDATA[<a>请假人员</a><font color=\'#E62E37\'><a>(%1$s)</a></font>]]></string>
+    <string name="tip_task_number_07"><![CDATA[<a>考勤正常</a><font color=\'#E62E37\'><a>(%1$s人)</a></font>]]></string>
+    <string name="tip_task_number_08"><![CDATA[<a>考勤异常</a><font color=\'#E62E37\'><a>(%1$s人)</a></font>]]></string>
+    <string name="tip_task_number_09"><![CDATA["确定审核考勤为%1$s？"]]></string>
+    <string name="tip_task_number_10"><![CDATA[<a>当前位置偏离考勤规则地址</a><font color=\'#E62E37\'><a>%1$s</a></font><a>。确认签退后，考勤将视为异常考勤，且不允许再次签退，确认签退吗？</a>]]></string>
+    <string name="tip_task_number_11"><![CDATA[<a>当前位置偏离考勤规则地址</a><font color=\'#E62E37\'><a>%1$s</a></font><a>。确认签到后，考勤将视为异常考勤，且不允许再次签到，确认签到吗？</a>]]></string>
+
+
+    <string name="tip_task_name">确定将客户【%1$s】标记无效吗?</string>
+
+
+    <string name="tip_new_custom_01"><![CDATA[<a>客户姓名</a><font color=\'#E62E37\'><a>*</a></font>]]></string>
+    <string name="tip_new_custom_02"><![CDATA[<a>手机号码</a><font color=\'#E62E37\'><a>*</a></font>]]></string>
+    <string name="tip_new_custom_03"><![CDATA[<a>拓客地址</a><font color=\'#E62E37\'><a>*</a></font>]]></string>
+    <string name="tip_new_custom_04"><![CDATA[<a>被推荐人身份<br/>证后六位</a><font color=\'#E62E37\'><a>*</a></font>]]></string>
+    <string name="tip_new_custom_05"><![CDATA[<a>省份</a><font color=\'#E62E37\'><a>*</a></font>]]></string>
+    <string name="tip_new_custom_06"><![CDATA[<a>意向楼盘</a><font color=\'#E62E37\'><a>*</a></font>]]></string>
+    <string name="tip_new_custom_07"><![CDATA[<a>预计看房日期</a><font color=\'#E62E37\'><a>*</a></font>]]></string>
+    <string name="tip_new_custom_08"><![CDATA[<a>到访地区</a><font color=\'#E62E37\'><a>*</a></font>]]></string>
+    <string name="tip_new_custom_09" tools:ignore="ExtraTranslation"><![CDATA[<a>到访地点</a><font color=\'#E62E37\'><a>*</a></font>]]></string>
+</resources>

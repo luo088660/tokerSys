@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        style="@style/style_match_content"
+        android:background="@color/c_gray_12"
+        android:orientation="vertical">
+
+    <LinearLayout
+            style="@style/style_match_wrap_content"
+            android:orientation="vertical">
+
+        <LinearLayout
+                style="@style/style_match_wrap_content"
+                android:layout_marginTop="@dimen/dimen_15"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="@dimen/dimen_16">
+
+            <TextView
+                    android:id="@+id/tv_me_atten_01"
+                    style="@style/style_match_wrap_content"
+                    android:layout_margin="@dimen/dimen_15"
+                    android:gravity="center"
+                    android:text="09:34:09"
+                    android:textColor="@color/c_black_6"
+                    android:textSize="@dimen/dimen_20"
+                    android:textStyle="bold" />
+
+            <TextView
+                    android:id="@+id/tv_me_atten_02"
+                    style="@style/style_match_wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/c_black_7"
+                    android:textSize="@dimen/dimen_12" />
+
+            <View
+                    style="@style/horizontalLine"
+                    android:layout_marginTop="@dimen/dimen_16" />
+
+            <LinearLayout
+                    android:id="@+id/ll_me_atten_03"
+                    style="@style/style_match_wrap_content"
+                    android:layout_marginTop="@dimen/dimen_16">
+
+                <TextView
+                        style="@style/style_wrap_content"
+                        android:text="考勤地址："
+                        android:textColor="@color/c_black_7"
+                        android:textSize="@dimen/dimen_12" />
+
+                <TextView
+                        android:id="@+id/tv_me_atten_03"
+                        style="@style/style_match_wrap_content"
+                        android:drawableLeft="@mipmap/icon_loca"
+                        android:drawablePadding="@dimen/dimen_5"
+                        android:textColor="@color/c_black_6"
+                        android:textSize="@dimen/dimen_12" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/ll_me_atten_04"
+                style="@style/style_match_content"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:orientation="vertical">
+
+            <LinearLayout
+                    style="@style/style_match_wrap_content"
+                    android:background="@color/white_01"
+                    android:gravity="center"
+                    android:padding="@dimen/dimen_16">
+
+                <TextView
+                        android:id="@+id/tv_me_atten_04"
+                        style="@style/style_wrap_content"
+                        android:gravity="left"
+                        android:lineSpacingMultiplier="1.2"
+                        android:text="签到\n09:00" />
+
+                <LinearLayout
+                        style="@style/style_wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_24"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                    <TextView
+                            android:id="@+id/tv_me_atten_05"
+                            style="@style/style_match_wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@mipmap/icon_loca"
+                            android:drawablePadding="@dimen/dimen_5"
+                            android:textColor="@color/c_gray_6"
+                            android:textSize="@dimen/dimen_12" />
+
+                    <LinearLayout
+                            android:id="@+id/ll_me_atten_01_"
+                            style="@style/style_wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dimen_10">
+
+                        <TextView
+                                android:id="@+id/tv_me_atten_06"
+                                style="@style/style_wrap_content"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="@dimen/dimen_18"
+                                android:text="迟到"
+                                android:textColor="@color/c_red_4"
+                                android:textSize="@dimen/dimen_12" />
+
+                        <TextView
+                                android:id="@+id/tv_me_atten_07"
+                                style="@style/style_wrap_content"
+                                android:layout_width="wrap_content"
+                                android:text="备注"
+                                android:textColor="@color/c_blue_6"
+                                android:textSize="@dimen/dimen_12" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                        android:id="@+id/btn_me_atten_01"
+                        style="@style/style_wrap_content_ts14_tcb6_bg_ptpb10_plpr20"
+                        android:text="签到" />
+            </LinearLayout>
+
+            <View style="@style/horizontalLine" />
+
+            <LinearLayout
+                    style="@style/style_match_wrap_content"
+                    android:background="@color/white_01"
+                    android:gravity="center"
+                    android:padding="@dimen/dimen_16">
+
+                <TextView
+                        android:id="@+id/tv_me_atten_08"
+                        style="@style/style_wrap_content"
+                        android:gravity="left"
+                        android:lineSpacingMultiplier="1.2"
+                        android:text="签到\n18:00" />
+
+                <LinearLayout
+                        style="@style/style_wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_24"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                    <TextView
+                            android:id="@+id/tv_me_atten_09"
+                            style="@style/style_match_wrap_content"
+                            android:drawableLeft="@mipmap/icon_loca"
+                            android:drawablePadding="@dimen/dimen_5"
+                            android:textColor="@color/c_gray_6"
+                            android:textSize="@dimen/dimen_12" />
+
+                    <LinearLayout
+                            android:id="@+id/ll_me_atten_02"
+                            style="@style/style_wrap_content"
+                            android:layout_marginTop="@dimen/dimen_10">
+
+                        <TextView
+                                android:id="@+id/tv_me_atten_10"
+                                style="@style/style_wrap_content"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="@dimen/dimen_18"
+                                android:text="迟到"
+                                android:textColor="@color/c_red_4"
+                                android:textSize="@dimen/dimen_12" />
+
+                        <TextView
+                                android:id="@+id/tv_me_atten_11"
+                                style="@style/style_wrap_content"
+                                android:text="备注"
+                                android:textColor="@color/c_blue_6"
+                                android:textSize="@dimen/dimen_12" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                        android:id="@+id/btn_me_atten_02"
+                        style="@style/style_wrap_content_ts14_tcb6_bg_ptpb10_plpr20"
+                        android:text="签退" />
+            </LinearLayout>
+
+            <TextView
+                    style="@style/style_match_wrap_content"
+                    android:layout_margin="@dimen/dimen_16"
+                    android:id="@+id/tv_me_atten_011"
+                    android:textColor="@color/c_gray_6"
+                    android:textSize="@dimen/dimen_10" />
+        </LinearLayout>
+
+        <TextView
+                style="@style/style_match_wrap_content"
+                android:background="@color/white"
+                android:id="@+id/tv_me_atten_wxkq"
+                android:visibility="gone"
+                android:padding="@dimen/dimen_16"
+                android:text="无需考勤"
+                android:textColor="@color/c_black_7"
+                android:textSize="@dimen/dimen_14"
+                android:layout_marginTop="@dimen/dimen_10"/>
+    </LinearLayout>
+</ScrollView>
+
+

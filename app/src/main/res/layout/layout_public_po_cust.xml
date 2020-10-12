@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/style_match_wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+            style="@style/style_match_wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dimen_15"
+            android:paddingRight="@dimen/dimen_15">
+
+        <LinearLayout
+                style="@style/style_match_wrap_content"
+                android:paddingTop="@dimen/dimen_15"
+                android:paddingBottom="@dimen/dimen_15">
+
+            <CheckBox
+                    android:id="@+id/cb_item_po_cust_01"
+                    style="@style/style_wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/tv_po_cust_06"
+                    android:button="@drawable/cb_xz_selector"
+                    android:paddingLeft="@dimen/dimen_10"
+                    android:text="王女士"
+                    android:textColor="@color/c_black_6"
+                    android:textSize="@dimen/dimen_16" />
+
+            <TextView
+                    android:id="@+id/tv_custo_detail_02"
+                    style="@style/style_wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="13900000001"
+                    android:textColor="@color/c_black_6"
+                    android:textSize="@dimen/dimen_14" />
+
+            <TextView
+                    android:id="@+id/tv_custo_detail_03"
+                    style="@style/style_wrap_content"
+                    android:background="@color/c_gray_124"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/dimen_10"
+                    android:paddingTop="@dimen/dimen_5"
+                    android:paddingRight="@dimen/dimen_10"
+                    android:paddingBottom="@dimen/dimen_5"
+                    android:text="逾期2天"
+                    android:textColor="@color/c_black_7"
+                    android:textSize="@dimen/dimen_12" />
+
+            <TextView
+                    android:id="@+id/tv_custo_detail_04"
+                    style="@style/style_wrap_content"
+                    android:layout_weight="1"
+                    android:drawableRight="@mipmap/icon_right"
+                    android:drawablePadding="@dimen/dimen_10"
+                    android:gravity="right"
+                    android:text=""
+                    android:textColor="@color/c_black_7"
+                    android:textSize="@dimen/dimen_12" />
+        </LinearLayout>
+
+        <View style="@style/horizontalLine" />
+
+        <LinearLayout
+                style="@style/style_match_wrap_content"
+                android:layout_marginTop="@dimen/dimen_15"
+                android:layout_marginBottom="@dimen/dimen_15">
+
+            <LinearLayout
+                    style="@style/style_wrap_content"
+                    android:orientation="vertical">
+
+                <TextView
+                        style="@style/style_wrap_content"
+                        android:text="拓客日期"
+                        android:textColor="@color/c_black_7"
+                        android:textSize="@dimen/dimen_14" />
+
+                <TextView
+                        style="@style/style_wrap_content"
+                        android:layout_marginTop="@dimen/dimen_15"
+                        android:text="拓客员"
+                        android:textColor="@color/c_black_7"
+                        android:textSize="@dimen/dimen_14" />
+
+                <TextView
+                        style="@style/style_wrap_content"
+                        android:layout_marginTop="@dimen/dimen_15"
+                        android:paddingTop="@dimen/dimen_5"
+                        android:text="状态"
+                        android:textColor="@color/c_black_7"
+                        android:textSize="@dimen/dimen_14" />
+            </LinearLayout>
+
+            <LinearLayout
+                    style="@style/style_wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:id="@+id/tv_custo_detail_05"
+                        style="@style/style_wrap_content"
+                        android:text="2019-08-01"
+                        android:textColor="@color/c_black_6"
+
+                        android:textSize="@dimen/dimen_14" />
+
+                <TextView
+                        android:id="@+id/tv_custo_detail_06"
+                        style="@style/style_wrap_content"
+                        android:layout_marginTop="@dimen/dimen_15"
+                        android:text="李木子"
+                        android:textColor="@color/c_black_6"
+                        android:textSize="@dimen/dimen_14" />
+
+                <LinearLayout
+                        style="@style/style_wrap_content"
+                        android:layout_marginTop="@dimen/dimen_15">
+
+
+                    <TextView
+                            android:id="@+id/tv_custo_detail_07"
+                            style="@style/style_wrap_content"
+                            android:background="@color/c_red_5"
+                            android:paddingLeft="@dimen/dimen_15"
+                            android:paddingTop="@dimen/dimen_5"
+                            android:paddingRight="@dimen/dimen_15"
+                            android:paddingBottom="@dimen/dimen_5"
+                            android:text="未推荐"
+                            android:textColor="@color/c_red_4"
+                            android:textSize="@dimen/dimen_14" />
+
+                    <TextView
+                            android:id="@+id/tv_custo_detail_08"
+                            style="@style/style_wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="@dimen/dimen_13"
+                            android:layout_toRightOf="@+id/tv_custo_detail_07"
+                            android:text="明细  >"
+                            android:textColor="@color/c_blue_6"
+                            android:visibility="gone" />
+
+                    <LinearLayout
+                            style="@style/style_wrap_content"
+                            android:layout_gravity="center"
+                            android:visibility="gone"
+                            android:layout_marginRight="@dimen/dimen_10"
+                            android:id="@+id/ll_custo_detail_10"
+                            android:layout_marginLeft="@dimen/dimen_10">
+
+                        <TextView
+                                style="@style/style_wrap_content"
+                                android:text="失效原因"
+                                android:textColor="@color/c_gray_6"
+                                android:textSize="@dimen/dimen_14" />
+
+                        <TextView
+                                style="@style/style_wrap_content"
+                                android:id="@+id/tv_custo_detail_10"
+                                android:maxLines="1"
+                                android:layout_marginLeft="@dimen/dimen_10"
+                                android:textColor="@color/btn_red"
+                                android:textSize="@dimen/dimen_14" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    style="@style/style_wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="right|center"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:id="@+id/tv_custo_detail_09"
+                        style="@style/style_wrap_content"
+                        android:background="@drawable/tv_bg_quit_login_normal"
+                        android:gravity="center"
+                        android:paddingRight="@dimen/dimen_10"
+                        android:paddingLeft="@dimen/dimen_10"
+                        android:paddingTop="@dimen/dimen_5"
+                        android:paddingBottom="@dimen/dimen_5"
+                        android:text="分配"
+                        android:textColor="@color/btn_red"
+                        android:textSize="@dimen/dimen_12" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

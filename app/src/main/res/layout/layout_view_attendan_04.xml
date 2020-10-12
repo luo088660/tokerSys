@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:visibility="gone"
+              android:id="@+id/ll_view_attendan_04"
+              style="@style/style_match_wrap_content">
+
+    <LinearLayout style="@style/style_match_wrap_content"
+                  android:layout_marginTop="@dimen/dimen_10"
+                  android:background="@color/white"
+                  android:orientation="vertical">
+        <TextView style="@style/style_match_wrap_content"
+                  android:paddingTop="@dimen/dimen_15"
+                  android:paddingRight="@dimen/dimen_16"
+                  android:paddingLeft="@dimen/dimen_16"
+                  android:id="@+id/tv_view_atte4_01"
+                  android:textSize="@dimen/dimen_14"
+                  android:textColor="@color/c_black_6"
+                  android:drawableRight="@mipmap/icon_xsjt"
+                  android:paddingBottom="@dimen/dimen_15"
+                  android:text="上班人员(0人)"/>
+        <View style="@style/horizontalLine"/>
+
+        <android.support.v7.widget.RecyclerView
+                android:visibility="gone"
+                android:id="@+id/rv_view_atte4_01"
+                style="@style/style_match_content"/>
+    </LinearLayout>
+    <LinearLayout style="@style/style_match_wrap_content"
+                  android:layout_marginTop="@dimen/dimen_10"
+                  android:background="@color/white"
+                  android:orientation="vertical">
+        <TextView style="@style/style_match_wrap_content"
+                  android:paddingTop="@dimen/dimen_15"
+                  android:paddingRight="@dimen/dimen_16"
+                  android:id="@+id/tv_view_atte4_02"
+                  android:paddingLeft="@dimen/dimen_16"
+                  android:textSize="@dimen/dimen_14"
+                  android:textColor="@color/c_black_6"
+                  android:drawableRight="@mipmap/icon_xsjt"
+                  android:paddingBottom="@dimen/dimen_15"
+                  android:text="请假人员(0人)"/>
+        <View style="@style/horizontalLine"/>
+        <android.support.v7.widget.RecyclerView
+                android:visibility="gone"
+                android:id="@+id/rv_view_atte4_02"
+                style="@style/style_match_content"/>
+    </LinearLayout>
+</LinearLayout>

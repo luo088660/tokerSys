@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        style="@style/style_match_wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        tools:ignore="MissingDefaultResource">
+
+
+    <TextView
+            android:id="@+id/tv_my_attem_01"
+            style="@style/style_match_wrap_content"
+            android:padding="@dimen/dimen_16"
+            android:textColor="@color/c_black_6"
+            android:textSize="@dimen/dimen_14" />
+
+    <View style="@style/horizontalLine_16" />
+    <TextView
+            android:id="@+id/tv_my_attem_011"
+            style="@style/style_match_wrap_content"
+            android:padding="@dimen/dimen_16"
+            android:visibility="gone"
+            android:text="暂无考勤记录"
+            android:textColor="@color/c_gray_6"
+            android:textSize="@dimen/dimen_14" />
+    <LinearLayout
+            style="@style/style_match_wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/ll_my_attem_011"
+            android:visibility="visible">
+
+        <LinearLayout
+                style="@style/style_match_wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/dimen_16">
+
+            <LinearLayout
+                    style="@style/style_match_wrap_content"
+                    android:gravity="center">
+
+                <TextView
+                        android:id="@+id/tv_my_attem_02"
+                        style="@style/style_wrap_content"
+                        android:layout_width="@dimen/dimen_0"
+                        android:layout_weight="1.2"
+                        android:textColor="@color/c_black_6"
+                        android:textSize="@dimen/dimen_20"
+                        android:textStyle="bold" />
+
+                <View style="@style/verticalLine" />
+
+                <LinearLayout
+                        style="@style/style_wrap_content"
+                        android:layout_width="@dimen/dimen_0"
+                        android:layout_marginLeft="@dimen/dimen_10"
+                        android:layout_weight="5">
+
+                    <TextView
+                            style="@style/style_wrap_content"
+                            android:text="签到"
+                            android:textColor="@color/c_black_6"
+                            android:textSize="@dimen/dimen_14" />
+
+                    <TextView
+                            android:id="@+id/tv_my_attem_03"
+                            style="@style/style_wrap_content"
+                            android:layout_marginLeft="@dimen/dimen_12"
+                            android:textColor="@color/c_red_4"
+                            android:textSize="@dimen/dimen_14" />
+
+                    <TextView
+                            android:id="@+id/tv_my_attem_04"
+                            style="@style/style_match_wrap_content"
+                            android:layout_marginLeft="@dimen/dimen_12"
+                            android:textColor="@color/c_gray_6"
+                            android:textSize="@dimen/dimen_12" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                    android:id="@+id/tv_my_attem_05"
+                    style="@style/style_match_wrap_content"
+                    android:layout_marginTop="@dimen/dimen_12"
+                    android:drawableLeft="@mipmap/icon_loca"
+                    android:drawablePadding="@dimen/dimen_5"
+                    android:textColor="@color/c_black_7"
+                    android:textSize="@dimen/dimen_12" />
+
+            <TextView
+                    android:id="@+id/tv_my_attem_055"
+                    style="@style/style_match_wrap_content"
+                    android:layout_marginTop="@dimen/dimen_12"
+                    android:drawablePadding="@dimen/dimen_5"
+                    android:text="暂无考勤数据"
+                    android:textColor="@color/c_black_7"
+                    android:textSize="@dimen/dimen_12"
+                    android:visibility="gone" />
+        </LinearLayout>
+
+        <View style="@style/horizontalLine_16" />
+
+        <LinearLayout
+                style="@style/style_match_wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/dimen_16">
+
+            <LinearLayout
+                    style="@style/style_match_wrap_content"
+                    android:gravity="center">
+
+                <TextView
+                        android:id="@+id/tv_my_attem_06"
+                        style="@style/style_wrap_content"
+                        android:layout_width="@dimen/dimen_0"
+                        android:layout_weight="1.2"
+                        android:textColor="@color/c_black_6"
+                        android:textSize="@dimen/dimen_20"
+                        android:textStyle="bold" />
+
+                <View style="@style/verticalLine" />
+
+                <LinearLayout
+                        style="@style/style_wrap_content"
+                        android:layout_width="@dimen/dimen_0"
+                        android:layout_marginLeft="@dimen/dimen_10"
+                        android:layout_weight="5">
+
+                    <TextView
+                            style="@style/style_wrap_content"
+                            android:text="签退"
+                            android:textColor="@color/c_black_6"
+                            android:textSize="@dimen/dimen_14" />
+
+                    <TextView
+                            android:id="@+id/tv_my_attem_07"
+                            style="@style/style_wrap_content"
+                            android:layout_width="wrap_content"
+                            android:layout_marginLeft="@dimen/dimen_12"
+                            android:textColor="@color/c_red_4"
+                            android:textSize="@dimen/dimen_14" />
+
+                    <TextView
+                            android:id="@+id/tv_my_attem_08"
+                            style="@style/style_match_wrap_content"
+                            android:layout_marginLeft="@dimen/dimen_12"
+                            android:textColor="@color/c_gray_6"
+                            android:textSize="@dimen/dimen_12" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                    android:id="@+id/tv_my_attem_09"
+                    style="@style/style_match_wrap_content"
+                    android:layout_marginTop="@dimen/dimen_12"
+                    android:drawableLeft="@mipmap/icon_loca"
+                    android:drawablePadding="@dimen/dimen_5"
+                    android:textColor="@color/c_black_7"
+                    android:textSize="@dimen/dimen_12" />
+
+            <TextView
+                    android:id="@+id/tv_my_attem_099"
+                    style="@style/style_match_wrap_content"
+                    android:layout_marginTop="@dimen/dimen_12"
+                    android:drawablePadding="@dimen/dimen_5"
+                    android:text="暂无考勤数据"
+                    android:textColor="@color/c_black_7"
+                    android:textSize="@dimen/dimen_12"
+                    android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

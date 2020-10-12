@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/style_match_wrap_content"
+              android:background="@color/c_gray_12"
+              android:orientation="vertical">
+    <LinearLayout style="@style/style_match_wrap_content"
+                  android:layout_marginTop="@dimen/dimen_10">
+
+        <TextView style="@style/style_wrap_content_w0_gc_pd14_ts12_tcb6_drxx"
+                  android:id="@+id/tv_follow_up_01"
+                  android:text="全部项目"/>
+        <TextView style="@style/style_wrap_content_w0_gc_pd14_ts12_tcb6_drxx"
+                  android:id="@+id/tv_follow_up_02"
+                  android:text="全部状态"
+        />
+        <TextView style="@style/style_wrap_content_w0_gc_pd14_ts12_tcb6_drxx"
+                  android:text="全部已推荐客户"
+                  android:id="@+id/tv_follow_up_03"/>
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/style_match_wrap_content"
+                  android:background="@color/c_gray_12"
+                  android:gravity="center"
+                  android:layout_gravity="center">
+        <TextView style="@style/style_wrap_content_ts12_tchg6_tcb6_pdtb14_pdlr10"
+                  android:hint="开始日期"
+                  android:id="@+id/tv_follow_up_04"
+        />
+        <TextView style="@style/style_wrap_content"
+                  android:textSize="@dimen/dimen_12"
+                android:id="@+id/tv_follow_up_044"
+                  android:layout_marginRight="@dimen/dimen_6"
+                  android:layout_marginLeft="@dimen/dimen_6"
+                  android:textColor="@color/c_gray_6"
+                  android:text="至"/>
+        <TextView style="@style/style_wrap_content_ts12_tchg6_tcb6_pdtb14_pdlr10"
+                  android:hint="结束日期"
+                  android:id="@+id/tv_follow_up_05"
+        />
+        <ImageView android:layout_width="@dimen/dimen_30"
+                   android:id="@+id/tv_follow_up_06"
+                   android:layout_height="@dimen/dimen_30"
+                   android:padding="@dimen/dimen_8"
+                   android:src="@mipmap/icon_shuaxuan"/>
+    </LinearLayout>
+
+    <TextView style="@style/style_match_wrap_content"
+              android:background="@color/c_gray_122"
+              android:paddingTop="@dimen/dimen_10"
+              android:id="@+id/tv_follow_up_07"
+              android:paddingBottom="@dimen/dimen_10"
+              android:textSize="@dimen/dimen_12"
+              android:layout_gravity="left"
+              android:paddingLeft="@dimen/dimen_16"
+              android:text="共 0 个任务"/>
+
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/style_match_wrap_content"
+        android:orientation="vertical">
+
+    <TextView
+            android:id="@+id/tv_read_01"
+            style="@style/style_wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dimen_15"
+            android:background="@color/c_gray_18"
+            android:paddingLeft="@dimen/dimen_15"
+            android:paddingTop="@dimen/dimen_5"
+            android:paddingRight="@dimen/dimen_15"
+            android:paddingBottom="@dimen/dimen_5"
+            android:textColor="@color/white" />
+
+    <LinearLayout
+            android:id="@+id/ll_read_01"
+            style="@style/style_match_wrap_content"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_marginRight="@dimen/dimen_15"
+            android:background="@color/white_01"
+            android:orientation="vertical">
+
+        <LinearLayout
+                style="@style/style_match_wrap_content"
+                android:gravity="center">
+
+            <TextView
+                    android:id="@+id/tv_read_02"
+                    style="@style/style_wrap_content"
+                    android:layout_margin="@dimen/dimen_15"
+                    android:layout_weight="1"
+                    android:text="2019-5-21 待跟进客户"
+                    android:textColor="@color/c_black_6"
+                    android:textSize="@dimen/dimen_16" />
+
+            <TextView
+                    android:id="@+id/tv_read_03"
+                    style="@style/style_wrap_content"
+                    android:layout_marginRight="@dimen/dimen_15"
+                    android:text="标记已读"
+                    android:textColor="@color/c_red_4"
+                    android:textSize="@dimen/dimen_12" />
+
+        </LinearLayout>
+
+        <View style="@style/horizontalLine" />
+
+        <TextView
+                android:id="@+id/tv_read_04"
+                style="@style/style_match_wrap_content"
+                android:padding="@dimen/dimen_10"
+                android:text="点击查看明细 >"
+                android:textColor="@color/c_blue_5" />
+
+        <View style="@style/horizontalLine" />
+        <TextView
+                android:id="@+id/tv_read_05"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:layout_margin="@dimen/dimen_10"
+                style="@style/style_wrap_content"
+                android:background="@drawable/tv_bg_quit_login_normal"
+                android:gravity="center"
+                android:padding="@dimen/dimen_5"
+                android:text="我知道了,当天不再提醒"
+                android:textSize="@dimen/dimen_12"
+                android:textColor="@color/c_red_4"/>
+    </LinearLayout>
+
+
+</LinearLayout>

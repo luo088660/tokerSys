@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/c_gray_12"
+        android:orientation="vertical">
+
+    <include layout="@layout/layout_content_title" />
+
+    <FrameLayout style="@style/style_match_content">
+
+        <android.support.v4.widget.NestedScrollView
+                android:id="@+id/sl_sheent"
+                style="@style/style_match_content">
+
+            <LinearLayout
+                    style="@style/style_match_content"
+                    android:orientation="vertical">
+
+                <LinearLayout
+                        style="@style/style_match_wrap_content"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                    <com.toker.sys.utils.view.CircleImageView
+                            android:layout_width="@dimen/dimen_80"
+                            android:layout_height="@dimen/dimen_80"
+                            android:id="@+id/imt_st_sheet"
+                            android:layout_margin="@dimen/dimen_15"
+                            android:src="@mipmap/icon_title" />
+
+                    <TextView
+                            android:id="@+id/tv_t_sheet_01"
+                            style="@style/style_wrap_content"
+                            android:layout_centerInParent="true"
+                            android:gravity="center"
+                            android:text="李子一   广东公司拓客管理员"
+                            android:textColor="@color/c_black_6"
+                            android:textSize="@dimen/dimen_15"
+                            android:textStyle="bold" />
+
+                    <TextView
+                            android:id="@+id/tv_t_sheet_02"
+                            android:layout_marginRight="@dimen/dimen_16"
+                            android:layout_marginLeft="@dimen/dimen_16"
+                            style="@style/style_wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="@dimen/dimen_10"
+                            android:gravity="center"
+                            android:textColor="@color/c_black_7"
+                            android:textSize="@dimen/dimen_12" />
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_sheet_title_ls"
+                        style="@style/style_match_wrap_content"
+                        android:layout_marginBottom="@dimen/dimen_10"
+                        android:background="@color/white"
+                        android:paddingTop="@dimen/dimen_10" />
+
+
+                <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_sheet"
+                        style="@style/style_match_wrap_content"
+                        android:background="@color/white"
+                        android:paddingTop="@dimen/dimen_10"
+                        android:paddingBottom="@dimen/dimen_10" />
+
+                <FrameLayout
+                        android:id="@+id/fl_jrkq"
+                        style="@style/style_match_wrap_content" />
+
+                <include layout="@layout/layout_my_performance" />
+
+                <FrameLayout
+                        android:id="@+id/fl_dqrw"
+                        style="@style/style_match_wrap_content" />
+
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+        <TextView
+                android:id="@+id/btn_sheet"
+                style="@style/style_wrap_content"
+                android:layout_gravity="end|bottom"
+                android:layout_margin="@dimen/dimen_20"
+                android:background="@drawable/btn_return_top" />
+    </FrameLayout>
+</LinearLayout>

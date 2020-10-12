@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        style="@style/style_match_content"
+        android:fitsSystemWindows="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+    <!--edittext 失去焦点-->
+    <requestFocus />
+
+    <include
+            android:id="@+id/inc"
+            layout="@layout/layout_content_title" />
+
+    <ScrollView
+            style="@style/style_match_content"
+            android:layout_above="@+id/ll_new_custom"
+            android:layout_below="@+id/inc">
+
+        <LinearLayout
+                style="@style/style_match_wrap_content"
+                android:orientation="vertical">
+
+            <include layout="@layout/layout_new_custom_01" />
+
+            <LinearLayout
+                    android:id="@+id/ll_new_custom_01"
+                    style="@style/style_match_wrap_content"
+                    android:orientation="vertical">
+
+                <LinearLayout style="@style/style_match_wrap_content_pl16_pr16_bw_gc">
+
+                    <TextView
+                            style="@style/style_wrap_content_mt15_mb15_w1_ts14"
+                            android:text="意向级别" />
+
+                    <TextView
+                            android:id="@+id/tv_new_custom_01"
+                            style="@style/style_wrap_content_tch0_tc6_bnull_gr_w1_ts14"
+                            android:layout_weight="1"
+                            android:drawableRight="@mipmap/icon_xxjt"
+                            android:drawablePadding="@dimen/dimen_10"
+                            android:hint="请选择意向级别" />
+                </LinearLayout>
+                <View style="@style/horizontalLine" />
+            </LinearLayout>
+            <include
+                    android:id="@+id/ll_new_custom_02"
+                    layout="@layout/layout_new_custom_02"
+                    android:visibility="visible" />
+
+
+            <LinearLayout style="@style/style_match_wrap_content_pl16_pr16_bw_gc">
+
+                <TextView
+                        style="@style/style_wrap_content_mt15_mb15_w1_ts14"
+                        android:layout_gravity="left|center"
+                        android:layout_weight="0"
+                        android:text="购房客户需求" />
+
+                <LinearLayout
+                        android:id="@+id/ll_new_custom_click"
+                        style="@style/style_match_wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_10"
+                        android:gravity="center">
+
+                    <TextView
+                            android:id="@+id/tv_new_custom_click_00"
+                            style="style/style_wrap_content_tch0_tc6_bnull_gr_w1_ts14"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/c_black_6"
+                            android:hint="请选择"
+                            android:textColorHint="@color/c_gray_6"
+                            android:ellipsize="end"
+                            android:drawableRight="@mipmap/icon_right"
+                            android:maxLines="1"
+                            android:drawablePadding="@dimen/dimen_5"
+                            android:layout_weight="1"
+                            android:gravity="right|center" />
+
+                    <TextView
+                            android:id="@+id/tv_new_custom_click"
+                            android:visibility="gone"
+                            style="@style/style_wrap_content"
+                            android:background="@drawable/btn_bg_click_normal"
+                            android:paddingLeft="@dimen/dimen_10"
+                            android:paddingTop="@dimen/dimen_5"
+                            android:paddingRight="@dimen/dimen_10"
+                            android:paddingBottom="@dimen/dimen_5"
+                            android:text="点击选择"
+                            android:textColor="@color/c_red_4"
+                            android:textSize="@dimen/dimen_12" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View style="@style/horizontalLine" />
+
+            <LinearLayout
+                    style="@style/style_match_wrap_content_pl16_pr16_bw_gc">
+
+                <TextView
+                        style="@style/style_wrap_content_mt15_mb15_w1_ts14"
+                        android:layout_width="@dimen/dimen_0"
+                        android:layout_marginRight="@dimen/dimen_20"
+                        android:text="客户备注" />
+
+                <EditText
+                        android:id="@+id/et_new_custom_033"
+                        style="@style/style_wrap_content_tch0_tc6_bnull_gr_w1_ts14"
+                        android:layout_width="@dimen/dimen_0"
+                        android:layout_weight="3"
+                        android:hint="填写备注内容" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+            android:id="@+id/ll_new_custom"
+            style="@style/style_match_wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/dimen_16"
+            android:paddingBottom="@dimen/dimen_15">
+
+        <TextView
+                android:id="@+id/btn_new_custom_cancel"
+                style="@style/style_wrap_content"
+                android:layout_marginRight="@dimen/dimen_12"
+                android:layout_weight="1"
+                android:background="@drawable/edit_bg_selector"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dimen_16"
+                android:paddingTop="@dimen/dimen_5"
+                android:paddingRight="@dimen/dimen_16"
+                android:paddingBottom="@dimen/dimen_5"
+                android:text="取消"
+                android:textColor="@color/c_gray_6"
+                android:textSize="@dimen/dimen_14" />
+
+        <TextView
+                android:id="@+id/btn_new_custom_determine"
+                style="@style/style_wrap_content"
+                android:layout_marginLeft="@dimen/dimen_12"
+                android:layout_weight="1"
+                android:background="@drawable/btn_bg_quit_login_normal"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dimen_16"
+                android:paddingTop="@dimen/dimen_5"
+                android:paddingRight="@dimen/dimen_16"
+                android:paddingBottom="@dimen/dimen_5"
+                android:text="提交"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_14" />
+    </LinearLayout>
+</RelativeLayout>

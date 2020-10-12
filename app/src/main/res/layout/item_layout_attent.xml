@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/style_match_wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+            style="@style/style_match_wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/dimen_16">
+
+        <TextView
+                android:id="@+id/tv_layout_atten_01"
+                style="@style/style_wrap_content"
+                android:layout_width="@dimen/dimen_0"
+                android:layout_weight="1"
+                android:textColor="@color/c_black_6"
+                android:textSize="@dimen/dimen_14" />
+
+        <LinearLayout
+                style="@style/style_wrap_content"
+                android:layout_width="@dimen/dimen_0"
+                android:layout_weight="3"
+                android:orientation="horizontal">
+
+            <LinearLayout
+                    style="@style/style_wrap_content"
+                    android:orientation="vertical">
+
+                <TextView
+                        style="@style/style_wrap_content"
+                        android:text="签到"
+                        android:textColor="@color/c_black_7"
+                        android:textSize="@dimen/dimen_14" />
+
+                <TextView
+                        style="@style/style_wrap_content"
+                        android:text="签退"
+                        android:textColor="@color/c_black_7"
+                        android:textSize="@dimen/dimen_14" />
+            </LinearLayout>
+
+            <LinearLayout
+                    style="@style/style_wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_16"
+                    android:layout_weight="1"
+                    android:id="@+id/ll_layout_atten_"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:id="@+id/tv_layout_atten_02"
+                        style="@style/style_wrap_content"
+                        android:textColor="@color/c_black_6"
+                        android:textSize="@dimen/dimen_14" />
+
+                <TextView
+                        android:id="@+id/tv_layout_atten_03"
+                        style="@style/style_wrap_content"
+                        android:textColor="@color/c_black_6"
+                        android:textSize="@dimen/dimen_14" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+                style="@style/style_wrap_content"
+                android:drawableRight="@mipmap/icon_right" />
+
+    </LinearLayout>
+
+    <View style="@style/horizontalLine_16" />
+</LinearLayout>

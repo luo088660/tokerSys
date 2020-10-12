@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              style="@style/style_match_wrap_content">
+
+    <CheckBox style="@style/style_match_wrap_content"
+              android:id="@+id/tv_chcust_stute"
+              android:background="@drawable/btn_bg_selector"
+              android:paddingTop="@dimen/dimen_5"
+              android:button="@null"
+              android:paddingBottom="@dimen/dimen_5"
+              android:textColor="@drawable/btn_quit_bg_selector"
+              android:textSize="@dimen/dimen_12"
+              android:text="高层"
+              android:gravity="center"/>
+
+</LinearLayout>

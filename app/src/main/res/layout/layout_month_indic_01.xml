@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/style_match_wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+            style="@style/style_match_wrap_content"
+            android:background="@color/white_01"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dimen_10"
+            android:paddingRight="@dimen/dimen_10">
+
+        <LinearLayout
+                style="@style/style_match_wrap_content"
+                android:layout_marginTop="@dimen/dimen_10">
+
+            <TextView
+                    style="@style/style_wrap_content_b7_ts14"
+                    android:text="所属项目" />
+
+            <TextView
+                    android:id="@+id/tv_indic_01"
+                    style="@style/style_wrap_content_ts14_tcb6_ml10"
+                    android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+                style="@style/style_match_wrap_content"
+                android:layout_marginTop="@dimen/dimen_10">
+
+            <TextView
+                    style="@style/style_wrap_content_b7_ts14"
+                    android:text="任务类型" />
+
+            <TextView
+                    android:id="@+id/tv_indic_02"
+                    style="@style/style_wrap_content_ts14_tcb6_ml10"
+                    android:layout_weight="1" />
+
+            <TextView
+                    style="@style/style_wrap_content_b7_ts14"
+                    android:text="任务状态" />
+
+            <TextView
+                    android:id="@+id/tv_indic_03"
+                    style="@style/style_wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:layout_marginRight="@dimen/dimen_20"
+                    android:background="@color/c_red_5"
+                    android:paddingLeft="@dimen/dimen_8"
+                    android:paddingTop="@dimen/dimen_4"
+                    android:paddingRight="@dimen/dimen_8"
+                    android:paddingBottom="@dimen/dimen_4"
+                    android:textColor="@color/c_red_4" />
+        </LinearLayout>
+
+        <LinearLayout
+                style="@style/style_match_wrap_content"
+                android:layout_marginTop="@dimen/dimen_10">
+
+            <TextView
+                    style="@style/style_wrap_content"
+                    android:text="创建人\t\t " />
+
+            <TextView
+                    android:id="@+id/tv_indic_04"
+                    style="@style/style_wrap_content_ts14_tcb6_ml10"
+                    android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+                style="@style/style_match_wrap_content"
+                android:layout_marginTop="@dimen/dimen_10">
+
+            <TextView
+                    style="@style/style_wrap_content_b7_ts14"
+                    android:text="任务对象" />
+
+            <TextView
+                    android:id="@+id/tv_indic_06"
+                    style="@style/style_wrap_content_ts14_tcb6_ml10"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:maxLines="1" />
+        </LinearLayout>
+
+        <LinearLayout
+                style="@style/style_match_wrap_content"
+                android:layout_marginTop="@dimen/dimen_10">
+
+            <TextView
+                    style="@style/style_wrap_content_b7_ts14"
+                    android:text="创建时间" />
+
+            <TextView
+                    android:id="@+id/tv_indic_05"
+                    style="@style/style_wrap_content_ts14_tcb6_ml10"
+                    android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+                style="@style/style_match_wrap_content"
+                android:layout_marginTop="@dimen/dimen_10">
+
+            <TextView
+                    style="@style/style_wrap_content_b7_ts14"
+                    android:text="任务时间" />
+
+            <TextView
+                    android:id="@+id/tv_indic_07"
+                    style="@style/style_wrap_content_ts14_tcb6_ml10"
+                    android:layout_weight="1" />
+        </LinearLayout>
+
+        <include layout="@layout/layout_progress_01" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

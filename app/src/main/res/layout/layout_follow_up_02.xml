@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/style_match_wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+            style="@style/style_match_wrap_content"
+            android:orientation="vertical">
+
+        <LinearLayout
+                style="@style/style_match_wrap_content"
+                android:background="@color/white_01"
+                android:padding="@dimen/dimen_10">
+
+            <TextView
+                    style="@style/style_wrap_content"
+                    android:text="排名"
+                    android:textColor="@color/c_black_6"
+                    android:textSize="@dimen/dimen_12"
+                    android:textStyle="bold" />
+
+            <TextView
+                    style="@style/style_wrap_content"
+                    android:layout_width="@dimen/dimen_0"
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="项目"
+                    android:textColor="@color/c_black_6"
+                    android:textSize="@dimen/dimen_12"
+                    android:textStyle="bold" />
+
+            <TextView
+                    android:id="@+id/tv_follow_up2_01"
+                    style="@style/style_wrap_content"
+                    android:layout_width="@dimen/dimen_0"
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="客户总数"
+                    android:drawableRight="@mipmap/icon_mrpx"
+                    android:textColor="@color/c_black_6"
+                    android:textSize="@dimen/dimen_12"
+                    android:textStyle="bold" />
+
+            <TextView
+                    android:id="@+id/tv_follow_up2_02"
+                    style="@style/style_wrap_content"
+                    android:layout_width="@dimen/dimen_0"
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:layout_weight="1.2"
+                    android:gravity="center"
+                    android:text="已推荐客户"
+                    android:drawableRight="@mipmap/icon_mrpx"
+                    android:textColor="@color/c_black_6"
+                    android:textSize="@dimen/dimen_12"
+                    android:textStyle="bold" />
+        </LinearLayout>
+
+        <View style="@style/horizontalLine" />
+
+        <LinearLayout
+                style="@style/style_match_wrap_content"
+                android:background="@color/white_01"
+                android:padding="@dimen/dimen_10">
+
+            <TextView
+                    style="@style/style_wrap_content"
+                    android:textSize="@dimen/dimen_12"
+                    android:text="汇总"
+                    android:textColor="@color/c_black_7" />
+
+            <TextView
+                    style="@style/style_wrap_content"
+                    android:layout_width="@dimen/dimen_0"
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:textSize="@dimen/dimen_12"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="全部项目"
+                    android:textColor="@color/c_black_7" />
+
+            <TextView
+                    style="@style/style_wrap_content"
+                    android:layout_width="@dimen/dimen_0"
+                    android:textSize="@dimen/dimen_12"
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:id="@+id/tv_follow_up_011"
+                    android:text="0"
+                    android:textColor="@color/c_black_7" />
+
+            <TextView
+                    style="@style/style_wrap_content"
+                    android:layout_width="@dimen/dimen_0"
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:layout_weight="1.2"
+                    android:textSize="@dimen/dimen_12"
+                    android:id="@+id/tv_follow_up_012"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/c_black_7" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

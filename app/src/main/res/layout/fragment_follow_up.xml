@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/style_match_content"
+              android:orientation="vertical">
+        <com.liaoinstan.springview.widget.SpringView
+                android:id="@+id/sp_t_follow"
+                style="@style/style_match_content">
+
+            <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_t_follow"
+                    style="@style/style_match_wrap_content"/>
+        </com.liaoinstan.springview.widget.SpringView>
+        <TextView style="@style/style_wrap_content"
+                  android:id="@+id/btn_follow_up"
+                  android:layout_alignParentRight="true"
+                  android:layout_alignParentBottom="true"
+                  android:background="@drawable/btn_return_top"
+                  android:layout_margin="@dimen/dimen_20"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/style_match_wrap_content"
+        android:orientation="vertical">
+
+
+    <LinearLayout
+            style="@style/style_match_wrap_content"
+            android:background="@color/white_01"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dimen_16"
+            android:paddingRight="@dimen/dimen_16">
+
+        <TextView
+                style="@style/style_wrap_content"
+                android:text="拓客业绩排名"
+                android:textColor="@color/c_black_6"
+                android:textSize="@dimen/dimen_16"
+                android:textStyle="bold" />
+
+        <TextView
+                android:id="@+id/tv_ver_01"
+                style="@style/style_wrap_content_w0_gc_pd14_ts12_tcb6_drxx"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_15"
+                android:layout_weight="0"
+                android:drawablePadding="@dimen/dimen_5"
+                android:gravity="left"
+                android:text="项目" />
+
+        <TextView
+                android:id="@+id/tv_poin_date_00"
+                style="@style/style_wrap_content"
+                android:layout_marginLeft="@dimen/dimen_6"
+                android:layout_marginRight="@dimen/dimen_6"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text=""
+                android:textColor="@color/c_gray_6"
+                android:textSize="@dimen/dimen_12" />
+
+        <LinearLayout
+                android:id="@+id/ll_poin_date"
+                style="@style/style_wrap_content"
+                android:gravity="center">
+
+            <TextView
+                    android:id="@+id/tv_poin_date"
+                    style="@style/style_wrap_content_ts12_tchg6_tcb6_pdtb14_pdlr10"
+                    android:gravity="center"
+                    android:hint="日期"
+                    android:lineSpacingMultiplier="1.2"
+                    android:text="1" />
+
+            <ImageView
+                    android:layout_width="@dimen/dimen_30"
+                    android:layout_height="@dimen/dimen_30"
+                    android:padding="@dimen/dimen_8"
+                    android:src="@mipmap/icon_shuaxuan" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+            style="@style/style_match_wrap_content"
+            android:paddingLeft="@dimen/dimen_16"
+            android:paddingRight="@dimen/dimen_16">
+
+        <RelativeLayout
+                android:id="@+id/rl_ver_02"
+                style="@style/style_wrap_content"
+                android:layout_width="@dimen/dimen_0"
+                android:layout_weight="1">
+
+            <TextView
+                    android:id="@+id/tv_ver_02"
+                    style="@style/style_wrap_content_w0_gc_pd14_ts12_tcb6_drxx"
+                    android:layout_width="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:drawablePadding="@dimen/dimen_5"
+                    android:text="全部项目" />
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:id="@+id/rl_ver_03"
+                style="@style/style_wrap_content"
+                android:layout_width="@dimen/dimen_0"
+                android:layout_weight="1">
+
+            <TextView
+                    android:id="@+id/tv_ver_03"
+                    style="@style/style_wrap_content_w0_gc_pd14_ts12_tcb6_drxx"
+                    android:layout_width="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:drawablePadding="@dimen/dimen_5"
+                    android:text="全部团队" />
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:id="@+id/rl_ver_04"
+                style="@style/style_wrap_content"
+                android:layout_width="@dimen/dimen_0"
+                android:layout_weight="1">
+
+            <TextView
+                    android:id="@+id/tv_ver_04"
+                    style="@style/style_wrap_content_w0_gc_pd14_ts12_tcb6_drxx"
+                    android:layout_width="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:drawablePadding="@dimen/dimen_5"
+                    android:text="成交额(万元)" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+            style="@style/style_match_wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+        <LinearLayout style="@style/style_match_wrap_content"
+                android:visibility="gone">
+
+            <TextView
+                    style="@style/style_wrap_content_pad15_gc_ts12_tcb6"
+                    android:layout_width="wrap_content"
+                    android:text="排名" />
+
+            <TextView
+                    style="@style/style_wrap_content_pad15_gc_ts12_tcb6"
+                    android:layout_width="@dimen/dimen_0"
+                    android:layout_weight="1.5"
+                    android:text="项目" />
+
+            <TextView
+                    android:id="@+id/tv_ver_05"
+                    style="@style/style_wrap_content_pad15_gc_ts12_tcb6"
+                    android:layout_width="@dimen/dimen_0"
+                    android:layout_weight="1"
+                    android:drawableRight="@mipmap/icon_mrpx"
+                    android:text="完成"
+                    android:textColor="@color/btn_red" />
+
+            <TextView
+                    android:id="@+id/tv_ver_06"
+                    style="@style/style_wrap_content_pad15_gc_ts12_tcb6"
+                    android:layout_width="@dimen/dimen_0"
+                    android:layout_weight="1"
+                    android:drawableRight="@mipmap/icon_mrpx"
+                    android:text="目标" />
+
+            <TextView
+                    android:id="@+id/tv_ver_07"
+                    style="@style/style_wrap_content_pad15_gc_ts12_tcb6"
+                    android:layout_width="@dimen/dimen_0"
+                    android:layout_weight="1.2"
+                    android:drawableRight="@mipmap/icon_mrpx"
+                    android:text="完成率" />
+        </LinearLayout>
+
+        <FrameLayout
+                android:id="@+id/fl_pion_perfor_rank"
+                style="@style/style_match_content"/>
+
+
+    </LinearLayout>
+</LinearLayout>

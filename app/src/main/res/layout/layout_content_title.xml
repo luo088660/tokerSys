@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 标题-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <RelativeLayout
+            android:id="@+id/rl_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_45"
+            android:background="@color/white_01">
+
+
+        <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="@dimen/dimen_30"
+                android:layout_height="@dimen/dimen_30"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_5"
+                android:padding="@dimen/dimen_5"
+                android:src="@mipmap/icon_back" />
+
+        <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/c_black_6"
+                android:textSize="@dimen/dimen_20" />
+
+        <TextView
+                android:id="@+id/tv_myaccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dimen_15"
+                android:textColor="@color/c_gray_9"
+                android:textSize="@dimen/dimen_15"
+                android:visibility="gone" />
+
+        <RelativeLayout
+                android:id="@+id/ll_msg"
+                style="@style/style_wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:visibility="gone">
+
+            <ImageView
+                    android:id="@+id/img_msg"
+                    android:layout_width="@dimen/text_19"
+                    android:layout_height="@dimen/dimen_14"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:layout_marginBottom="@dimen/dimen_10"
+                    android:src="@mipmap/icon_msg"
+                    android:textColor="@color/c_gray_9"
+                    android:textSize="@dimen/dimen_15" />
+
+            <TextView
+                    android:id="@+id/tv_my_msg_01"
+                    android:layout_width="@dimen/dimen_10"
+                    android:layout_toRightOf="@+id/img_msg"
+                    android:visibility="gone"
+                    android:layout_height="@dimen/dimen_10"
+                    android:background="@drawable/spot_01_select"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dimen_9" />
+        </RelativeLayout>
+
+        <LinearLayout
+                android:id="@+id/ll_account"
+                style="@style/style_wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dimen_15"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+            <ImageView
+                    android:layout_width="@dimen/dimen_18"
+                    android:layout_height="@dimen/dimen_18"
+                    android:src="@mipmap/icon_tjdw"
+                    android:textColor="@color/c_gray_9"
+                    android:textSize="@dimen/dimen_15" />
+
+            <TextView
+                    style="@style/style_wrap_content"
+                    android:layout_marginTop="@dimen/dimen_5"
+                    android:text="推荐点"
+                    android:textColor="@color/c_black_6"
+                    android:textSize="@dimen/dimen_10" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1"
+            android:background="@color/login_line" />
+</LinearLayout>

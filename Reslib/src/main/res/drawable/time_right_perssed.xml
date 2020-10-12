@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <corners android:topRightRadius="@dimen/dimen_3"
+                     android:bottomRightRadius="@dimen/dimen_3"
+            />
+            <stroke android:width="@dimen/dimen_1"
+                    android:color="@color/c_red_4" /><!--边框颜色-->
+            <solid android:color="@color/c_bg_weikaishi"
+                   android:radius="@dimen/dimen_3"/><!--填充色-->
+        </shape>
+    </item>
+</layer-list><!--perssed-->

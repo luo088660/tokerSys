@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              style="@style/style_match_wrap_content">
+    <LinearLayout style="@style/style_match_wrap_content"
+                  android:background="@color/white"
+                  android:padding="@dimen/dimen_16">
+        <ImageView android:layout_width="@dimen/dimen_32"
+                   android:layout_height="@dimen/dimen_32"
+                   android:src="@mipmap/icon_litter_bee"/>
+
+
+        <LinearLayout style="@style/style_wrap_content"
+                      android:layout_marginRight="@dimen/dimen_20"
+                      android:layout_marginLeft="@dimen/dimen_20"
+                      android:orientation="vertical">
+            <TextView style="@style/style_wrap_content"
+                      android:textColor="@color/c_black_6"
+                    android:id="@+id/tv_lit_be_01"
+                      android:textSize="@dimen/dimen_14"
+                      android:layout_marginBottom="@dimen/dimen_8"
+                      android:text="李一鸣"/>
+            <TextView style="@style/style_wrap_content"
+                      android:textColor="@color/c_gray_6"
+                      android:textSize="@dimen/dimen_14"
+                      android:text="注册日期"/>
+        </LinearLayout>
+        <LinearLayout style="@style/style_match_wrap_content"
+                      android:orientation="vertical">
+            <TextView style="@style/style_wrap_content"
+                      android:textColor="@color/c_black_6"
+                    android:id="@+id/tv_lit_be_02"
+                      android:layout_marginBottom="@dimen/dimen_8"
+                      android:textSize="@dimen/dimen_14"
+                      android:text="13900000200"/>
+            <TextView style="@style/style_wrap_content"
+                    android:id="@+id/tv_lit_be_03"
+                      android:textColor="@color/c_gray_6"
+                      android:textSize="@dimen/dimen_14"
+                      android:text="2019-05-21"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View style="@style/horizontalLine_16"/>
+
+</LinearLayout>

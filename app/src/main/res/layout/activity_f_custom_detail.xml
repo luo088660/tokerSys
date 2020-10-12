@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/style_match_content"
+        android:background="@color/c_gray_12"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+
+    <include
+            android:id="@+id/ll_mcf_custom_detail_top"
+            layout="@layout/layout_content_title" />
+    <!--
+        <FrameLayout style="@style/style_match_content"
+                     -->
+    <LinearLayout
+            style="@style/style_match_wrap_content"
+            android:layout_above="@+id/ll_mcf_custom_detail_btm"
+            android:layout_below="@+id/ll_mcf_custom_detail_top"
+            android:orientation="vertical">
+
+        <LinearLayout
+                android:id="@+id/ll_f_custom_datail"
+                style="@style/style_match_wrap_content"
+                android:orientation="vertical">
+
+            <TextView
+                    android:id="@+id/tv_f_custom_datail"
+                    style="@style/style_match_wrap_content"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:padding="@dimen/dimen_12"
+                    android:text="逾期4天，请尽快分配拓客员！"
+                    android:textColor="@color/c_red_4"
+                    android:textSize="@dimen/dimen_14" />
+
+            <View
+                    style="@style/horizontalLine"
+                    android:layout_height="@dimen/dimen_10" />
+        </LinearLayout>
+
+        <ScrollView style="@style/style_match_wrap_content"
+
+                >
+
+            <LinearLayout
+                    style="@style/style_match_content"
+                    android:orientation="vertical">
+
+                <include layout="@layout/layout_f_custom_detail_01" />
+
+                <View style="@style/horizontalLine_16" />
+
+                <LinearLayout
+                        android:id="@+id/ll_f_custom_datail_01"
+                        style="@style/style_match_wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:paddingLeft="@dimen/dimen_16"
+                        android:paddingRight="@dimen/dimen_16"
+                        android:paddingBottom="@dimen/dimen_16"
+                        android:visibility="gone">
+
+                    <LinearLayout
+                            android:id="@+id/ll_f_custom_datail_02"
+                            style="@style/style_match_wrap_content_mt15">
+
+                        <TextView
+                                style="@style/style_wrap_content_wid0_w1"
+                                android:text="无效标记人" />
+
+                        <TextView
+                                android:id="@+id/tv_f_custom_datail_01"
+                                style="@style/style_wrap_content_wid0_w4"
+                                android:layout_weight="2.5"
+                                android:text="王女士" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/style_match_wrap_content_mt15">
+
+                        <TextView
+                                style="@style/style_wrap_content_wid0_w1"
+                                android:text="无效标记日期" />
+
+                        <TextView
+                                android:id="@+id/tv_f_custom_datail_02"
+                                style="@style/style_wrap_content_wid0_w4"
+                                android:layout_weight="2.5" />
+
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/style_match_wrap_content_mt15">
+
+                        <TextView
+                                style="@style/style_wrap_content_wid0_w1"
+                                android:text="无效原因" />
+
+                        <TextView
+                                android:id="@+id/tv_f_custom_datail_03"
+                                style="@style/style_wrap_content_wid0_w4"
+                                android:layout_weight="2.5" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <include
+                        android:id="@+id/layout_tjr_info"
+                        layout="@layout/layout_mcf_custom_recom_01" />
+
+                <include layout="@layout/layout_f_custom_detail_02" />
+
+                <TextView
+                        android:id="@+id/btn_f_custom_datail"
+                        style="@style/style_match_wrap_content"
+                        android:layout_margin="@dimen/dimen_16"
+                        android:background="@drawable/btn_bg_quit_login_normal"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/dimen_16"
+                        android:paddingTop="@dimen/dimen_5"
+                        android:paddingRight="@dimen/dimen_16"
+                        android:paddingBottom="@dimen/dimen_5"
+                        android:text="分配拓客员"
+                        android:textColor="@color/white_01"
+                        android:textSize="@dimen/dimen_14"
+                        android:visibility="gone" />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <!-- </FrameLayout>-->
+    <LinearLayout
+            android:id="@+id/ll_mcf_custom_detail_btm"
+            style="@style/style_match_wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+        <include layout="@layout/layout_mcf_custom_recom_03" />
+    </LinearLayout>
+
+
+</RelativeLayout>

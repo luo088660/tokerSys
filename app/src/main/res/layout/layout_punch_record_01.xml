@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/white"
+              android:paddingLeft="@dimen/dimen_16"
+              android:paddingRight="@dimen/dimen_16"
+              android:paddingTop="@dimen/dimen_16"
+              style="@style/style_match_wrap_content">
+    <LinearLayout style="@style/style_match_wrap_content"
+            android:paddingBottom="@dimen/dimen_5"
+
+    >
+        <ImageView android:layout_width="@dimen/dimen_32"
+                   android:layout_height="@dimen/dimen_32"
+                   android:src="@mipmap/icon_litter_bee"/>
+
+
+        <LinearLayout style="@style/style_wrap_content"
+                      android:layout_marginRight="@dimen/dimen_20"
+                      android:layout_marginLeft="@dimen/dimen_20"
+                      android:orientation="vertical">
+            <TextView style="@style/style_wrap_content"
+                    android:id="@+id/tv_punch_record_01"
+                      android:textColor="@color/c_black_6"
+                      android:textSize="@dimen/dimen_14"
+                      android:text="李一鸣"/>
+            <TextView style="@style/style_wrap_content"
+                      android:textColor="@color/c_gray_6"
+                      android:layout_marginTop="@dimen/dimen_8"
+                      android:layout_marginBottom="@dimen/dimen_8"
+                      android:textSize="@dimen/dimen_14"
+                      android:text="注册日期"/>
+            <TextView style="@style/style_wrap_content"
+                      android:textColor="@color/c_gray_6"
+                      android:textSize="@dimen/dimen_14"
+                      android:text="打卡次数"/>
+        </LinearLayout>
+        <LinearLayout style="@style/style_match_wrap_content"
+                      android:orientation="vertical">
+            <TextView style="@style/style_wrap_content"
+                      android:textColor="@color/c_black_6"
+                      android:textSize="@dimen/dimen_14"
+                    android:id="@+id/tv_punch_record_02"
+                      android:text="13900000200"/>
+            <TextView style="@style/style_wrap_content"
+                      android:textColor="@color/c_gray_6"
+                      android:layout_marginTop="@dimen/dimen_8"
+                      android:layout_marginBottom="@dimen/dimen_8"
+                    android:id="@+id/tv_punch_record_03"
+                      android:textSize="@dimen/dimen_14"
+                      android:text="2019-05-21"/>
+            <TextView style="@style/style_wrap_content"
+                      android:textColor="@color/c_gray_6"
+                    android:id="@+id/tv_punch_record_04"
+                      android:textSize="@dimen/dimen_14"
+                      android:text="5次"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <View style="@style/horizontalLine"/>
+
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_item_record"
+            android:layout_marginTop="@dimen/dimen_10"
+            style="@style/style_match_wrap_content"/>
+
+    <LinearLayout style="@style/style_match_wrap_content"
+                  android:gravity="center"
+                  android:padding="@dimen/dimen_10">
+        <TextView style="@style/style_wrap_content"
+                  android:text="展开打卡记录"
+                android:id="@+id/tv_punch_record_05"
+                  android:textSize="@dimen/dimen_12"
+                  android:drawableTint="@color/c_red_4"
+                  android:textColor="@color/c_red_4"
+                  android:drawablePadding="@dimen/dimen_10"
+                  android:drawableRight="@mipmap/icon_xxjt"/>
+    </LinearLayout>
+</LinearLayout>
